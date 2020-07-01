@@ -13,7 +13,7 @@ public class Solution{
         }
     //calculate the rights, and the product from the right of the array
         int right = 1;
-        for(int i = n -1; i >= 0){
+        for(int i = n -1; i >= 0; i--){
             if (i < n-1){
                 right = right * nums[i+1];
             }
