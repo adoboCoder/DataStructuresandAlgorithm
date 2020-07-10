@@ -16,3 +16,5 @@ class Solution extends VersionControl{
         return start;
     }
 }
+
+// Time: O(logN)
