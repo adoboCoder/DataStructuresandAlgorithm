@@ -9,6 +9,25 @@ class Solution{
             prev = head;
             head = next;
         }
-        return prev;
+        return prev; //Iterative solution
+    }
+}
+
+class Solution{
+    public ListNode reverseList(ListNode head){
+        return reverse(head, null);
+    }
+
+    private reverse(ListNode head, ListNodoe newHead){
+        if(head == null){
+            return newHead;
+        }
+
+        ListNode next = head.next;
+        head.next = newHead;
+        newHead = head;
+        head = next;
+
+        return reverse(head, newHead); //Recursive solution
     }
 }
