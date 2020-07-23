@@ -42,6 +42,6 @@ class Solution{
 
 }
 
-// Time: O(n)
-// Space O(n)
+// Time: O(m+n)
+// Space O(m+n)
 
