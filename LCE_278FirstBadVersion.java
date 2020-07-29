@@ -17,4 +17,4 @@ class Solution extends VersionControl{
     }
 }
 
-// Time: O(logN)
+// Time: O(logN) because it utilizes  binary search
