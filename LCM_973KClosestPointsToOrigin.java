@@ -18,9 +18,13 @@ class Solution {
 private int helper(int[][] A, int left, int right) {
     int[] pivot = A[left];
     while (left < right) {
-        while (left < right && compare(A[right], pivot) >= 0) right--;
+        while (left < right && compare(A[right], pivot) >= 0){
+            right--;
+        } 
         A[left] = A[right];
-        while (left < right && compare(A[left], pivot) <= 0) left++;
+        while (left < right && compare(A[left], pivot) <= 0){
+            left++;
+        } 
         A[right] = A[left];
     }
     A[left] = pivot;
