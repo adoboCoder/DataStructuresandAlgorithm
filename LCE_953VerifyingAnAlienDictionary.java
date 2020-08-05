@@ -4,18 +4,22 @@ class Solution {
       
        for (int i = 0; i < order.length(); i++)
            mapping[order.charAt(i) - 'a'] = i;
-       for (int i = 0; i < words.length - 1; i++)
-           if (compare(words[i], words[i+1]))
+       for (int i = 0; i < words.length - 1; i++){
+           if (compare(words[i], words[i+1])){
                return false;
+           }
+       }
        return true;
    }
 
   private boolean compare(String s1, String s2) {
        int n = s1.length();
        int m = s2.length();
-       for (int i = 0; i < n && i < m; ++i)
-           if (s1.charAt(i) != s2.charAt(i))
-               return mapping[s1.charAt(i) - 'a'] > mapping[s2.charAt(i) - 'a'];
+       for (int i = 0; i < n && i < m; ++i){
+           if (s1.charAt(i) != s2.charAt(i)){
+                return mapping[s1.charAt(i) - 'a'] > mapping[s2.charAt(i) - 'a'];
+            }
+       }
        return n > m;
    }
 }
