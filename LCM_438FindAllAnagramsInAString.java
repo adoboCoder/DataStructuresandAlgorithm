@@ -1,38 +1,43 @@
 public class Solution {
-    public List<Integer> findAnagrams(String s, String t) {
-        List<Integer> result = new LinkedList<>();
-        if(t.length()> s.length()){
+    public List<Integer> findAnagrams(String s, String p) {
+        List<Integer> result = new ArrayList<>();
+        if(s == null || s.length() == 0 || p == null || p.length() == 0){
             return result;
         }
-        Map<Character, Integer> map = new HashMap<>();
-        for(char c : t.toCharArray()){
-            map.put(c, map.getOrDefault(c, 0) + 1);
+        int[] hash = new int[256]; // Character Hash
+
+        for(char c : p.toCharArray()){
+            hash[c]++;
         }
-        int counter = map.size();
-        int begin = 0, end = 0;
-        int head = 0;
-        int len = Integer.MAX_VALUE;
-        while(end < s.length()){
-            char c = s.charAt(end);
-            if( map.containsKey(c) ){
-                map.put(c, map.get(c)-1);
-                if(map.get(c) == 0){
-                    counter--;
-                } 
+        int left = 0;
+        int right = 0;
+        int count = p.length();
+        while(right < s.length()){
+            //Move right everytime, if the character exists in P's Hash, decrease the count
+            //current has value of >=1 means the character is existing in p
+            if(hash[s.charAt(right)]>= 1){
+                count--;
             }
-            end++;
-            while(counter == 0){
-                char tempc = s.charAt(begin);
-                if(map.containsKey(tempc)){
-                    map.put(tempc, map.get(tempc) + 1);
-                    if(map.get(tempc) > 0){
-                        counter++;
-                    }
+
+            hash[s.charAt(right)]--;
+            right++;
+
+            // When the count is down to zero, means we found the right anagram
+            // then add the left index to the result list.
+            if(count == 0){
+                result.add(left);
+            }
+
+            //if we find the window's size equals to p, then we have to move left (narrow the window) to find the new match window
+            //++ to  reset the hash because we kicked out he left
+            //only increase the count if the character is in p
+            // count >= 0 indicates it was original in the hash because it won't go below zero.
+            if(right - left == p.length()){
+                if(hash[s.charAt(left)] >= 0){
+                    count++;
                 }
-                if(end-begin == t.length()){
-                    result.add(begin);
-                }
-                begin++;
+                hash[s.charAt(left)]++;
+                left++;
             }
         }
         return result;
