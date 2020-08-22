@@ -2,8 +2,11 @@ class Solution{
     public String minRemoveToMakeValid(String s) {
             int openCloseCount = 0;
             int close = 0;
-            for (int i = 0; i < s.length(); i++)  if (s.charAt(i) == ')') close++;
-            
+            for (int i = 0; i < s.length(); i++){
+                if (s.charAt(i) == ')'){
+                    close++;
+                } 
+            }  
             StringBuilder sb = new StringBuilder();
             
             for (char c: s.toCharArray()) {
@@ -11,8 +14,7 @@ class Solution{
                     if (openCloseCount == close) {
                         continue;
                     }
-                    openCloseCount++;
-                    
+                    openCloseCount++;  
                 } else if (c == ')') {
                     close--;
                     if (openCloseCount == 0) {
@@ -20,7 +22,6 @@ class Solution{
                     }
                     openCloseCount--;
                 } 
-    
                     sb.append(c);
             }
             return sb.toString();
