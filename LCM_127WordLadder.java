@@ -4,8 +4,11 @@ public class Solution {
         Set<String> qStart = new HashSet<>();
         Set<String> qEnd = new HashSet<>();
         Set<String> vis = new HashSet<>();
+        
         qStart.add(beginWord);
-        if (dict.contains(endWord)) qEnd.add(endWord); // all transformed words must be in dict (including endWord)
+        if (dict.contains(endWord)){
+            qEnd.add(endWord); // all transformed words must be in dict (including endWord)
+        } 
         for (int len = 2; !qStart.isEmpty(); len++) {
             Set<String> nq = new HashSet<>();
             for (String w : qStart) {
