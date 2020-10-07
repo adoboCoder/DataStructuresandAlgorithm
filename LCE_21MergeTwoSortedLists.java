@@ -13,11 +13,31 @@ class Solution{
             }
             current = current.next;
         }
-        current.next = l1 == null ? l2 : l1;
+        current.next = l1 == null ?
+         l2 : l1;
         return answer.next;
     }
 }
+/*
+The iterative solution requires a dummy node(answer), then later there is a current pointer that points to answer.
+answer will always have 0 at the head because of current = answer (line5).  When returning the answer I will return answer.next to 
+get rid of the 0 at the head.
 
+Example:
+l1: [1,2,4]
+l2: [1,3,4]
+
+First iteration of the while loop: 
+
+l1.val = 1 and l2.val = 2 
+current: [0,1,3,4] -> current: [1,3,4]
+l2:[3,4]
+
+
+
+
+
+*/
 // Time: O(n)
 // Space O(n)
 
@@ -45,3 +65,8 @@ class Solution{
 // Time: O(m+n)
 // Space O(m+n)
 
+/* The recursive solution is a little bit cleaner in my opinion.  
+It doesn't require any additional ListNode, so there's no keeping track of the pointer.
+
+
+*/
