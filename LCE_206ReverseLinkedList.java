@@ -18,7 +18,7 @@ class Solution{
         return reverse(head, null);
     }
 
-    private reverse(ListNode head, ListNodoe newHead){
+    private ListNode reverse(ListNode head, ListNode newHead){
         if(head == null){
             return newHead;
         }
