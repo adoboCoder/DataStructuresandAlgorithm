@@ -1,16 +1,20 @@
 class Solution {
     public int maxProfit(int[] prices) {
-        if(prices.length == 0){
-            return 0;
+        int maxCurrent = 0;
+        int maxSoFar = 0;
+        for(int i = 1; i < prices.length; i++) {
+            maxCurrent = Math.max(0, maxCurrent = maxCurrent + prices[i] - prices[i-1]);
+            maxSoFar = Math.max(maxCurrent, maxSoFar);
         }
-
-        int max = 0;
-        int min = Integer.MAX_VALUE;
-
-        for(int p : prices){
-            min = Math.min(min, p);
-            max = Math.max(p - min, max);
-        }
-        return max;
+        return maxSoFar;
     }
 }
+
+/*
+
+*maxCurrent = current maximum value
+
+*maxSoFar = maximum value found so far
+
+
+*/
