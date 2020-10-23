@@ -1,25 +1,54 @@
 import java.util.Collections;
 
 class Google {
-   public static String alphabetBoardPath(String target, int Kblength) {
-    int x = 0;
-    int y = 0;
-  StringBuilder sb = new StringBuilder();
-  for (char ch : target.toCharArray()) {
-    int x1 = (ch - 'a') % Kblength;
-    int y1 = (ch - 'a') / Kblength;
-    sb.append(String.join("", Collections.nCopies(Math.max(0, y - y1), "U")) +
-      String.join("", Collections.nCopies(Math.max(0, x1 - x), "R")) +
-      String.join("", Collections.nCopies(Math.max(0, x - x1), "L")) +
-      String.join("", Collections.nCopies(Math.max(0, y1 - y), "D")) + "!");
-    x = x1; y = y1;
-  }
-  return sb.toString();
-    }
+  public static String alphabetBoardPath(String target, int rows) {
+    // starting point(x,y)
+            int x = 0; 
+            int y = 0;
+            StringBuilder sb = new StringBuilder();
+            for(char c : target.toCharArray()){
+    //target point (i,j)
+                int i = (c-'a') / rows;  
+                int j = (c-'a') % rows ;  
+    //now we compare (x,y) (i,j) ==> move x y to i, j
+    //we need to handle special case "z"  cause z does not have the same length as other rows.
+                if(c=='z'){
+    //move to L first to avoid indexOutOfBound
+                    while(y>j){
+                        sb.append('L');
+                        y--;
+                    }
+    //and we know once we move to most L (y=0) and we can only go down as "z" is at last row. 
+                    while(x<i){
+                        sb.append('D');
+                        x++;
+                    }
+                }else{
+                    while(x<i){
+                        sb.append('D');
+                        x++;
+                    }
+                    while(x>i){
+                        sb.append('U');
+                        x--;
+                    }
+                    while(y<j){
+                        sb.append('R');
+                        y++;
+                    }
+                    while(y>j){
+                        sb.append('L');
+                        y--;
+                    }
+                }
+                    sb.append("!");    
+            }
+            return sb.toString();
+        }
 
     public static void main(String args[]) 
     { 
-       String output = alphabetBoardPath("aci", 5);
+       String output = alphabetBoardPath("zgoogle", 5);
   
         System.out.println(output); 
     } 
