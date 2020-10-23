@@ -22,7 +22,7 @@ public class Solution{
                 if(!dfs(map, visited, i)){
                     return false;
                 }
-            }
+            }   
         //if no cycle is found return true;
         return true;
     }
