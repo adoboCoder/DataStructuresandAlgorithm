@@ -27,6 +27,4 @@ We're iteratign  through the  array to find the maximum area where the elements 
 
 Time:O(n)
 Space: O(1)
-
-
 */
