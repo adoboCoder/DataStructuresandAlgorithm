@@ -26,3 +26,27 @@ class Solution{
          return result;
     }
  }
+
+ /*
+Two pointer technique 
+
+Exmpl
+
+A: [[0,2],[5,10],[13,23],[24,25]]
+B: [[1,5],[8,12],[15,24],[25,26]]
+
+A[0][0] = 0
+B[0][0] = 1
+maxStart = 1
+
+A[0][1] =2
+B[0][1] = 5
+minEnd = 2
+
+1 < 2, add to list...
+
+
+
+Time: O(n)
+Space: O(n)
+ */
