@@ -25,7 +25,7 @@ public class Solution {
         else if (number < 20 )
             return lessThanTwenty[number] + " ";
         else if(number < 100)
-            return tens[number / 10] + " " + helper(number );
+            return tens[number / 10] + " " + helper(number % 10 );
         else 
             return lessThanTwenty[number / 100] + " Hundred " + helper(number % 100);
         
