@@ -1,0 +1,5 @@
+class Solution{
+    public String removal(String S){
+        return s.replaceAll(["aeiou", ""]);
+    }
+}
