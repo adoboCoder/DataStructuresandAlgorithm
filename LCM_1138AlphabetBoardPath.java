@@ -8,8 +8,10 @@ class Google {
             StringBuilder sb = new StringBuilder();
             for(char c : target.toCharArray()){
     //target point (i,j)
-                int i = (c - 'a') / rows;  
+                int i = (c - 'a') / rows;
+                System.out.println("i: " + i);  
                 int j = (c - 'a') % rows ;  
+                System.out.println("j: " + j);  
     //now we compare (x,y) (i,j) ==> move x y to i, j
                     while(y > j){
                         sb.append('L');
@@ -37,9 +39,9 @@ class Google {
                         y--;
                     }
                     sb.append("!");    
-            return sb.toString();
-        }
-
+                }
+                return sb.toString();
+  }
     public static void main(String args[]) 
     { 
        String output = alphabetBoardPath("zgoogle", 7);
