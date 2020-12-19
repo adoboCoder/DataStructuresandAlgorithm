@@ -11,9 +11,6 @@ class Google {
                 int i = (c - 'a') / rows;  
                 int j = (c - 'a') % rows ;  
     //now we compare (x,y) (i,j) ==> move x y to i, j
-    //we need to handle special case "z"  cause z does not have the same length as other rows.
-                if(c == 'z'){
-    //move to L first to avoid indexOutOfBound
                     while(y > j){
                         sb.append('L');
                         y--;
@@ -23,7 +20,6 @@ class Google {
                         sb.append('D');
                         x++;
                     }
-                }else{
                     while(x < i){
                         sb.append('D');
                         x++;
@@ -40,7 +36,6 @@ class Google {
                         sb.append('L');
                         y--;
                     }
-                }
                     sb.append("!");    
             }
             return sb.toString();
@@ -48,7 +43,7 @@ class Google {
 
     public static void main(String args[]) 
     { 
-       String output = alphabetBoardPath("zgoogle", 5);
+       String output = alphabetBoardPath("zgoogle", 8);
   
         System.out.println(output); 
     } 
