@@ -37,14 +37,12 @@ class Google {
                         y--;
                     }
                     sb.append("!");    
-            }
             return sb.toString();
         }
 
     public static void main(String args[]) 
     { 
-       String output = alphabetBoardPath("zgoogle", 8);
-  
+       String output = alphabetBoardPath("zgoogle", 7);
         System.out.println(output); 
     } 
 } 
