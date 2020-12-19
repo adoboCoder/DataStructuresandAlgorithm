@@ -11,9 +11,6 @@ class Google {
                 int i = (c - 'a') / rows;  
                 int j = (c - 'a') % rows ;  
     //now we compare (x,y) (i,j) ==> move x y to i, j
-    
-                
-    //move to L first to avoid indexOutOfBound
                     while(y > j){
                         sb.append('L');
                         y--;
