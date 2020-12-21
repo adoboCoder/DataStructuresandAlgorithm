@@ -11,17 +11,8 @@ class Google {
                 int i = (c - 'a') / rows;
                 System.out.println("i: " + i);  
                 int j = (c - 'a') % rows ;  
-                System.out.println("j: " + j);  
-    //now we compare (x,y) (i,j) ==> move x y to i, j
-                    while(y > j){
-                        sb.append('L');
-                        y--;
-                    }
-    //and we know once we move to most L (y=0) and we can only go down as "z" is at last row. 
-                    while(x < i){
-                        sb.append('D');
-                        x++;
-                    }
+                System.out.println("j: " + j);
+                  
                     while(x < i){
                         sb.append('D');
                         x++;
@@ -44,7 +35,7 @@ class Google {
   }
     public static void main(String args[]) 
     { 
-       String output = alphabetBoardPath("zgoogle", 7);
+       String output = alphabetBoardPath("zzgoogle", 5);
         System.out.println(output); 
     } 
 } 
