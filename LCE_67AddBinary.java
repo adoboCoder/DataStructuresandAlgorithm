@@ -17,11 +17,11 @@ class Solution{
             if(j >= 0){
                 sum = sum + b.charAt(j--) - '0';
             }
-            sb.insert(0, sum%2);
+            sb.insert(0, sum % 2);
             carry = sum / 2;
         }
         if(carry > 0){
-            sb.insert(0,1);
+            sb.insert(0, 1);
         }
     return sb.toString();
     }
