@@ -1,6 +1,5 @@
-import java.util.Collections;
 
-class Google {
+class LCM_1139AlphabelBoardPath {
   public static String alphabetBoardPath(String target, int rows) {
     // starting point(x,y)
             int x = 0; 
