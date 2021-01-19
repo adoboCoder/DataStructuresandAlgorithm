@@ -12,6 +12,7 @@ public class Solution {
            runner = runner.next;
            p = p.next;
        }
+       // p is at the node we want to delete.  
        p.next = p.next.next;
        return dummy.next;
     }
