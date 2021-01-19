@@ -1,6 +1,5 @@
-import java.util.Collections;
 
-class Google {
+class LCM_1139AlphabelBoardPath {
   public static String alphabetBoardPath(String target, int rows) {
     // starting point(x,y)
             int x = 0; 
@@ -8,10 +7,8 @@ class Google {
             StringBuilder sb = new StringBuilder();
             for(char c : target.toCharArray()){
     //target point (i,j)
-                int i = (c - 'a') / rows;
-                System.out.println("i: " + i);  
+                int i = (c - 'a') / rows;  
                 int j = (c - 'a') % rows ;  
-                System.out.println("j: " + j);
                   
                     while(x < i){
                         sb.append('D');
