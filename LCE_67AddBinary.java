@@ -12,10 +12,12 @@ class Solution{
             int sum = carry;
 
             if(i >= 0){
-                sum = sum + a.charAt(i--) - '0';
+                sum = sum + a.charAt(i) - '0';
+                i--;
             }
             if(j >= 0){
-                sum = sum + b.charAt(j--) - '0';
+                sum = sum + b.charAt(j) - '0';
+                j--;
             }
             sb.insert(0, sum % 2);
             carry = sum / 2;
