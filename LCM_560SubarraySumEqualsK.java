@@ -7,12 +7,11 @@ class Solution{
         int sum = 0;
         map.put(0,1);
         for(int i : nums){
-            sum = sum + i;
+            sum += i;
             if(map.containsKey(sum - k)){
-                result = result + map.get(sum-k);
+                result = result + map.get(sum - k);
             }    
-            map.put(sum, map.getOrDefault(sum, 0)+1);
-
+            map.put(sum, map.getOrDefault(sum, 0) + 1);
         }
         return result;
     }
