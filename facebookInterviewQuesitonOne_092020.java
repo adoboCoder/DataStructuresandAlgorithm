@@ -10,10 +10,8 @@ public class facebookInterviewQuesitonOne_092020{
     
         for(j = 0; j < arr.length; j++){
           sum = sum + arr[j];
-          System.out.println(sum);
-    
-          if(j >= K -1){
-            result[i] = sum / K;
+          if(j >= K - 1){
+            result[i] = (double)sum / K;
             sum = sum - i;
             i++;
           }
@@ -26,8 +24,7 @@ public class facebookInterviewQuesitonOne_092020{
         int n = 4;
         double [] out = findAverages(n, arr);
         for(double d : out){
-            System.out.println("[" + d +"]");
+           System.out.print("[" + d +"]" + ",");
         }
-        System.out.println(findAverages(n, arr));
     }
 }
