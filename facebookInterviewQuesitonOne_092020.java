@@ -24,10 +24,10 @@ public class facebookInterviewQuesitonOne_092020{
     public static void main(String[] args){
         int [] arr = {1, 2, 3, 4, 5, 6, 7, 8};
         int n = 4;
-        double [] out = FindMovingAverage(n, arr);
+        double [] out = findAverages(n, arr);
         for(double d : out){
             System.out.println("[" + d +"]");
         }
-        System.out.println(FindMovingAverage(arr, n));
+        System.out.println(findAverages(n, arr));
     }
 }

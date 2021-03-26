@@ -1,27 +1,33 @@
 class Solution {
-     public int lengthOfLongestSubstring(String s) {
-        if (s.length() == 0){
-          return 0;  
-        } 
-        HashMap<Character, Integer> map = new HashMap<Character, Integer>();
-        int max = 0;
-        for (int i=0, j=0; i < s.length(); i++){
-            if (map.containsKey(s.charAt(i))){
-                j = Math.max(j, map.get(s.charAt(i)) + 1);
+    public int lengthOfLongestSubstring(String s) {
+        if(s == null || s.length() == 0){
+            return 0;
+        }
+        int max = Integer.MIN_VALUE;
+        int i = 0;
+        int j = 0;
+        Set<Character> set = new HashSet<>();
+        
+        for(j = 0; j < s.length(); j++){
+            char c = s.charAt(j);
+            while(set.contains(c)){
+                set.remove(s.charAt(i));
+                i++;
             }
-            map.put(s.charAt(i), i);
-            max = Math.max(max, i - j + 1);
+            set.add(c);
+            max = Math.max(max, j - i + 1);
         }
         return max;
     }
 }
 
-/* 
-Two pointer technique while  keeping a hashmap with of the characters that appear in the string.
+
+//Slding window technique.
 
 
-Time: O(n)
-Space: O(n)
-
-
+// String s = "ABCBCAC"
+/*
+     A B C B C A C
+    i^
+    j^
 */
