@@ -2,24 +2,29 @@
 import java.io.*; 
 
 public class facebookInterviewQuesitonOne_092020{
-    public static double[] FindMovingAverage(int[] arr, int n){
-        double [] result = new double[n];
-        int start = 0;
-        int end = n - 1;
-        for(int i = 0; i < arr.length - n + 1; i++){
-            double currentSum = 0.0;
-          for(int j = 0; j < arr.length; j++){
-              currentSum = currentSum + arr[i + j];
-            }
-            result[i] = currentSum / n;
+    public static double[] findAverages(int K, int[] arr) {
+        double[] result = new double[arr.length - K + 1];
+        int i = 0;
+        int j = 0;
+        int sum = 0;
+    
+        for(j = 0; j < arr.length; j++){
+          sum = sum + arr[j];
+          System.out.println(sum);
+    
+          if(j >= K -1){
+            result[i] = sum / K;
+            sum = sum - i;
+            i++;
+          }
         }
         return result;
-    }
+      }
 
     public static void main(String[] args){
         int [] arr = {1, 2, 3, 4, 5, 6, 7, 8};
         int n = 4;
-        double [] out = FindMovingAverage(arr, n);
+        double [] out = FindMovingAverage(n, arr);
         for(double d : out){
             System.out.println("[" + d +"]");
         }
