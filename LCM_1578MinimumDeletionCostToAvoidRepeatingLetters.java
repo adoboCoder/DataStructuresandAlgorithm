@@ -17,3 +17,6 @@ class Solution{
        return result + sum - max;
     }
 }
+
+//Time O(N)
+//Space O(1)
