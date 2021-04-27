@@ -1,8 +1,8 @@
 class Solution{
-    public void merge(int[] nums1, int m, int[] nums2, int n) {
+    public void merge(int[] nums1, int m, int[] nums2, int n){
        m--;
        n--;
-       int index = nums1.length -1;
+       int index = nums1.length - 1;
 
        while(index >= 0){
            if(m < 0){
