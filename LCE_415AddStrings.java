@@ -7,10 +7,12 @@ class Solution{
     
         while( i >= 0 || j >= 0 || carry != 0){
             if(i >= 0){
-                carry = carry + num1.charAt(i--) - '0';
+                carry = carry + num1.charAt(i) - '0';
+                i--;
             }
             if(j >= 0){
-                carry = carry + num2.charAt(j--) - '0';
+                carry = carry + num2.charAt(j) - '0';
+                j--;
             }
 
             sb.append(carry % 10);
