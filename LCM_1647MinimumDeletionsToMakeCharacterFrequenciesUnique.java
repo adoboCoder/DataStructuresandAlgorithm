@@ -1,3 +1,5 @@
+import java.util.*;
+
 class Solution{
     public int minDeletions(String s){
         int[] freqCount = new int[26];
