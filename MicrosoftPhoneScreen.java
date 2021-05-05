@@ -1,4 +1,17 @@
-class MicrosoftPhoneScreen{
+/*
+a b c d e f 
+g h i j k l 
+m n o p q r
+s t u v w x
+a b c d e f
+
+given a matrix, write a function to find a word in the matrix
+
+john is present
+top is present
+norm is not present
+
+*/class MicrosoftPhoneScreen{
     public static boolean exist(char[][] grid, String word){
         for(int i = 0; i < grid.length; i++){
             for(int j = 0; j < grid[i].length; j++){
@@ -52,6 +65,10 @@ class MicrosoftPhoneScreen{
         System.out.println(s + " is " + b);
 
         s = "norm";
+        b = MicrosoftPhoneScreen.exist(grid, s) == true ? "present" : "not present";
+        System.out.println(s + " is " + b);
+
+        s = "ahbipvdewf";
         b = MicrosoftPhoneScreen.exist(grid, s) == true ? "present" : "not present";
         System.out.println(s + " is " + b);
 
