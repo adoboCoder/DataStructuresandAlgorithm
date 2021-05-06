@@ -1,23 +1,25 @@
-class Solution{
-    public List<List<Integer>> combinationSum(int[] nums, int target){
+import java.util.*;
+
+class CombinationSum{
+    public List<List<Integer>> findCombination(int[] nums, int target){
         List<List<Integer>> result = new ArrayList<>();
         Arrays.sort(nums);
         dfs(result, new ArrayList<>(), nums, target, 0);
         return result;
     }
 
-    private void dfs(List<List<Integer>> result, List<Integer> temp, int[] nums, int remain, int start){
-        if(remain < 0){
+    private void dfs(List<List<Integer>> result, List<Integer> current, int[] nums, int target, int start){
+        if(target < 0){
             return;
         }
-        else if(remain == 0){
-            result.add(new ArrayList<>(temp));
+        else if(target == 0){
+            result.add(new ArrayList<>(current));
         }
         else{
             for(int i = start; i < nums.length; i++){
-                temp.add(nums[i]);
-                dfs(result, temp, nums, remain - nums[i], i);
-                temp.remove(temp.size() - 1);
+                current.add(nums[i]);
+                dfs(result, current, nums, target - nums[i], i);
+                current.remove(current.size() - 1);
             }
         }
     }

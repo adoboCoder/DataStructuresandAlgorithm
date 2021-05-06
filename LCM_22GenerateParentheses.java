@@ -19,6 +19,14 @@ class Solution {
             return;
         }
     }
+
+    public static void main(String[] args){
+        int n = 4;
+        List<String> test = new ArrayList<String>();
+        test = generateParenthesis(n);
+
+        
+    }
 }
 
 /*
