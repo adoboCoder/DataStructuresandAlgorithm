@@ -49,12 +49,12 @@ norm is not present
 
     public static void main(String[] args){
         char[][] grid ={
-            {'a', 'b', 'c', 'd', 'e', 'f'},
-            {'g', 'h', 'i', 'j', 'k', 'l'},
-            {'m', 'n', 'o', 'p', 'q', 'r'},
-            {'s', 't', 'u', 'v', 'w', 'x'},
-            {'a', 'b', 'c', 'd', 'e', 'f'}
-        };
+                            {'a', 'b', 'c', 'd', 'e', 'f'},
+                            {'g', 'h', 'i', 'j', 'k', 'l'},
+                            {'m', 'n', 'o', 'p', 'q', 'r'},
+                            {'s', 't', 'u', 'v', 'w', 'x'},
+                            {'a', 'b', 'c', 'd', 'e', 'f'}
+                        };
 
         String s = "john";
         String b = MicrosoftPhoneScreen.exist(grid, s) == true ? "present" : "not present";
@@ -68,7 +68,11 @@ norm is not present
         b = MicrosoftPhoneScreen.exist(grid, s) == true ? "present" : "not present";
         System.out.println(s + " is " + b);
 
-        s = "ahbipvdewf";
+        s = "hbipvdewf";
+        b = MicrosoftPhoneScreen.exist(grid, s) == true ? "present" : "not present";
+        System.out.println(s + " is " + b);
+        
+        s = "aim";
         b = MicrosoftPhoneScreen.exist(grid, s) == true ? "present" : "not present";
         System.out.println(s + " is " + b);
 
