@@ -1,5 +1,5 @@
-public class Solution{
-    public int[] productExceptSelf(int[] nums){
+public class LCM_238ProductOfArrayExceptSelf{
+    public static int[] productExceptSelf(int[] nums){
         int[] result = new int[nums.length];
         int left = 1;
         for(int i = 0; i < nums.length; i++){
@@ -17,6 +17,14 @@ public class Solution{
             result[i] = result[i] * right;
         }
         return result;
+    }
+
+    public static void main(String[] agrs) {
+        int[] input = new int[] {1,2,3,4};
+        input = LCM_238ProductOfArrayExceptSelf.productExceptSelf(input);
+        for(int n : input){
+            System.out.println(n);
+        }
     }
 }
 
