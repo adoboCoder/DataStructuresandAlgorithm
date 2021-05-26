@@ -1,6 +1,6 @@
 import java.util.*;
 
-class LCE824GoatLatin {
+class LCE_824GoatLatin {
     public static String toGoatLatin(String S){
         Set<Character> vowels = new HashSet<>(Arrays.asList('a', 'e','i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'));
 
@@ -33,7 +33,7 @@ class LCE824GoatLatin {
     }
 
     public static void main(String[] agrs) {
-        System.out.println(LCE824GoatLatin.toGoatLatin("I Speak Goat Latin"));
+        System.out.println(LCE_824GoatLatin.toGoatLatin("I Speak Goat Latin"));
         
     }
 }
