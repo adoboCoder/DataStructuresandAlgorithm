@@ -27,6 +27,7 @@ class LCE_696CountBinarySubStrings {
     }
 
     public static void main(String[] args) {
+        String input = "00110011";
         System.out.println(LCE_696CountBinarySubStrings.countBinarySubstrings("00110011"));
     }
 }
