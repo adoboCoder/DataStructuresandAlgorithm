@@ -1,5 +1,7 @@
-class Solution {
-    public int[] twoSum(int[] nums, int target) {
+import java.util.*;
+
+class LCE_1twoSum {
+    public static int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> hash = new HashMap<Integer, Integer>();
         int[] result = new int[2];
         
@@ -11,6 +13,11 @@ class Solution {
         hash.put(nums[i], i);
         }
         return result;
+    }
+
+    public static void main(String[] args) {
+        int[] result = LCE_1twoSum.twoSum(new int[] {1, 3, 4, 5, 9}, 14);
+        System.out.println(Arrays.toString(result));
     }
 }
 

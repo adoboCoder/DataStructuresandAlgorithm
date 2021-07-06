@@ -1,0 +1,38 @@
+class LCE463IslandPerimeter {
+    public static int islandPerimeter(int[][] grid) {
+        int rows = grid.length;
+        int cols = grid[0].length;
+            
+        int num = 0;
+        
+        for(int i = 0; i < rows; i ++) {
+            for(int j = 0; j < cols; j++) {
+                if(grid[i][j] == 1) {
+                    if(i == 0 || grid[i - 1][j] == 0){ //up
+                        num++;
+                    }
+                    if(j == 0 || grid[i][j - 1] == 0){ //left
+                        num++;
+                    }
+                    if(i == rows - 1 || grid[i + 1][j] == 0) { //down
+                        num++;
+                    }
+                    if(j == cols - 1 || grid[i][j + 1] == 0) { //right
+                        num++;
+                    }
+                }
+            }
+        }
+        return num;
+    }
+
+    public static void main(String[] args) {
+        int[][] arr =   {   
+                            {0,1,1,1,0},
+                            {1,1,0,1,0},
+                            {1,1,0,0,0},
+                            {0,0,0,0,0}
+                        };
+        System.out.println(LCE463IslandPerimeter.islandPerimeter(arr));
+    }
+}
