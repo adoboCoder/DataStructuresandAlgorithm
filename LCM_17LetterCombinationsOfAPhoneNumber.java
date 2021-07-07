@@ -1,5 +1,7 @@
-class Solution {
-    public List<String> letterCombinations(String digits) {
+import java.util.*;
+
+class Leetcode {
+    public static List<String> letterCombinations(String digits) {
         ArrayList<String> result = new ArrayList<>();
         
         //Check input and call DFS
@@ -10,7 +12,7 @@ class Solution {
         return result;
     }
     
-    private void dfs(String digits, String[] map, ArrayList<String> result, StringBuilder sb, int index){
+    private static void dfs(String digits, String[] map, ArrayList<String> result, StringBuilder sb, int index){
         //base case for dfs to exit recursion
         if(index == digits.length()){
             result.add(sb.toString());
@@ -28,6 +30,10 @@ class Solution {
             sb.deleteCharAt(sb.length() - 1);
         }
         
+    }
+    
+    public static void main(String[] args) {
+        System.out.println(Leetcode.letterCombinations("234"));
     }
 }
 /*
