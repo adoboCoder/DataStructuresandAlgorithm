@@ -1,5 +1,6 @@
-class Solution {
-	public int[][] merge(int[][] intervals) {
+import java.util.*;
+class LCM_56MergeIntervals {
+	public static int[][] merge(int[][] intervals) {
 		if (intervals.length <= 1)
 			return intervals;
 		// Sort by ascending starting point
@@ -21,5 +22,13 @@ class Solution {
 			}
 		}
 		return result.toArray(new int[result.size()][]);
+	}
+
+	public static void main(String[] args) {
+		int[][] input = { { 1, 3 }, { 2, 6 }, {8, 13}, {7, 9}, {12, 16} };
+		int[][] output = LCM_56MergeIntervals.merge(input);
+
+		System.out.println(Arrays.deepToString(output));
+
 	}
 }
