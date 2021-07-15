@@ -6,14 +6,11 @@ class LCE_160RemoveDuplicatesFromSortedArray {
             nums[i] = n;
             i++;
         }
-            
     return i;
     }
 
     public static void main(String[] args) {
         int[] input =  {1, 2, 2, 4, 5, 6};
         System.out.println(LCE_160RemoveDuplicatesFromSortedArray.removeDuplicates(input));
-        
-        
     }
 }
