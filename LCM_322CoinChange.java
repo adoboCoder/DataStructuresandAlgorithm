@@ -16,8 +16,7 @@ class LCM_322CoinChange {
      }
 
      public static void main(String[] args) {
-        int[] coins = {1, 5, 10, 25};
-        int amount = 99;
-        System.out.println(LCM_322CoinChange.coinChange(coins, amount));
+        int amount = 100;
+        System.out.println(LCM_322CoinChange.coinChange(new int[] {1, 5, 10, 25}, amount));
      }
  }
