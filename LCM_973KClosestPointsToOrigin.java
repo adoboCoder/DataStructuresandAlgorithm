@@ -15,24 +15,24 @@ class Solution {
     return Arrays.copyOfRange(points, 0, K);
 }
 
-private int helper(int[][] A, int left, int right) {
-    int[] pivot = A[left];
-    while (left < right) {
-        while (left < right && compare(A[right], pivot) >= 0){
-            right--;
-        } 
-        A[left] = A[right];
-        while (left < right && compare(A[left], pivot) <= 0){
-            left++;
-        } 
-        A[right] = A[left];
+    private int helper(int[][] A, int left, int right) {
+        int[] pivot = A[left];
+        while (left < right) {
+            while (left < right && compare(A[right], pivot) >= 0){
+                right--;
+            } 
+            A[left] = A[right];
+            while (left < right && compare(A[left], pivot) <= 0){
+                left++;
+            } 
+            A[right] = A[left];
+        }
+        A[left] = pivot;
+        return left;
     }
-    A[left] = pivot;
-    return left;
-}
 
-private int compare(int[] p1, int[] p2) {
-    int ans = p1[0] * p1[0] + p1[1] * p1[1] - p2[0] * p2[0] - p2[1] * p2[1];
-    return ans;
-}
+    private int compare(int[] p1, int[] p2) {
+        int ans = p1[0] * p1[0] + p1[1] * p1[1] - p2[0] * p2[0] - p2[1] * p2[1];
+        return ans;
     }
+}

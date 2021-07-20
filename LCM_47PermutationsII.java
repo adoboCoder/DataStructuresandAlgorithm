@@ -1,26 +1,33 @@
-class Solution{
-    public List<List<Integer>> permuteUnique(int[] nums){
+import java.util.*;
+
+class Solution {
+    public List<List<Integer>> permuteUnique(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
+        if(nums==null || nums.length==0) return result;
         Arrays.sort(nums);
-        dfs(result, new ArrayList<>(), nums, new boolean[nums.length]);
+        dfs(nums, result, new ArrayList<Integer>(), new boolean[nums.length]);
         return result;
     }
-
-    private void dfs(List<List<Integer>> result, List<Integer> temp, int[] nums, boolean[] used){
-        if(temp.size() == nums.length){
-            result.add(new ArrayList(temp));
+    
+    public void dfs(int[] nums, List<List<Integer>> result , List<Integer> temp, boolean[] used) {
+        if(temp.size() == nums.length) {
+            result.add(new ArrayList<>(temp));
+            return;
         }
-        else{
-            for(int i = 0; i < nums.length; i++){
-                if(used[i] || i > 0 && nums[i] == nums[i - 1] && !used[i - 1]){
+        
+        
+            for(int i = 0; i < nums.length; i++) {
+                if(used[i] == true){
+                    continue;
+                }
+                if(i > 0 && nums[i] == nums[i - 1] && !used[i - 1]) {
                     continue;
                 }
                 used[i] = true;
                 temp.add(nums[i]);
-                dfs(list, temp, nums, used);
+                dfs(nums, result, temp, used);
                 used[i] = false;
                 temp.remove(temp.size() - 1);
-            }
         }
     }
 }
