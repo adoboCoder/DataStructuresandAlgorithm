@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 class Solution {
     public int[][] kClosest(int[][] points, int K) {
     int len =  points.length;

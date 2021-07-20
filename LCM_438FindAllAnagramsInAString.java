@@ -1,42 +1,33 @@
-public class Solution {
-    public List<Integer> findAnagrams(String s, String p) {
-        List<Integer> result = new ArrayList<>();
-        if(s == null || s.length() == 0 || p == null || p.length() == 0){
-            return result;
-        }
-        int[] hash = new int[256]; // Character Hash
+import java.util.*;
 
-        for(char c : p.toCharArray()){
-            hash[c]++;
+public class LCM_438FindAllAnagramsInAString {
+    public List<Integer> findAnagrams(String s, String p) {
+        int[] charCount = new int[26];
+
+        for (int i = 0; i < p.length(); i++) {
+            charCount[p.charAt(i) - 'a']++;
         }
+        List<Integer> result = new ArrayList<>();
+
         int left = 0;
         int right = 0;
-        int count = p.length();
-        while(right < s.length()){
-            //Move right everytime, if the character exists in P's Hash, decrease the count
-            //current has value of >=1 means the character is existing in p
-            if(hash[s.charAt(right)]>= 1){
-                count--;
-            }
+        int toVisit = p.length();
+        while (right < s.length()) {
 
-            hash[s.charAt(right)]--;
+            if (charCount[s.charAt(right) - 'a'] >= 1) {
+                toVisit--;
+            }
+            charCount[s.charAt(right) - 'a']--;
             right++;
 
-            // When the count is down to zero, means we found the right anagram
-            // then add the left index to the result list.
-            if(count == 0){
+            if (toVisit == 0)
                 result.add(left);
-            }
 
-            //if we find the window's size equals to p, then we have to move left (narrow the window) to find the new match window
-            //++ to  reset the hash because we kicked out he left
-            //only increase the count if the character is in p
-            // count >= 0 indicates it was original in the hash because it won't go below zero.
-            if(right - left == p.length()){
-                if(hash[s.charAt(left)] >= 0){
-                    count++;
+            if (right - left == p.length()) {
+                if (charCount[s.charAt(left) - 'a'] >= 0) {
+                    toVisit++;
                 }
-                hash[s.charAt(left)]++;
+                charCount[s.charAt(left) - 'a']++;
                 left++;
             }
         }

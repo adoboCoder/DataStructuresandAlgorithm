@@ -1,7 +1,11 @@
 import java.util.*;
+// 7/19/2021
 
-class Solution {
-    public List<List<Integer>> permuteUnique(int[] nums) {
+// Time: O(n!)
+// Space: O(n!) ?
+
+class LCM_47PermutationsII {
+    public static List<List<Integer>> permuteUnique(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
         if(nums==null || nums.length==0) return result;
         Arrays.sort(nums);
@@ -30,4 +34,12 @@ class Solution {
                 temp.remove(temp.size() - 1);
         }
     }
+
+    public static void main(String[] args) {
+        int[] input = {4, 7, 6};
+        System.out.println(LCM_47PermutationsII.permuteUnique(input));
+
+    }
+
+
 }
