@@ -22,6 +22,27 @@ class QualtricsPhoneScreen1 {
         return result;
     }
 
+    public static List<String> commonWordInEveryBook(String[][] books) {
+        List<List<String>> listOfList = new ArrayList<>();
+        for (String[] book : books) {
+            listOfList.add(Arrays.asList(book));
+        }
+
+        List<String> result = new ArrayList<>();
+        Set<String> set = new HashSet<>();
+        for (List<String> book : listOfList) {
+            for (String word : book) {
+                set.add(word);
+            }
+        }
+        for (String word : set) {
+            if (listOfList.stream().allMatch(book -> book.contains(word))) {
+                result.add(word);
+            }
+        }
+        return result;
+    }
+
     public static void main(String[] args) {
         List<List<String>> books = new ArrayList<>();
         books.add(Arrays.asList("the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"));

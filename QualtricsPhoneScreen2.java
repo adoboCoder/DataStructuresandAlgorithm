@@ -32,8 +32,8 @@ class QualtricsPhoneScreen2 {
 
     public static void main(String[] args) {
         String[] words = {  "the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", 
-                            "dog", "fox", "fox", "jumps", "over", "the", "lazy", "dog"
+                            "dog", "fox", "fox", "jumps", "over", "the", "lazy", "dog","fox"
                         };
-        System.out.println(QualtricsPhoneScreen2.KthMostFrequent(words, 1));
+        System.out.println(QualtricsPhoneScreen2.KthMostFrequent(words, 3));
     }
 }
