@@ -1,4 +1,5 @@
-public class Solution{
+import java.util.*;
+class LCM_207CourseSchedule{
     public boolean canFinish(int numCourses, int[][] prerequisites){
         //handle bad input       
         if(prerequisites == null || numCourses == 0 || prerequisites.length == 0){
