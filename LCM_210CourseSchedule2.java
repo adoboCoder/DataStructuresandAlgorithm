@@ -1,4 +1,6 @@
-public class Solution {
+import java.util.*;
+
+class LCM_210CourseSchedule2 {
     public int[] findOrder(int numCourses, int[][] prerequisites) {
         //Set up adjacency list
         List<List<Integer>> adj = new ArrayList<>(numCourses);
