@@ -1,8 +1,8 @@
 class LCE_993CousinsInBinaryTree {
-    TreeNode xParent = null;
-    TreeNode yParent = null;
-    int xDepth = -1;
-    int yDepth = -1;
+    static TreeNode xParent = null;
+    static TreeNode yParent = null;
+    static int xDepth = -1;
+    static int yDepth = -1;
 
     public static boolean isCousins(TreeNode root, int x, int y) {
         getDepth(root, x, y, 0 ,null);
