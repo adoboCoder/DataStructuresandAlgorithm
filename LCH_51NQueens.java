@@ -1,5 +1,6 @@
-public class Solution {
-    public List<List<String>> solveNQueens(int n) {
+import java.util.*;
+class LCH_51NQueens {
+    public static List<List<String>> solveNQueens(int n) {
         char[][] board = new char[n][n];
         for(int i = 0; i < n; i++)
             for(int j = 0; j < n; j++)
@@ -9,7 +10,7 @@ public class Solution {
         return res;
     }
     
-    private void dfs(char[][] board, int colIndex, List<List<String>> res) {
+    private static void dfs(char[][] board, int colIndex, List<List<String>> res) {
         if(colIndex == board.length) {
             res.add(construct(board));
             return;
@@ -24,7 +25,7 @@ public class Solution {
         }
     }
     
-    private boolean validate(char[][] board, int x, int y) {
+    private static boolean validate(char[][] board, int x, int y) {
         for(int i = 0; i < board.length; i++) {
             for(int j = 0; j < y; j++) {
                 if(board[i][j] == 'Q' && (x + j == y + i || x + y == i + j || x == i))
@@ -35,12 +36,16 @@ public class Solution {
         return true;
     }
     
-    private List<String> construct(char[][] board) {
-        List<String> res = new LinkedList<String>();
+    private static List<String> construct(char[][] board) {
+        List<String> result = new LinkedList<String>();
         for(int i = 0; i < board.length; i++) {
             String s = new String(board[i]);
-            res.add(s);
+            result.add(s);
         }
-        return res;
+        return result;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(LCH_51NQueens.solveNQueens(2));
     }
 }
