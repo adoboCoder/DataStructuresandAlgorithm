@@ -1,5 +1,6 @@
-public class Solution {
-    public String decodeString(String s) {
+import java.util.*;
+class LCM_394DecodeString {
+    public static String decodeString(String s) {
         Stack<Integer> iStack = new Stack<>();
         Stack<StringBuilder> sStack = new Stack<>();
         StringBuilder sb = new StringBuilder();
@@ -21,5 +22,12 @@ public class Solution {
             } else sb.append(c);
         }
         return sb.toString();
+    }
+
+    public static void main(String[] args) {
+        String s = "3[3[a]3[ec]]";
+        System.out.println(LCM_394DecodeString.decodeString(s));
+        s = "3[z]";
+        System.out.println(LCM_394DecodeString.decodeString(s));
     }
 }
