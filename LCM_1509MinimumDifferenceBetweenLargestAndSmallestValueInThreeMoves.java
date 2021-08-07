@@ -13,7 +13,7 @@ class LCM_1509MinimumDifferenceBetweenLargestAndSmallestValueInThreeMoves {
             minHeap.add(num);
             maxHeap.add(num);
 
-            if(maxHeap.size() > 4) {
+            if(maxHeap.size() > 4 || minHeap.size() > 4) {
                 minHeap.poll();
                 maxHeap.poll();
             }
