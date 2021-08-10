@@ -1,29 +1,35 @@
-class Solution {
-    public void nextPermutation(int[] A) {
-    if(A == null || A.length <= 1) return;
-    int i = A.length - 2;
-    while(i >= 0 && A[i] >= A[i + 1]){
-        i--; // Find 1st id i that breaks descending order
-    } 
-        if(i >= 0) {                           // If not entirely descending
-            int j = A.length - 1;              // Start from the end
-            while(A[j] <= A[i]){
-                j--;           // Find rightmost first larger id j
-            } 
-            swap(A, i, j);                     // Switch i and j
+class LCM_31NextPermutation {
+    public static void nextPermutation(int[] A) {
+        int k = A.length - 2;
+        while (k >= 0 && A[k] >= A[k + 1]){
+            k--;
         }
-        reverse(A, i + 1, A.length - 1);       // Reverse the descending sequence
+        
+        //Corer case where the given  permutation is already the max
+        if(k == -1) {
+            reverse(A, 0, A.length - 1);
+            return;
+        }
+        
+        for(int l = A.length -1; l > k; l--) {
+            if(A[l] > A[k]) {
+                int temp = A[k];
+                A[k] = A[l];
+                A[l] = temp;
+                break;
+            }
+        }
+        
+        reverse(A, k + 1, A.length - 1);
     }
-
-    public void swap(int[] A, int i, int j) {
-        int tmp = A[i];
-        A[i] = A[j];
-        A[j] = tmp;
-    }
-
-    public void reverse(int[] A, int i, int j) {
-        while(i < j){
-            swap(A, i++, j--);
-        } 
-    }
-}
+    
+    private static void reverse(int[] nums, int start, int end) {
+        while(start < end) {
+            int temp = nums[start];
+            nums[start] = nums[end];
+            nums[end] = temp;
+            start++;
+            end--;
+        }
+    }    
+}   
