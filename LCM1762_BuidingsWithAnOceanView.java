@@ -25,8 +25,6 @@ class LCM1762_BuidingsWithAnOceanView {
     public static void main(String[] args) {
         int[] heights = {4, 2, 3, 1};
         heights = LCM1762_BuidingsWithAnOceanView.findBuildings(heights);
-        
             System.out.println(Arrays.toString(heights));
-        
     }
 }
