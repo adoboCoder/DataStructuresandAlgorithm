@@ -15,10 +15,10 @@ class LCH_140WordBreakII {
         
         String[] wordArr = new String[s.length()];
         Set<String> dict = listToSet(wordDict);
-        wordBreak(s, 0, wordArr, 0, dict, dp, result);
+        backtrack(s, 0, wordArr, 0, dict, dp, result);
         return result;
     }
-    private static void wordBreak(String s, int index, String[] words, int wIndex, Set<String> dict,boolean[] dp, List<String> wordBreaks) {
+    private static void backtrack(String s, int index, String[] words, int wIndex, Set<String> dict,boolean[] dp, List<String> wordBreaks) {
         if(index == s.length()){
             wordBreaks.add(wordsToString(words, wIndex));
             return;
@@ -31,7 +31,7 @@ class LCH_140WordBreakII {
             }
             
             words[wIndex] = word;
-            wordBreak(s, i, words, wIndex + 1, dict, dp, wordBreaks);
+            backtrack(s, i, words, wIndex + 1, dict, dp, wordBreaks);
         }
     }
     
