@@ -1,5 +1,6 @@
-class Solution {
-    public boolean checkSubarraySum (int[] nums, int k) {
+import java.util.*;
+class LCM_523ContinuousSubArraySum {
+    public static boolean checkSubarraySum (int[] nums, int k) {
         Map<Integer, Integer> map = new HashMap<>();
         map.put(0, -1);
         
@@ -22,4 +23,10 @@ class Solution {
         }
         return false;
     }
+    public static void main(String[] args) {
+        int[] nums = {1, 2, 3, 3, 4, 8, 8, 29, 2};
+        int k = 12;
+        System.out.println(LCM_523ContinuousSubArraySum.checkSubarraySum(nums, k));
+    }
+    
 }
