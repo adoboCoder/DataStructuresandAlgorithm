@@ -1,33 +1,26 @@
-public class Solution {
-        private String[] lessThanTwenty = {"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", 
-                                "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"};
-        private String[] tens = {"", "Ten", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
-        private String [] thousands = {"", "Thousand", "Million", "Billion"};
-    public String numberToWords (int number){
-        if (number == 0){
-            return "Zero";
-        }
-        int i = 0;
-        String words = "";
+class LCH_273IntegerToEnglishWords {
+        private static String[] belowTen = {"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"};
+        private static String[] belowTwenty = {"", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"};
+        private static String [] belowHundred = {"", "Ten", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
 
-        while(number > 0){
-            if(number % 1000 != 0){
-                words = helper (number % 1000) + thousands[i] + " " + words;
-            }
-            number = number / 1000;
-            i++;
+        public static String numberToWords(int num) {
+            if (num == 0) return "Zero";
+            return helper(num); 
         }
-        return words. trim();
-    }
-    
-    private String helper (int number){
-        if (number == 0) return "";
-        else if (number < 20 )
-            return lessThanTwenty[number] + " ";
-        else if(number < 100)
-            return tens[number / 10] + " " + helper(number % 10 );
-        else 
-            return lessThanTwenty[number / 100] + " Hundred " + helper(number % 100);
         
-    }
+        private static String helper(int num) {
+            String result = new String();
+            if (num < 10) result = belowTen[num];
+            else if (num < 20) result = belowTwenty[num -10];
+            else if (num < 100) result = belowHundred[num/10] + " " + helper(num % 10);
+            else if (num < 1000) result = helper(num/100) + " Hundred " +  helper(num % 100);
+            else if (num < 1000000) result = helper(num/1000) + " Thousand " +  helper(num % 1000);
+            else if (num < 1000000000) result = helper(num/1000000) + " Million " +  helper(num % 1000000);
+            else result = helper(num/1000000000) + " Billion " + helper(num % 1000000000);
+            return result.trim();
+        }
+
+        public static void main(String[] args) {
+            System.out.println(LCH_273IntegerToEnglishWords.numberToWords(102938));
+        }
 }
