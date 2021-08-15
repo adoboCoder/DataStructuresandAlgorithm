@@ -3,8 +3,8 @@ class LCH_269AlienDictionary {
     public static  String alienOrder(String[] words) {
 
         //Setup datatstructures to find all unique words
-        Map<Character, Set<Character>> map = new HashMap<Character, Set<Character>>();
-        Map<Character, Integer> degree = new HashMap<Character, Integer>();
+        Map<Character, Set<Character>> map = new HashMap<>();
+        Map<Character, Integer> degree = new HashMap<>();
         String result = "";
         if(words == null || words.length == 0) return result;
         for(String word: words){
