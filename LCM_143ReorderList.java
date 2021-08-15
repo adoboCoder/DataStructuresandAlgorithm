@@ -1,4 +1,4 @@
-class Solution {
+class LCM_143ReorderList {
     public void reorderList(ListNode head) {
         if(head == null || head.next == null) {
             return;
