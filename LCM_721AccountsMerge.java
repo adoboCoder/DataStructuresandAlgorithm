@@ -1,4 +1,6 @@
-class Solution {
+import java.util.*;
+
+class LCM_721AccountsMerge {
     public List<List<String>> accountsMerge(List<List<String>> accounts) {
         Map<String, Set<String>> graph = new HashMap<>();  //<email node, neighbor nodes>
         Map<String, String> name = new HashMap<>();        //<email, username>

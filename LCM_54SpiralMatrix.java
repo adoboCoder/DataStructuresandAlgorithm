@@ -41,7 +41,7 @@ class Solution {
             }
             colStart ++;
 
-            }
+        }
             return result;
     }
 }

@@ -2,16 +2,21 @@ import java.util.*;
 
 class LCM_692TopKFrequentWords {
     public static List<String> topKFrequent(String[] words, int k) {
+        
+        List<String> result = new LinkedList<>();
         Map<String, Integer> map = new HashMap<>();
-        List<String> result = new ArrayList<>();
-        for(String word : words) {
-            map.put(word, map.getOrDefault(word, 0) + 1);
+        for(int i=0; i<words.length; i++)
+        {
+            if(map.containsKey(words[i]))
+                map.put(words[i], map.get(words[i])+1);
+            else
+                map.put(words[i], 1);
         }
-
+        
         PriorityQueue<Map.Entry<String, Integer>> pq = new PriorityQueue<>(
-                 (a,b) -> a.getValue()==b.getValue() ? b.getKey().compareTo(a.getKey()) : a.getValue() - b.getValue()
+                 (a,b) -> a.getValue()==b.getValue() ? b.getKey().compareTo(a.getKey()) : a.getValue()-b.getValue()
         );
-
+        
         for(Map.Entry<String, Integer> entry: map.entrySet())
         {
             pq.offer(entry);
@@ -20,10 +25,11 @@ class LCM_692TopKFrequentWords {
         }
 
         while(!pq.isEmpty())
-        result.add(0, pq.poll().getKey());
-    
-    return result;
+            result.add(0, pq.poll().getKey());
+        
+        return result;
     }
+
 
     public static void main(String[] args) {
         List<String> result = LCM_692TopKFrequentWords.topKFrequent(new String[] { "i", "love", "leetcode", "i", "love", "coding" }, 2);
