@@ -1,7 +1,10 @@
-class Solution{
-    public String alienOrder(String[] words) {
-        Map<Character, Set<Character>> map = new HashMap<Character, Set<Character>>();
-        Map<Character, Integer> degree = new HashMap<Character, Integer>();
+import java.util.*;
+class LCH_269AlienDictionary {
+    public static  String alienOrder(String[] words) {
+
+        //Setup datatstructures to find all unique words
+        Map<Character, Set<Character>> map = new HashMap<>();
+        Map<Character, Integer> degree = new HashMap<>();
         String result = "";
         if(words == null || words.length == 0) return result;
         for(String word: words){
@@ -9,10 +12,15 @@ class Solution{
                 degree.put(c,0);
             }
         }
+
+        // find all edges
         for(int i = 0; i < words.length - 1; i++){
             String currentWord = words[i];
             String nextWord = words[i+1];
             int length = Math.min(currentWord.length(), nextWord.length());
+            if(currentWord.length() > nextWord.length() && currentWord.startsWith(nextWord)){
+                return "";
+            }
             for(int j = 0; j < length; j++){
                 char char1 = currentWord.charAt(j); //Char1 is the pointer to currentWord
                 char char2 = nextWord.charAt(j); //Char2 is the pointer to nextWord
@@ -30,6 +38,8 @@ class Solution{
                 }
             }
         }
+        
+        // bfs
         Queue<Character> q = new LinkedList<Character>();
         for(char c: degree.keySet()){
             if(degree.get(c) == 0){
@@ -49,4 +59,10 @@ class Solution{
         if(result.length() != degree.size()) return "";
         return result;
         }
+
+        public static void main(String[] args) {
+            String[] words = {"awzwwim","wrt", "wrf", "er", "ett", "rftt"};
+            System.out.println(LCH_269AlienDictionary.alienOrder(words));
+        }
+
 }
