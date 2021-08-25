@@ -31,5 +31,6 @@ class LCM_31NextPermutation {
             start++;
             end--;
         }
-    }    
+    } 
+
 }   

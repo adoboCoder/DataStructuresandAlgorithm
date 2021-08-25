@@ -46,6 +46,7 @@ class LCH_23MergedKSortedLists{
         ListNode l2 = new ListNode(1);
         l2.next = new ListNode(3);
         l2.next.next = new ListNode(4);
+        l2.next.next.next = new ListNode(5);
 
 
         ListNode l3 = new ListNode(2);
@@ -53,10 +54,11 @@ class LCH_23MergedKSortedLists{
 
         ListNode result = LCH_23MergedKSortedLists.mergeKLists(new ListNode[] { l1, l2, l3 });
         System.out.print("Here are the elements form the merged list: ");
-        while (result != null) {
-          System.out.println(result.val + " ");
+        while (result.next != null) {
+          System.out.print(result.val + " -> ");
           result = result.next;
         }
+        System.out.print(result.val);
 
 
     }
