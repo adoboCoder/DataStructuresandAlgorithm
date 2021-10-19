@@ -1,3 +1,4 @@
+import java.util.*;
 class LCM_91DecodeWays {
     public static int numDecodings(String s) {
         if (s == null || s.length() == 0) {
