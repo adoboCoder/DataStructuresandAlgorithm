@@ -29,4 +29,10 @@ class LCM_253MeetingRooms2 {
         }
         return result;
     }
+
+    public static void main(String[] args) {
+        int[][] interval = { { 0, 30 }, { 5, 10 }, { 15, 20 }, { 0, 15 } };
+        System.out.println(Arrays.deepToString(interval));
+        System.out.println(LCM_253MeetingRooms2.minMeetingRooms(interval));
+    }
 }
