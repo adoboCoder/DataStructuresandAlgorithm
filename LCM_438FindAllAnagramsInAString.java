@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class LCM_438FindAllAnagramsInAString {
-    public List<Integer> findAnagrams(String s, String p) {
+    public static List<Integer> findAnagrams(String s, String p) {
         int[] charCount = new int[26];
 
         for (int i = 0; i < p.length(); i++) {
@@ -32,5 +32,12 @@ public class LCM_438FindAllAnagramsInAString {
             }
         }
         return result;
+    }
+
+    public static void main(String[] args) {
+        String s1 = "cbaebabacd";
+        String s2 = "abc";
+
+        System.out.println(LCM_438FindAllAnagramsInAString.findAnagrams(s1, s2));
     }
 }
