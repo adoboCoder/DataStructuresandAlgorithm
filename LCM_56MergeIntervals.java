@@ -25,7 +25,7 @@ class LCM_56MergeIntervals {
 	}
 
 	public static void main(String[] args) {
-		int[][] input = { { 1, 3 }, { 2, 6 }, {8, 13}, {7, 9}, {12, 16} };
+		int[][] input = { { 0, 3 }, { 2, 4 }, { 1, 3} };
 		int[][] output = LCM_56MergeIntervals.merge(input);
 
 		System.out.println(Arrays.deepToString(output));
