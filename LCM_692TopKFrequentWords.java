@@ -1,5 +1,6 @@
 import java.util.*;
 
+
 class LCM_692TopKFrequentWords {
     public static List<String> topKFrequent(String[] words, int k) {
 
@@ -27,7 +28,7 @@ class LCM_692TopKFrequentWords {
 
     public static void main(String[] args) {
         List<String> result = LCM_692TopKFrequentWords
-                .topKFrequent(new String[] { "i", "love", "leetcode", "i", "love", "coding" }, 2);
+                .topKFrequent(new String[] { "i", "love", "love", "i", "love", "love" }, 2);
         System.out.println("Here are the K frequent words:" + result);
     }
 }
