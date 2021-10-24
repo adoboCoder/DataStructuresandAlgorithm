@@ -3,15 +3,11 @@ import java.util.*;
 class LCM_71SimplifyPath {
     public static String simPlifyPath(String path) {
         Stack<String> stack = new Stack<>();
-        String[] p = path.split("/");
+        String[] paths = path.split("/");
 
-        for(int i = 0; i < p.length; i++) {
-            if(!stack.isEmpty() && p[i].equals("..")) {
-                stack.pop();
-            }
-            else if( !p[i].equals(".") && !p[i].equals("") && !p[i].equals("..")) {
-                stack.push(p[i]);
-            }
+        for(String p : paths) {
+            if(!stack.empty() && p.equals("..")) stack.pop();
+            else if(!p.equals("..") && !p.equals("") && !p.equals(".")) stack.push(p);
         }
         List<String> result = new ArrayList<>(stack);
 
