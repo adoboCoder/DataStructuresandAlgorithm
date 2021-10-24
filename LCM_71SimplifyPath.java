@@ -10,7 +10,6 @@ class LCM_71SimplifyPath {
             else if(!p.equals("..") && !p.equals("") && !p.equals(".")) stack.push(p);
         }
         List<String> result = new ArrayList<>(stack);
-
         return "/" + String.join("/", result);
     }
 
