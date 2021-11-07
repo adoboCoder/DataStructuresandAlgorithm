@@ -3,8 +3,8 @@ class LCM_207CourseSchedule{
     public boolean canFinish(int numCourses, int[][] prerequisites){
         //handle bad input       
         if(prerequisites == null || numCourses == 0 || prerequisites.length == 0){
-           return true;
-       }
+            return true;
+        }
         //set up adjacency list
         HashMap<Integer, ArrayList<Integer>> map = new HashMap<>();
         for(int i = 0; i < numCourses; i++){
