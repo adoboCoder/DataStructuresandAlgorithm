@@ -23,8 +23,14 @@ class LCH_1153StringTransformIntoAnotherString {
     public static void main(String[] args) {
         String s1 = "aabcc";
         String s2 = "ccdee";
-
         System.out.println(LCH_1153StringTransformIntoAnotherString.canConvert(s1, s2));
 
+        s1 = "healthcare";
+        s2 = "carehealth";
+        System.out.println(LCH_1153StringTransformIntoAnotherString.canConvert(s1, s2));
+
+        s1 = "catdog";
+        s2 = "dogcat";
+        System.out.println(LCH_1153StringTransformIntoAnotherString.canConvert(s1, s2));
     }
 }
