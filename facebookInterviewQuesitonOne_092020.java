@@ -3,17 +3,17 @@ import java.io.*;
 import java.util.Arrays;
 
 public class facebookInterviewQuesitonOne_092020 {
-  public static double[] findAverages(int K, int[] arr) {
-    double[] result = new double[arr.length - K + 1];
+  public static double[] findAverages(int k, int[] arr) {
+    double[] result = new double[arr.length - k + 1];
     int i = 0;
     int j = 0;
     int sum = 0;
 
     for (j = 0; j < arr.length; j++) {
       sum = sum + arr[j];
-      if (j >= K - 1) { // increasing the right pointer until we get the size of K
-        result[i] = (double) sum / K;
+      if (j >= k - 1) { // increasing the right pointer until we get the size of K
         sum = sum - i;
+        result[i] = (double)sum / k;
         i++;
       }
     }
