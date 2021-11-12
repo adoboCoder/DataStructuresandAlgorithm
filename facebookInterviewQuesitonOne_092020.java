@@ -12,7 +12,7 @@ public class facebookInterviewQuesitonOne_092020 {
     for (j = 0; j < arr.length; j++) {
       sum = sum + arr[j];
       if (j >= k - 1) { // increasing the right pointer until we get the size of K
-        sum = sum - i;
+        sum = sum - i; // move left pointer by subracting i from sum
         result[i] = (double)sum / k;
         i++;
       }
