@@ -1,5 +1,7 @@
-class Solution{
-    public boolean validPalindrome(String s){
+import java.util.*;
+
+class LCE680_ValidPalindromeII{
+    public static boolean validPalindrome(String s){
         int left = 0;
         int right = s.length() - 1;
 
@@ -15,7 +17,7 @@ class Solution{
         return true;
     }
     
-    private boolean isPalindrome(String s, int left, int right){
+    private static boolean isPalindrome(String s, int left, int right){
         while(left <= right){
             if(s.charAt(left) == s.charAt(right)){
                 left++;
@@ -27,4 +29,14 @@ class Solution{
         }
         return true;
     }
-}
+    public static void main(String[] args) {
+        String input = "aba";
+        System.out.println(LCE680_ValidPalindromeII.validPalindrome(input));
+
+        input = "abca";
+        System.out.println(LCE680_ValidPalindromeII.validPalindrome(input));
+
+        input = "abc";
+        System.out.println(LCE680_ValidPalindromeII.validPalindrome(input));
+    }
+}   
