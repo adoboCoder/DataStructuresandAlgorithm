@@ -1,3 +1,4 @@
+import java.util.*;
 class Solution {
     public List<Integer> rightSideView(TreeNode root) {
         List<Integer> result = new ArrayList<Integer>();
@@ -13,7 +14,7 @@ class Solution {
         if( depth == result.size())
         result.add(root.val);
         
-         helper(result, root.right, depth +1);
-         helper(result, root.left, depth +1);
+        helper(result, root.right, depth +1);
+        helper(result, root.left, depth +1);
     }
 }
