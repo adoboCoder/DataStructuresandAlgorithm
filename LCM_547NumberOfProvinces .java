@@ -21,7 +21,7 @@ class LCM_547NumberOfProvinces {
     }
 
     public static void main(String[] args) {
-        int[][] test = { { 1, 1, 0 }, { 1, 1, 0 }, { 0, 0, 1 } };
+        int[][] test = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } };
         System.out.println(LCM_547NumberOfProvinces.findCircleNum(test));
 
     }
