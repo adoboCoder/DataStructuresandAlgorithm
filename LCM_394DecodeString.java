@@ -24,16 +24,8 @@ class LCM_394DecodeString {
         return sb.toString();
     }
 
-<<<<<<< HEAD
 
     public static void main(String[] args) {
         System.out.println(LCM_394DecodeString.decodeString("5[ab6[cd]]"));
-=======
-    public static void main(String[] args) {
-        String s = "3[3[a]3[ec]]";
-        System.out.println(LCM_394DecodeString.decodeString(s));
-        s = "3[z]";
-        System.out.println(LCM_394DecodeString.decodeString(s));
->>>>>>> 36140f7f47f855fbc1b0e02f66381a2b75595cc5
     }
 }
