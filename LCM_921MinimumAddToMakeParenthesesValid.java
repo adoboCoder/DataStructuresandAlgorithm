@@ -8,12 +8,12 @@ class LCM_921MinimumAddToMakeParenthesesValid {
 
         for (char c : s.toCharArray()) {
             if (c == '(') {
-                ++openCount;
+                openCount++;
             } else {
                 if (openCount > 0) {
-                    --openCount;
+                    openCount--;
                 } else {
-                    ++closeCount;
+                    closeCount++;
                 }
             }
         }
