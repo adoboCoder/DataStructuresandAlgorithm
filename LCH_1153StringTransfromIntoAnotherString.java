@@ -5,6 +5,7 @@ class LCH_1153StringTransformIntoAnotherString {
         if (str1.equals(str2)) {
             return true;
         }
+        if(str1.length() != str2.length()) return false;
 
         Map<Character, Character> map = new HashMap<>();
 
@@ -31,6 +32,10 @@ class LCH_1153StringTransformIntoAnotherString {
 
         s1 = "catdog";
         s2 = "dogcat";
+        System.out.println(LCH_1153StringTransformIntoAnotherString.canConvert(s1, s2));
+
+        s1 = "catdo";
+        s2 = "dot";
         System.out.println(LCH_1153StringTransformIntoAnotherString.canConvert(s1, s2));
     }
 }
