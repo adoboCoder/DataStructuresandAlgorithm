@@ -1,5 +1,5 @@
 class Knapsack {
-
+    // bottom up approach
     public static int solveKnapsack(int[] profits, int[] weights, int capacity) {
         // basic checks
         if (capacity <= 0 || profits.length == 0 || weights.length != profits.length)
