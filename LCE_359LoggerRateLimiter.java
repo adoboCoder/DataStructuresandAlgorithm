@@ -2,7 +2,7 @@ import java.util.*;
 
 class LCE_359LoggerRateLimiter {
     Map<String, Integer> store;
-    public Logger() {
+    public LCE_359LoggerRateLimiter() {
         store = new HashMap<>();
     }
     
