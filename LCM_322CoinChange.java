@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 class LCM_322CoinChange {
-    public static int coinChange(int[] coins, int amount) {
+    public static int coinChange(int[] coins, int amount) { // Bottom up
         int[] dp = new int[amount + 1];
         Arrays.fill(dp, amount + 1);
         dp[0] = 0;
@@ -16,7 +16,7 @@ class LCM_322CoinChange {
     }
 
     public static void main(String[] args) {
-        int amount = 100;
-        System.out.println(LCM_322CoinChange.coinChange(new int[] { 1, 5, 10, 25 }, amount));
+        int amount = 11;
+        System.out.println(LCM_322CoinChange.coinChange(new int[] { 1, 2, 5 }, amount));
     }
 }
