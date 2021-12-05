@@ -1,4 +1,4 @@
-package Blind75;
+package Blind75.Arrays;
 import java.util.*;
 
 public class ContainsDuplicate {

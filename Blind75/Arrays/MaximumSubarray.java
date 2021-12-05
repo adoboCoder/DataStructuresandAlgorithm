@@ -1,4 +1,4 @@
-package Blind75;
+package Blind75.Arrays;
 
 public class MaximumSubarray {
     public static int findMaxSubarray (int[] nums) {
