@@ -1,14 +1,14 @@
 import java.util.*;
 
 
-class Solution{
-    public List<List<Integer>> permute(int[] nums){
+class LCM_46Permutations{
+    public static List<List<Integer>> permute(int[] nums){
         List<List<Integer>> myList = new ArrayList<>();
         dfs(myList, new ArrayList<>(), nums);
         return myList;
     }
     
-    private void dfs(List<List<Integer>> list, List<Integer> temp, int [] nums){
+    private static void dfs(List<List<Integer>> list, List<Integer> temp, int [] nums){
         if(temp.size() == nums.length){
             list.add(new ArrayList(temp));
         }
@@ -22,5 +22,8 @@ class Solution{
                 temp.remove(temp.size() - 1);
             }
         }
+    }
+    public static void main(String[] args) {
+        System.out.println(LCM_46Permutations.permute(new int[] {1, 2, 3}));
     }
 }
