@@ -36,7 +36,7 @@ class LCM735_AsteroidCollision {
         int[] asteroids2 = {5, -5};
         System.out.println(Arrays.toString(LCM735_AsteroidCollision.asteroidCollision(asteroids2)));
 
-        int[] asteroids3 = {10, 2, 5};
+        int[] asteroids3 = {-2, -1, 1, 2};
         System.out.println(Arrays.toString(LCM735_AsteroidCollision.asteroidCollision(asteroids3)));
     }
 }

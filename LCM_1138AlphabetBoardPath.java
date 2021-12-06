@@ -1,6 +1,6 @@
 
 class LCM_1139AlphabelBoardPath {
-  public static String alphabetBoardPath(String target, int rows) {
+public static String alphabetBoardPath(String target, int rows) {
     // starting point(x,y)
             int x = 0; 
             int y = 0;
@@ -8,8 +8,7 @@ class LCM_1139AlphabelBoardPath {
             for(char c : target.toCharArray()){
     //target point (i,j)
                 int i = (c - 'a') / rows;  
-                int j = (c - 'a') % rows ;  
-                  
+                int j = (c - 'a') % rows ;                   
                     while(x < i){
                         sb.append('D');
                         x++;
@@ -29,10 +28,10 @@ class LCM_1139AlphabelBoardPath {
                     sb.append("!");    
                 }
                 return sb.toString();
-  }
+}
     public static void main(String args[]) 
     { 
-       String output = alphabetBoardPath("zzgoogle", 5);
+        String output = alphabetBoardPath("zzgoogle", 5);
         System.out.println(output); 
     } 
 } 
