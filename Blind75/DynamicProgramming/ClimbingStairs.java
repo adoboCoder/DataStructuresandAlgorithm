@@ -14,7 +14,7 @@ public class ClimbingStairs {
         return dp[n];
     }
     public static void main(String[] args) {
-        System.out.println(ClimbingStairs.climbingStairs(3));
-        System.out.println(ClimbingStairs.climbingStairs(5));
+        System.out.println(ClimbingStairs.climbingStairs(2));
+        System.out.println(ClimbingStairs.climbingStairs(4));// 1111, 112, 121, 211, 22
     }
 }
