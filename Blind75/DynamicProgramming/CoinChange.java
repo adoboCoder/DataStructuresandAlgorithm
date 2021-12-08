@@ -1,6 +1,5 @@
 package Blind75.DynamicProgramming;
 import java.util.*;
-
 public class CoinChange {
     public static int coinChange(int[] coins, int amount) {
         int[] dp = new int[amount + 1];
@@ -13,9 +12,10 @@ public class CoinChange {
                 }
             }
         }
-        return dp[amount] > amount ? -1 : dp[amount];
+        return amount < dp[amount] ? -1 : dp[amount];
     }
+
     public static void main(String[] args) {
-        System.out.println(CoinChange.coinChange(new int[] {1, 2, 5}, 11));
+        System.out.println(CoinChange.coinChange(new int[] {1, 2, 5},11));
     }
 }
