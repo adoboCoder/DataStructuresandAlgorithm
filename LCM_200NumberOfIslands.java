@@ -12,11 +12,12 @@ class LCM_200NumberOfIslands {
         }
         m = grid[0].length;
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++)
+            for (int j = 0; j < m; j++) {
                 if (grid[i][j] == '1') {
                     sinkIsland(grid, i, j);
                     count++;
                 }
+            }
         }
         return count;
     }
