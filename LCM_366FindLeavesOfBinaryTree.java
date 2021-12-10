@@ -18,14 +18,14 @@ class LCM_366FindLeavesOfBinaryTree {
 
     public static List<List<Integer>> findLeaves (xTreeNode root) {
         List<List<Integer>> result = new ArrayList<>();
-        helper(root, result);
+        dfs(root, result);
         return result;
     }
 
-    private static int helper(xTreeNode root, List<List<Integer>> result) {
+    private static int dfs(xTreeNode root, List<List<Integer>> result) {
         if(root == null) return -1;
 
-        int level = 1 + Math.max(helper(root.left, result), helper(root.right, result));
+        int level = 1 + Math.max(dfs(root.left, result), dfs(root.right, result));
         if(result.size() == level) {
             result.add(new ArrayList<>());
         }
