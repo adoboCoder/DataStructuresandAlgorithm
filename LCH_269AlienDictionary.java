@@ -47,7 +47,7 @@ class LCH_269AlienDictionary {
             } 
         }
         while(!q.isEmpty()){
-            char c = q.remove();
+            char c = q.poll();
             result += c;
             if(map.containsKey(c)){
                 for(char char2: map.get(c)){
