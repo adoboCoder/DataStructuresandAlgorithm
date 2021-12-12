@@ -39,6 +39,8 @@ class LCM_299BullsAndCows {
     }
 
     public static void main(String[] args) {
+        System.out.println(LCM_299BullsAndCows.getHint("1807","7810"));
         System.out.println(LCM_299BullsAndCows.getHint("1123","0111"));
+        System.out.println(LCM_299BullsAndCows.getHint("1","0"));
     }
 }
