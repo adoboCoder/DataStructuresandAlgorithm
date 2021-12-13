@@ -1,7 +1,8 @@
-class Solution {
+import java.util.*;
+class LCH301_RemoveInvalidParentheses {
     public static List<String> removeInvalidParentheses(String s) {
         List<String> result = new ArrayList<>();
-        char[] check = new char[] { '(', ')' };
+        char[] check = new char[] {'(', ')'};
         dfs(s, result, check, 0, 0);
         return result;
     }
@@ -37,5 +38,11 @@ class Solution {
                 }
             }
         }
+    }
+    public static void main(String[] args) {
+        String s = "()())()";
+        System.out.println(LCH301_RemoveInvalidParentheses.removeInvalidParentheses(s));
+        s = "(a)())()";
+        System.out.println(LCH301_RemoveInvalidParentheses.removeInvalidParentheses(s));
     }
 }
