@@ -50,5 +50,20 @@ class LCM690_EmployeeImportance {
         input.add(e3);
 
         System.out.println(LCM690_EmployeeImportance.getImportance(input, 1));
+
+        Employee em1 = new Employee();
+        em1.id = 1;
+        em1.importance = 2;
+        em1.subordinates = Arrays.asList(5);
+
+        Employee em2 = new Employee();
+        em2.id = 5;
+        em2.importance = -3;
+        em2.subordinates = Arrays.asList();
+
+        List<Employee> input1 = new ArrayList<>();
+        input1.add(em1);
+        input1.add(em2);
+        System.out.println(LCM690_EmployeeImportance.getImportance(input1, 5));
     }
 }
