@@ -4,7 +4,7 @@ class SnapshotArray {
     private List<Map<Integer, Integer>> shot;
     private Map<Integer, Integer> diff;
 
-    public snapshotArray(int length) {
+    public void snapshotArray(int length) {
         shot = new ArrayList<>(length);
         diff = new HashMap<>(length);
     }
@@ -21,7 +21,7 @@ class SnapshotArray {
 
     public int get(int index, int snap_id) {
 
-        for(int = snap_id; i >= 0; i--) {
+        for(int i = snap_id; i >= 0; i--) {
             if(shot.get(i).containsKey(index)) {
                 return shot.get(i).get(index);
             }
