@@ -8,19 +8,24 @@ class LCM_1048LongestStringChain {
         Arrays.sort(words, (a, b) -> a.length() - b.length());
 
         for (String word : words) {
-            int best = 0;
-            for (int i = 0; i < word.length(); i++) {
-                String prev = word.substring(0, i) + word.substring(i + 1);
-                best = Math.max(best, map.getOrDefault(prev, 0) + 1);
+            map.put(word, 1);
+            for(int i = 0; i < word.length(); i++) {
+                StringBuilder current = new StringBuilder(word);
+                String next = current.deleteCharAt(i).toString();
+
+                if(map.containsKey(next)) {
+                    map.put(word, Math.max(map.get(word), map.get(next) + 1));
+                }
             }
-            map.put(word, best);
-            result = Math.max(result, best);
+            result = Math.max(result, map.get(word));
         }
         return result;
     }
 
     public static void main(String[] args) {
-        String[] input = { "a", "b", "ba", "bca", "bda", "bdca" };
+        String[] input = { "bdca", "b", "ba", "bca", "bda", "a" };
         System.out.println(LCM_1048LongestStringChain.longestStringChain(input));
+        String[] input2 = {"xbc","pcxbcf","xb","cxbc","pcxbc"};
+        System.out.println(LCM_1048LongestStringChain.longestStringChain(input2));
     }
 }
