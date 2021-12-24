@@ -26,5 +26,8 @@ class LCM_1937MaximumNumberOfPointsWithCost {
     public static void main(String[] args) {
         int[][] points = {{1,2,3},{1,5,1},{3,1,1}};
         System.out.println(LCM_1937MaximumNumberOfPointsWithCost.maxPoints(points));
+
+        int[][] points1 = {{1,5},{2,3},{4,2}};
+        System.out.println(LCM_1937MaximumNumberOfPointsWithCost.maxPoints(points1));
     }
 }
