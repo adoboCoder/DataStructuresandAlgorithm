@@ -7,6 +7,7 @@ class LCM735_AsteroidCollision {
         for(int a : asteroids) {
             if(a > 0) {
                 stack.push(a);
+                
             }
             else {
                 while(!stack.isEmpty() && stack.peek() > 0 && stack.peek() < Math.abs(a)) {
