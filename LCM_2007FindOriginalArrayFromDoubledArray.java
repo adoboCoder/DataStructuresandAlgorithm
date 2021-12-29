@@ -26,11 +26,14 @@ class LCM_2007FindOriginalArrayFromDoubledArray {
             }
             j--;
         }
-        return index == len / 2 ? result : new int[0];
+        return index == len / 2 ? result : new int[] {};
     }
 
     public static void main(String[] args) {
         int[] input = {1,3,4,2,6,8};
         System.out.println(Arrays.toString(LCM_2007FindOriginalArrayFromDoubledArray.findOriginalArray(input)));
+        input = new int[] {6, 3, 0, 1};
+        System.out.println(Arrays.toString(LCM_2007FindOriginalArrayFromDoubledArray.findOriginalArray(input)));
+
     }
 }
