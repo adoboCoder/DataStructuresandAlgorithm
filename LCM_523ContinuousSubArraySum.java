@@ -24,8 +24,8 @@ class LCM_523ContinuousSubArraySum {
         return false;
     }
     public static void main(String[] args) {
-        int[] nums = {1, 2, 3, 3, 4, 8, 8, 29, 2};
-        int k = 12;
+        int[] nums = {1, 3, 1, 4, 23};
+        int k = 7;
         System.out.println(LCM_523ContinuousSubArraySum.checkSubarraySum(nums, k));
     }
     
