@@ -1,53 +1,49 @@
 class LCM_1011CapacityToShipWithinDDays {
-    public static int shipWithinDDays (int[] weights, int D) {
-        int min = 0;
+    public static int shipWithinDays(int[] weights, int days) {
         int max = 0;
-
-        for(int w : weights) {
-            min = Math.min(min, w);
-            max = max + w;
+        int min = 0;
+        for (int w : weights) {
+            max += w;
+            min = Math.max(min, w);
         }
-
-        int result = 0;
-        while(min <= max) {
-            int mid = min + (max - min) / 2;
-            int daysRequired = numberOfDaysNeededWithCapacity(weights, mid);
-
-            if(daysRequired > D) {
+        
+        while (min < max) {
+            int mid = (max + min) / 2;
+            if (canShip(mid, weights, days)) {
+                max = mid;
+            } else {
                 min = mid + 1;
             }
-            else {
-                result = mid;
-                max = mid - 1;
-            }
         }
-        return result;
+        return min;
     }
-    private static int numberOfDaysNeededWithCapacity(int [] weights, int capacity) {
-        int daysRequired = 1;
-        int currentWeight = 0;
-
-        for(int w : weights) {
-            currentWeight = currentWeight + w;
-            if(currentWeight > capacity) {
-                daysRequired++;
-                currentWeight = w;
+    
+    public static boolean canShip(int dailySum, int[] weights, int days) {
+        int tempSum = 0;
+        int shipDay = 0;
+        for (int w : weights) {
+            if (tempSum + w > dailySum) {
+                shipDay += 1;
+                
+                tempSum = w; 
+            } else {
+                tempSum += w;
             }
         }
-        return daysRequired;
+        if (shipDay + 1 > days) return false;
+        return true;
     }
     public static void main(String[] args) {
         int[] weights = {1,2,3,4,5,6,7,8,9,10};
         int days = 5;
-        System.out.println(LCM_1011CapacityToShipWithinDDays.shipWithinDDays(weights, days));
+        System.out.println(LCM_1011CapacityToShipWithinDDays.shipWithinDays(weights, days));
 
         int[] weights2 = {3,2,2,4,1,4};
         int days2 = 3;
-        System.out.println(LCM_1011CapacityToShipWithinDDays.shipWithinDDays(weights2, days2));
+        System.out.println(LCM_1011CapacityToShipWithinDDays.shipWithinDays(weights2, days2));
 
         int[] weights3 = {1,2,3,1,1};
         int days3 = 4;
-        System.out.println(LCM_1011CapacityToShipWithinDDays.shipWithinDDays(weights3, days3));
+        System.out.println(LCM_1011CapacityToShipWithinDDays.shipWithinDays(weights3, days3));
     }
-
 }
