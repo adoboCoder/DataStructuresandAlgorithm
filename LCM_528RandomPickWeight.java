@@ -1,29 +1,30 @@
 import java.util.*;
 class Solution {
-
-    Random random;
-    int[] weightSums;
+    private int[] prefixSum;
+    private int sum;
     
     public Solution(int[] w) {
-        this.random = new Random();
-        for(int i=1; i<w.length; i++)
-            w[i] += w[i-1];
-        this.weightSums = w;
+        sum = 0;
+        prefixSum = new int[w.length];
+        for(int i = 0; i < w.length; i++) {
+            sum = sum + w[i];
+            prefixSum[i] = sum;
+        }
     }
     
     public int pickIndex() {
-        int len = weightSums.length;
-        int index = random.nextInt(weightSums[len-1]) + 1;
-        int left = 0, right = len - 1;
-        // search position 
-        while(left < right){
-            int mid = left + (right-left)/2;
-            if(weightSums[mid] == index)
-                return mid;
-            else if(weightSums[mid] < index)
+        int left = 0;
+        int right = prefixSum.length - 1;
+        double rand = (new Random().nextDouble()) * sum;
+        
+        while(left < right) {
+            int mid = left + (right - left) / 2;
+            if(rand > prefixSum[mid]) {
                 left = mid + 1;
-            else
+            }
+            else {
                 right = mid;
+            }
         }
         return left;
     }
