@@ -1,11 +1,11 @@
 import java.util.*;
 
 class SnapshotArray {
-    private List<Map<Integer, Integer>> shot;
+    private List<Map<Integer, Integer>> snapshot;
     private Map<Integer, Integer> diff;
 
     public void snapshotArray(int length) {
-        shot = new ArrayList<>(length);
+        snapshot = new ArrayList<>(length);
         diff = new HashMap<>(length);
     }
 
@@ -14,16 +14,16 @@ class SnapshotArray {
     }
 
     public int snap() {
-        shot.add(diff);
+        snapshot.add(diff);
         diff = new HashMap<>();
-        return shot.size() - 1;
+        return snapshot.size() - 1;
     }
 
     public int get(int index, int snap_id) {
 
         for(int i = snap_id; i >= 0; i--) {
-            if(shot.get(i).containsKey(index)) {
-                return shot.get(i).get(index);
+            if(snapshot.get(i).containsKey(index)) {
+                return snapshot.get(i).get(index);
             }
         }
         return 0;
