@@ -12,7 +12,7 @@ class LCH_68TextJustification {
                 lineLength += words[j].length();
                 j++;
             }
-            int diff = maxWidth - lineLength;
+            int diff = maxWidth - lineLength; // number of spaces required
             int numberOfWords = j - i;
             if(numberOfWords == 1 || j >= n) {
                 result.add(leftJustify(words, diff, i, j));
