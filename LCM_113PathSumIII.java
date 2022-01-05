@@ -29,13 +29,10 @@ class LCM_113PathSumIII {
     private static void dfs(TreeNode root, int targetSum, List<Integer> current, List<List<Integer>> result) {
         if (root == null)
             return;
-
         current.add(root.val);
-
         if (root.val == targetSum && root.left == null && root.right == null) {
             result.add(new ArrayList<Integer>(current));
         } else {
-
             dfs(root.left, targetSum - root.val, current, result);
             dfs(root.right, targetSum - root.val, current, result);
         }
