@@ -1,15 +1,13 @@
-class Solution{ 
-    public String minRemoveToMakeValid(String s) {
+class LCM_1249MinimumReMoveToMakeValidParentheses { 
+    public static String minRemoveToMakeValid(String s) {
         int openCloseCount = 0;
         int close = 0;
-        for (int i = 0; i < s.length(); i++){
-            if (s.charAt(i) == ')'){
-                close++;
-            } 
-        }  
+        for(char c : s.toCharArray()){
+            if(c == ')') close++;
+        }
         StringBuilder sb = new StringBuilder();
         
-        for (char c: s.toCharArray()) {
+        for(char c: s.toCharArray()) {
             if (c == '(') {
                 if (openCloseCount == close) {
                     continue;
@@ -25,6 +23,9 @@ class Solution{
                 sb.append(c);
         }
         return sb.toString();
+    }
+    public static void main(String[] args) {
+        System.out.println(LCM_1249MinimumReMoveToMakeValidParentheses.minRemoveToMakeValid("lee(t(c)o)de)"));
     }
 }
 
