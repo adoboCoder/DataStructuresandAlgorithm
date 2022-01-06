@@ -9,23 +9,21 @@ class LCM_1249MinimumReMoveToMakeValidParentheses {
         
         for(char c: s.toCharArray()) {
             if (c == '(') {
-                if (openCloseCount == close) {
-                    continue;
-                }
+                if (openCloseCount == close) continue;
                 openCloseCount++;  
             } else if (c == ')') {
                 close--;
-                if (openCloseCount == 0) {
-                    continue;
-                }
+                if (openCloseCount == 0) continue;
                 openCloseCount--;
             } 
-                sb.append(c);
+            sb.append(c);
         }
         return sb.toString();
     }
     public static void main(String[] args) {
         System.out.println(LCM_1249MinimumReMoveToMakeValidParentheses.minRemoveToMakeValid("lee(t(c)o)de)"));
+        System.out.println(LCM_1249MinimumReMoveToMakeValidParentheses.minRemoveToMakeValid("a)b(c)d"));
+        System.out.println(LCM_1249MinimumReMoveToMakeValidParentheses.minRemoveToMakeValid("))(("));
     }
 }
 
