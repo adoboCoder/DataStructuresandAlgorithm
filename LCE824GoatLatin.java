@@ -15,7 +15,6 @@ class LCE_824GoatLatin {
             if(sb.length() != 0) {
                 sb.append(" ");
             }
-
             char c = word.charAt(0);
 
             if(vowels.contains(c)) {
