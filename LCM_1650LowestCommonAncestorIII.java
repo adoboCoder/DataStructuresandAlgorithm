@@ -1,13 +1,7 @@
 import java.util.*;
 
 class LCM_1650LowestCommonAncestorIII {
-    class Node {
-        public int val;
-        public Node left;
-        public Node right;
-        public Node parent;
-    };
-
+    
     public static Node lowestCommonAncestor(Node p, Node q) {
         Set<Node> set = new HashSet<>();
 
@@ -21,9 +15,5 @@ class LCM_1650LowestCommonAncestorIII {
         }
 
         return q;
-    }
-
-    public static void main(String[] args) {
-        System.out.println();
     }
 }
