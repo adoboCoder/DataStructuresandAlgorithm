@@ -3,7 +3,7 @@ import java.util.*;
 class LCM_2007FindOriginalArrayFromDoubledArray {
     public static int[] findOriginalArray(int[] changed) {
         int len = changed.length;
-        int result[] = new int[len / 2];
+        int[] result = new int[len / 2];
         int index = 0;
         int j = len - 1;
         
