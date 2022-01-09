@@ -12,7 +12,7 @@ import java.util.*;
         this.val = val; 
         this.next = next; 
             }
-     }
+    }
 class LCH_23MergedKSortedLists{
     public static ListNode mergeKLists(ListNode[] lists){
         if (lists == null || lists.length == 0)return null;
@@ -55,8 +55,8 @@ class LCH_23MergedKSortedLists{
         ListNode result = LCH_23MergedKSortedLists.mergeKLists(new ListNode[] { l1, l2, l3 });
         System.out.print("Here are the elements form the merged list: ");
         while (result.next != null) {
-          System.out.print(result.val + " -> ");
-          result = result.next;
+            System.out.print(result.val + " -> ");
+            result = result.next;
         }
         System.out.print(result.val);
 
