@@ -1,6 +1,6 @@
 class Solution{
     public int[] sortedSquears(int[] nums){
-        int left = 0
+        int left = 0;
         int right = nums.length - 1;
         int[] result = new int[nums.length];
         
