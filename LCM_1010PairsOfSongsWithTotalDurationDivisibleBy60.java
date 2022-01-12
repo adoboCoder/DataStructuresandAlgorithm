@@ -24,5 +24,8 @@ class LCM_1010PairsOfSongsWithTotalDurationDivisibleBy60 {
     public static void main(String[] args) {
         int[] times = {30,20,150,100,40};
         System.out.println(LCM_1010PairsOfSongsWithTotalDurationDivisibleBy60.numPairsDivisibleBy60(times));
+
+        int[] times1 = {60, 60, 60};
+        System.out.println(LCM_1010PairsOfSongsWithTotalDurationDivisibleBy60.numPairsDivisibleBy60(times1));
     }
 }
