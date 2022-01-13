@@ -21,7 +21,7 @@ class LCM_1041RobotBoundedInCircle {
                     
             }
             else if(c == 'L') {
-                 dir = dir == 1 ? 4 : dir-1;
+                dir = dir == 1 ? 4 : dir-1;
             }
             else {
                 dir = dir == 4 ? 1 : dir+1; 
