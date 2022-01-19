@@ -16,8 +16,8 @@ class LCM_2096StepByStepDirectionsFromABinaryTreeNodeToAnother {
         find(root, destValue, destination);
         int i = 0;
         int maxLength = Math.min(destination.length(), source.length());
-        while (i < maxLength
-                && source.charAt(source.length() - i - 1) == destination.charAt(destination.length() - i - 1))
+        while (i < maxLength &&
+                source.charAt(source.length() - i - 1) == destination.charAt(destination.length() - i - 1))
             ++i;
         return "U".repeat(source.length() - i) + destination.reverse().toString().substring(i);
     }
