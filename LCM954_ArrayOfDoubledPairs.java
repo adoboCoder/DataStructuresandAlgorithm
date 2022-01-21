@@ -11,10 +11,10 @@ class LCM954_ArrayOfDoubledPairs {
         for (int x : arr) {
             if (map.get(x) == 0)
                 continue;
-            if (x < 0 && x % 2 != 0)
+            if (x < 0 && x % 2 != 0) // For example: arr=[-5, -2, 1, 2], x = -5, there is no x/2 pair to match
                 return false;
             int y = x > 0 ? x * 2 : x / 2;
-            if (map.getOrDefault(y, 0) == 0)
+            if (map.getOrDefault(y, 0) == 0)// Don't have the corresponding `y` to match with `x` -> Return IMPOSSIBLE!
                 return false;
 
             map.put(x, map.get(x) - 1);
