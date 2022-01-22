@@ -40,7 +40,13 @@ class KaratxWayfairInterview {
                 }
             }
         }
-
         return result;
+    }
+
+    public static void main(String[] args) {
+        String[] user1 = { "hi", "bye", "hello", "leetcode", "start", "end" };
+        String[] user2 = { "hi", "stop", "leetcode", "start", "end", "bye" };
+
+        System.out.println(KaratxWayfairInterview.findContiguousHistory(user1, user2));
     }
 }
