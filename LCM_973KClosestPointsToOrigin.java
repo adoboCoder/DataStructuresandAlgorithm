@@ -39,7 +39,9 @@ class LCM_973KClosestPointsToOrigin {
     }
     public static void main(String[] args) {
         int[][] points = {{1, 3},{-2, 2}};
-        int[][] result = LCM_973KClosestPointsToOrigin.kClosest(points, 1);
-        System.out.println(Arrays.deepToString(result));
+        System.out.println(Arrays.deepToString(LCM_973KClosestPointsToOrigin.kClosest(points, 1)));
+
+        int[][] points2 = {{3, 3},{5, -1},{-2, 4}};
+        System.out.println(Arrays.deepToString(LCM_973KClosestPointsToOrigin.kClosest(points2, 2)));
     }
 }
