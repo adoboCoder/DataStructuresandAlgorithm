@@ -4,8 +4,8 @@ class LCM_921MinimumAddToMakeParenthesesValid {
             return 0;
             int leftBracket = 0;
             int rightBracket = 0;
-            for (int i = 0; i < s.length(); i++) {
-                if (s.charAt(i) == '(') {
+            for(char c : s.toCharArray()) {
+                if(c == '(') {
                     leftBracket++;
                 } else {
                     if (leftBracket > 0) {
@@ -15,7 +15,7 @@ class LCM_921MinimumAddToMakeParenthesesValid {
                     }
                 }
             }
-            return leftBracket + rightBracket;
+        return leftBracket + rightBracket;
     }
 
     public static void main(String[] args) {
