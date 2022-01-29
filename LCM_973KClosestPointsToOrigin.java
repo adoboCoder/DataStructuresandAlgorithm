@@ -1,7 +1,7 @@
-import java.util.Arrays;
+import java.util.*;
 
-class Solution {
-    public int[][] kClosest(int[][] points, int K) {
+class LCM_973KClosestPointsToOrigin {
+    public static int[][] kClosest(int[][] points, int K) {
     int len =  points.length;
     int    left = 0;
     int    right = len - 1;
@@ -17,7 +17,7 @@ class Solution {
     return Arrays.copyOfRange(points, 0, K);
 }
 
-    private int helper(int[][] A, int left, int right) {
+    private static int helper(int[][] A, int left, int right) {
         int[] pivot = A[left];
         while (left < right) {
             while (left < right && compare(A[right], pivot) >= 0){
@@ -33,8 +33,13 @@ class Solution {
         return left;
     }
 
-    private int compare(int[] p1, int[] p2) {
+    private static int compare(int[] p1, int[] p2) {
         int ans = p1[0] * p1[0] + p1[1] * p1[1] - p2[0] * p2[0] - p2[1] * p2[1];
         return ans;
+    }
+    public static void main(String[] args) {
+        int[][] points = {{1, 3},{-2, 2}};
+        int[][] result = LCM_973KClosestPointsToOrigin.kClosest(points, 1);
+        System.out.println(Arrays.deepToString(result));
     }
 }
