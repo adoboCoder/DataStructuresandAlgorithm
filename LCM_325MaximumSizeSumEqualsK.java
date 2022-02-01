@@ -18,7 +18,7 @@ class LCM_325MaximumSizeSumEqualsK {
             if (map.containsKey(nums[i] - k)) {
                 result = Math.max(result, i - map.get(nums[i] - k));
             }
-            else if (!map.containsKey(nums[i])) {
+            if (!map.containsKey(nums[i])) {
                 map.put(nums[i], i);
             }
         }
