@@ -1,19 +1,20 @@
 class LCM_1891CuttingRibbons {
     public static int maxLength(int[] ribbons, int k) {
-        int l = 0, r = 100_000;
-        while (l < r) {
+        int left = 0;
+        int right = 100_000;
+        while (left < right) {
             int numRibbons = 0;
-            int currLength = l + (r - l) / 2 + 1;
+            int currLength = left + (right - left) / 2 + 1;
             for (int i = 0; i < ribbons.length && numRibbons < k; ++i) {
                 numRibbons += ribbons[i] / currLength;
             }
             if (numRibbons >= k) {
-                l = currLength;
+                left = currLength;
             } else {
-                r = currLength - 1;
+                right = currLength - 1;
             }
         }
-        return l;
+        return left;
     }
 
     public static void main(String[] args) {
