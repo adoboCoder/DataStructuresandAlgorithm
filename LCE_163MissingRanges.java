@@ -1,36 +1,41 @@
-class Solution {
-     public List<String> findMissingRanges(int[] nums, int lower, int upper) {
-		List<String> result = new ArrayList<>();
+import java.util.*;
 
-		for (int current : nums) {
+class LCE_163MissingRanges {
+    public static List<String> findMissingRanges(int[] nums, int lower, int upper) {
+        List<String> result = new ArrayList<>();
+        if (nums == null || nums.length == 0){
+            result.add(formRange(lower,upper));
+            return result;
+        }
+        // 1st step
+        if (nums[0] > lower){
+            result.add(formRange(lower,nums[0]-1));
+        }
 
-			if (current > lower) {
-				result.add(toString(lower, current - 1));
-			}
-			if (current == upper) {
-				return result; // Avoid overflow
-			}
+        // 2nd step
+        for (int i = 0; i < nums.length-1; i++){
+            if (nums[i+1] != nums[i] && nums[i+1] > nums[i] +1) {
+                result.add(formRange(nums[i]+1, nums[i+1]-1));
+            }
+        }
 
-			// update lower
-			lower = current + 1;
-		}
-		
-		// upper provided is bigger then last arr element
-		if (lower <= upper) {
-			result.add(toString(lower, upper));
-		}
-		return result;
-	}
+       // 3rd step
+        if (nums[nums.length-1] < upper){
+            result.add(formRange(nums[nums.length-1]+1, upper));
+        }
+        return result;
+    }
+    
+    public static String formRange(int low, int high){
+        return low == high ? String.valueOf(low) : (low + "->" + high);
+    }
+    public static void main(String[] args) {
+        int[] nums = {0,1,3,50,75};
+        int lower = 0;
+        int upper = 99;
 
-	private String toString(int start, int end) {
-		StringBuilder sb = new StringBuilder();
-		sb.append(start);
-		if (start < end) {
-			sb.append("->").append(end);
-		}
-		return sb.toString();
-	}
-}
+        System.out.println(LCE_163MissingRanges.findMissingRanges(nums, lower, upper));
+    }
 
 /*
 Time: O(n)
@@ -41,3 +46,4 @@ Going through the nums array with the for loop.  There are two conditions in the
 2. current == upper means that we've gone through the whole sequence already
 3. If either of the two above are true, then we need to update the lower by adding 1 to lower.
 */
+}
