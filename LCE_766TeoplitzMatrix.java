@@ -14,7 +14,7 @@ class LCE_766TeoplitzMatrix {
                                 {1, 2, 3, 4},
                                 {5, 1, 2, 3},
                                 {9, 5, 1, 2}
-                            }
+                            };
         System.out.println(LCE_766TeoplitzMatrix.isToeplitzMatrix(matrix));
     }
 }
