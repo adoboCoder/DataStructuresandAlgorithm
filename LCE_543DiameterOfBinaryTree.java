@@ -1,3 +1,4 @@
+import TreeNode;
 
 class LCE_543DiameterOfBinaryTree{
   public static int max = 0;
