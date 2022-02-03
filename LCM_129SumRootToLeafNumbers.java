@@ -9,6 +9,7 @@ class LCM_129SumRootToLeafNumbers {
             return 0;
 
         currentSum = currentSum * 10 + root.val;
+        if(root.right == null && root.left == null) return currentSum;
         int left = dfs(root.left, currentSum);
         int right = dfs(root.right, currentSum);
         return left + right;
