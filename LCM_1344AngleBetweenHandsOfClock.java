@@ -1,9 +1,9 @@
 class LCM_1344AngleBetweenHandsOfClock {
     public static double calculateAngle(int hours, int minutes) {
-        double hour = (hours % 12 * 30) + ((double)minutes / 60 * 30);
-        double minute = minutes * 6;
+        double hr = (hours % 12 * 30) + ((double)minutes / 60 * 30);
+        double min = minutes * 6;
 
-        double angle = Math.abs(minute - hour);
+        double angle = Math.abs(min - hr);
 
         if (angle > 180) {
             angle = 360 - angle;
