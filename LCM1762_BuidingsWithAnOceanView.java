@@ -33,3 +33,6 @@ class LCM1762_BuidingsWithAnOceanView {
         System.out.println(Arrays.toString(heights3));
     }
 }
+
+//Time complexity: O(N).
+//Space complexity: O(1).
