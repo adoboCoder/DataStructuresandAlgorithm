@@ -3,7 +3,7 @@ import java.util.*;
 class RandomizedSet {
     private List<Integer> list;
     private HashMap<Integer, Integer> map;
-    java.util.Random random = new java.util.Random();
+    Random rand = new Random();
     public RandomizedSet() {
         list = new ArrayList<Integer>();
         map = new HashMap<Integer, Integer>();
@@ -34,6 +34,6 @@ class RandomizedSet {
     }
 
     public int getRandom() {
-        return list.get(random.nextInt(list.size()));
+        return list.get(rand.nextInt(list.size()));
     }
 }
