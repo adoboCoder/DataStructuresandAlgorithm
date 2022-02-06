@@ -40,7 +40,6 @@ class LCM_1650LowestCommonAncestorIII {
         root.right.right.parent = root.right;
         Node p = root.left.left;
         Node q = root.right.right;
-        Node res = lowestCommonAncestor(p, q);
-        System.out.println(res.val);
+        System.out.println(lowestCommonAncestor(p, q));
     }
 }
