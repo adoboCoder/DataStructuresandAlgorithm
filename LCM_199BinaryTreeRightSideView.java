@@ -18,3 +18,6 @@ class Solution {
         helper(result, root.left, depth +1);
     }
 }
+
+//TC: O(n)
+//SC: O(h) , h is height of tree
