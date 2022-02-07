@@ -44,4 +44,9 @@ class LCM_973KClosestPointsToOrigin {
         int[][] points2 = {{3, 3},{5, -1},{-2, 4}};
         System.out.println(Arrays.deepToString(LCM_973KClosestPointsToOrigin.kClosest(points2, 2)));
     }
+
+
+    public int[][] kClosest_comparator(int[][] points, int K) {
+        Arrays.sort(points, Comparator.comparing(p -> p[0] * p[0] + p[1] * p[1]));
+        return Arrays.copyOfRange(points, 0, K);
 }
