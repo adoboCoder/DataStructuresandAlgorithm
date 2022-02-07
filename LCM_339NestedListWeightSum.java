@@ -1,7 +1,7 @@
 import java.util.*;
 
 class LCM_339NestedListWeightSum {
-    public int depthSum(List<NestedInteger> nestedList) {
+    public int depthSum_BFS(List<NestedInteger> nestedList) {
         if(nestedList == null){
             return 0;
         }
@@ -23,4 +23,19 @@ class LCM_339NestedListWeightSum {
         }
         return sum;
     }
+    public int depthSumDFS(List<NestedInteger> nestedList) {
+        return dfs(nestedList, 1);
+    }
+    private int dfs(List<NestedInteger> list, int depth) {
+        int total = 0;
+        for (NestedInteger nested : list) {
+            if (nested.isInteger()) {
+                total += nested.getInteger() * depth;
+            } else {
+                total += dfs(nested.getList(), depth + 1);
+            }
+        }
+        return total;
+    }
+
 }
