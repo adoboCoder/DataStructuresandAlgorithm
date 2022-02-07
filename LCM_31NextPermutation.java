@@ -1,26 +1,24 @@
+import java.util.*;
 class LCM_31NextPermutation {
-    public static void nextPermutation(int[] A) {
-        int k = A.length - 2;
-        while (k >= 0 && A[k] >= A[k + 1]){
+    public static void nextPermutation(int[] nums) {
+        int k = nums.length - 2;
+        while(k >= 0 && nums[k] >= nums[k + 1]) {
             k--;
         }
         
-        //Corer case where the given  permutation is already the max
-        if(k == -1) {
-            reverse(A, 0, A.length - 1);
+        if(k == -1) { //corner case when given max
+            reverse(nums, 0, nums.length - 1);
             return;
         }
-        
-        for(int l = A.length -1; l > k; l--) {
-            if(A[l] > A[k]) {
-                int temp = A[k];
-                A[k] = A[l];
-                A[l] = temp;
+        for(int i = nums.length - 1; i > k; i--) {
+            if(nums[i] > nums[k]) {
+                int temp = nums[k];
+                nums[k] = nums[i];
+                nums[i] = temp;
                 break;
             }
         }
-        
-        reverse(A, k + 1, A.length - 1);
+        reverse(nums, k+ 1, nums.length - 1);
     }
     
     private static void reverse(int[] nums, int start, int end) {
@@ -31,6 +29,12 @@ class LCM_31NextPermutation {
             start++;
             end--;
         }
-    } 
+    }
+    public static void main(String[] args) {
+        int[] nums = {1, 2, 3};
+        System.out.println(Arrays.toString(nums));
+        nextPermutation(nums);
+        System.out.println(Arrays.toString(nums));
 
-}   
+    }
+}
