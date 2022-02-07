@@ -13,6 +13,8 @@
  *     }
  * }
  */
+import java.util.*;
+
 public class BSTIterator {
     Stack<TreeNode> stack;
     public BSTIterator(TreeNode root) {
@@ -20,12 +22,12 @@ public class BSTIterator {
         fillStack(root);
     }
 
-    /** @return whether we have a next smallest number */
+    /** return whether we have a next smallest number */
     public boolean hasNext() {
         return !stack.isEmpty();
     }
 
-    /** @return the next smallest number */
+    /** return the next smallest number */
     public int next() {
         TreeNode curNode = stack.pop();
         fillStack(curNode.right);
