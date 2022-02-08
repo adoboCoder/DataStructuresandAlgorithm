@@ -33,3 +33,5 @@ class LCM_636ExclusiveTimeOffFunctions {
         System.out.println(Arrays.toString(LCM_636ExclusiveTimeOffFunctions.exclusiveTime(n, logs)));
     }
 }
+// TC O(n)
+// SC O(n)
