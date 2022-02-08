@@ -38,3 +38,7 @@ class LCE_543DiameterOfBinaryTree{
     System.out.println("Tree Diameter: " + LCE_543DiameterOfBinaryTree.diameterOfBinaryTree(root));
   }
 }
+
+// TC: O(n) 
+// SC: O(n), but if the tree is balanced it'd be O(log N)
+
