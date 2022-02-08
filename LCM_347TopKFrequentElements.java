@@ -8,7 +8,7 @@ class LCM_347TopKFrequentElements {
             map.put(num, map.getOrDefault(num, 0) + 1);
         }
 
-        PriorityQueue<Map.Entry<Integer, Integer>> minHeap = new PriorityQueue<Map.Entry<Integer, Integer>>(
+        PriorityQueue<Map.Entry<Integer, Integer>> minHeap = new PriorityQueue<>(
                 (a, b) -> a.getValue() - b.getValue());
 
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
@@ -61,9 +61,17 @@ class LCM_347TopKFrequentElements {
 
     public static void main(String[] args) {
         int[] result = LCM_347TopKFrequentElements.topKFrequent(new int[] { 1, 3, 5, 12, 11, 12, 11 }, 2);
-        System.out.println("Here are the K frequent numbers: " + result);
+        System.out.println("Here are the K frequent numbers: " + Arrays.toString(result));
 
-        result = LCM_347TopKFrequentElements.topKFrequent(new int[] { 5, 12, 11, 3, 11 }, 2);
-        System.out.println("Here are the K frequent numbers: " + result);
+        result = LCM_347TopKFrequentElements.topKFrequent(new int[] { 5, 12, 11, 3, 11, 12, 12, 1, 1, 1, 1 }, 2);
+        System.out.println("Here are the K frequent numbers: " + Arrays.toString(result));
     }
 }
+
+// Heap Solution
+// TC: O(n Log K)
+// SC: O(N + k)
+
+// Quick Sort Solution
+// TC: O(n) on average, O(n^2) at worst case
+// SC: O(N)
