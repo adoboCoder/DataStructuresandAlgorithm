@@ -1,6 +1,6 @@
 import java.util.*;
 
-class LCM_791CustomString {
+class LCM_791CustomSortString {
     public static String customSortString(String order, String s) {
         Set<Character> set = new HashSet<>();
         StringBuilder sb = new StringBuilder();
@@ -23,9 +23,9 @@ class LCM_791CustomString {
     public static void main(String[] args) {
         String order = "cba";
         String s = "abcd";
-        System.out.println(LCM_791CustomString.customSortString(order, s));
+        System.out.println(LCM_791CustomSortString.customSortString(order, s));
         order = "cbafg";
         s = "abcd";
-        System.out.println(LCM_791CustomString.customSortString(order, s));
+        System.out.println(LCM_791CustomSortString.customSortString(order, s));
     }
 }
