@@ -23,7 +23,7 @@ class LCM_721AccountsMerge {
         List<List<String>> result = new LinkedList<>();
         // DFS search the graph;
         for (String email : name.keySet()) {
-            List<String> list = new LinkedList<>();
+            List<String> list = new ArrayList<>();
             if (visited.add(email)) {
                 dfs(graph, email, visited, list);
                 Collections.sort(list);
@@ -44,3 +44,11 @@ class LCM_721AccountsMerge {
         }
     }
 }
+/*
+
+N is the number of accounts and K is the maximum length of an account.
+
+Time complexity: O(NK log NK)O(NKlogNK)
+Space complexity: O(NK)O(NK)
+
+*/
