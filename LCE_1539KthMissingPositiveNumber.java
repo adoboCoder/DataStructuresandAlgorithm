@@ -19,3 +19,8 @@ class LCE_1539KthMissingPositiveNumber {
 
     }
 }
+
+/*
+ * Time complexity: O(log N)
+ * Space : O(1)
+ */
