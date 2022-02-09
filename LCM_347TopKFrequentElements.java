@@ -61,10 +61,21 @@ class LCM_347TopKFrequentElements {
 
     public static void main(String[] args) {
         int[] result = LCM_347TopKFrequentElements.topKFrequent(new int[] { 1, 3, 5, 12, 11, 12, 11 }, 2);
-        System.out.println("Here are the K frequent numbers: " + result);
+        System.out.println("Here are the K frequent numbers: " + Arrays.toString(result));
+
+        int[] result1 = LCM_347TopKFrequentElements.topKFrequent(new int[] { 1, 3, 5, 12, 11, 12, 11 }, 2);
+        System.out.println("Here are the K frequent numbers: " + Arrays.toString(result1));
 
         result = LCM_347TopKFrequentElements.topKFrequent(new int[] { 5, 12, 11, 3, 11 }, 2);
         System.out.println("Here are the K frequent numbers: " + result);
         
     }
 }
+
+// Heap Solution
+// TC: O(n Log K)
+// SC: O(N + k)
+
+// Quick Sort Solution
+// TC: O(n) on average, O(n^2) at worst case
+// SC: O(N)
