@@ -41,8 +41,8 @@ class LCM_1011CapacityToShipWithinDDays {
         int days2 = 3;
         System.out.println(LCM_1011CapacityToShipWithinDDays.shipWithinDays(weights2, days2));
 
-        int[] weights3 = {1,2,3,1,1};
-        int days3 = 4;
+        int[] weights3 = {1, 1, 2, 3};
+        int days3 = 3;
         System.out.println(LCM_1011CapacityToShipWithinDDays.shipWithinDays(weights3, days3));
     }
 }
