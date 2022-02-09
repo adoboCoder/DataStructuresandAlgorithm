@@ -6,16 +6,15 @@ class LCM_523ContinuousSubArraySum {
         
         int runningSum = 0;
         
-        for(int i = 0; i < nums.length; i ++) {
-            runningSum = runningSum + nums[i];
+        for(int i = 0; i < nums.length; i++) {
+            runningSum += nums[i];
+            
             if(k != 0) {
                 runningSum = runningSum % k;
             }
             
-            Integer prev = map.get(runningSum);
-            
-            if(prev != null) {
-                if(i - prev > 1) {
+            if(map.containsKey(runningSum)){
+                if(i - map.get(runningSum) >= 2) {
                     return true;
                 }
             }
@@ -24,9 +23,20 @@ class LCM_523ContinuousSubArraySum {
         return false;
     }
     public static void main(String[] args) {
-        int[] nums = {1, 3, 1, 4, 23};
-        int k = 7;
+        int[] nums = {23,2,4,6,7};
+        int k = 6;
         System.out.println(LCM_523ContinuousSubArraySum.checkSubarraySum(nums, k));
+        int[] nums2 = {23,2,6,4,7};
+        int k2 = 6;
+        System.out.println(LCM_523ContinuousSubArraySum.checkSubarraySum(nums2, k2));
+        int[] nums3 = {23,2,6,4,7};
+        int k3 = 13;
+        System.out.println(LCM_523ContinuousSubArraySum.checkSubarraySum(nums3, k3));
     }
     
 }
+
+/*
+    TC: O(N)
+    SC: O(N)
+*/
