@@ -8,7 +8,7 @@ class LCM_1011CapacityToShipWithinDDays {
         }
         
         while (min < max) {
-            int mid = (max + min) / 2;
+            int mid = min + (max - min) / 2;
             if (canShip(mid, weights, days)) {
                 max = mid;
             } else {
@@ -41,8 +41,13 @@ class LCM_1011CapacityToShipWithinDDays {
         int days2 = 3;
         System.out.println(LCM_1011CapacityToShipWithinDDays.shipWithinDays(weights2, days2));
 
-        int[] weights3 = {1, 1, 2, 3};
-        int days3 = 3;
+        int[] weights3 = {1,2,3,1,1};
+        int days3 = 4;
         System.out.println(LCM_1011CapacityToShipWithinDDays.shipWithinDays(weights3, days3));
     }
+
+    /**
+     TC : O(N log N)
+     SC : O(1)
+     */
 }
