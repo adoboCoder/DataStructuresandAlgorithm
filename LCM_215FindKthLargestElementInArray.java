@@ -1,6 +1,6 @@
 import java.util.*;
 
-class LCM_215FindKthLargest{
+class LCM_215FindKthLargestElementInArray{
     public static int findKthLargest_minHeap(int [] nums, int k){
         PriorityQueue<Integer> minHeap = new PriorityQueue<Integer>();
         for(int i : nums){
