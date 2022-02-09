@@ -8,7 +8,7 @@ class LCM_347TopKFrequentElements {
             map.put(num, map.getOrDefault(num, 0) + 1);
         }
 
-        PriorityQueue<Map.Entry<Integer, Integer>> minHeap = new PriorityQueue<Map.Entry<Integer, Integer>>(
+        PriorityQueue<Map.Entry<Integer, Integer>> minHeap = new PriorityQueue<>(
                 (a, b) -> a.getValue() - b.getValue());
 
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
@@ -65,5 +65,6 @@ class LCM_347TopKFrequentElements {
 
         result = LCM_347TopKFrequentElements.topKFrequent(new int[] { 5, 12, 11, 3, 11 }, 2);
         System.out.println("Here are the K frequent numbers: " + result);
+        
     }
 }
