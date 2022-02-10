@@ -25,3 +25,5 @@ class LCM_560SubarraySumEqualsK{
         System.out.println(LCM_560SubarraySumEqualsK.subarraySum(test, 3));
     }
 }
+// TC O(n)
+// SC O(n)
