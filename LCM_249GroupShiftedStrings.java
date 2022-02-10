@@ -28,3 +28,8 @@ class LCM_249GroupShiftedStrings {
         return result;
     }
 }
+
+/*
+TC: O(NK) N Length of Strings array, K length of longest string
+SC: O(NK)
+*/
