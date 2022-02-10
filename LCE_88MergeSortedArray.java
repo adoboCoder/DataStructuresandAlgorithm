@@ -29,3 +29,9 @@ class LCE_88MergeSortedArray{
     }
     
 }
+
+/*
+Time complexity: O(n+m).
+
+Space complexity: O(1).
+*/
