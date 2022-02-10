@@ -11,9 +11,11 @@ class LCE_88MergeSortedArray{
                 break;
             }
             if (p1 >= 0 && nums1[p1] > nums2[p2]) {
-                nums1[i] = nums1[p1--];
+                nums1[i] = nums1[p1];
+                p1--;
             } else {
-                nums1[i] = nums2[p2--];
+                nums1[i] = nums2[p2];
+                p2--;
             }
         }
     }
