@@ -20,3 +20,7 @@ class LCE_266PalindromePermutation {
         System.out.println(canPermutePalindrome(s1));
     }
 }
+/*
+TC: O(n)
+SC: O(1)
+*/
