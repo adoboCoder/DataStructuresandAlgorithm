@@ -40,3 +40,8 @@ class LCE680_ValidPalindromeII{
         System.out.println(LCE680_ValidPalindromeII.validPalindrome(input));
     }
 }   
+
+/*
+TC: O(N)
+S/C: O(1)
+*/
