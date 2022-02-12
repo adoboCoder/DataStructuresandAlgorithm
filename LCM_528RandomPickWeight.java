@@ -29,3 +29,6 @@ class Solution {
         return left;
     }
 }
+
+// TC : Constructor O(N), pickindex O(logN)
+// SC : Constructor O(N), pickindex O(1)
