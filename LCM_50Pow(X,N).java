@@ -27,4 +27,4 @@ class LCM_50PowXN {
     }
 }
 //TC : O(log n)
-//SC : O(log n)
+//SC : O(1)
