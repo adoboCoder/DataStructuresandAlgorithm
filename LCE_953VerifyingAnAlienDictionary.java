@@ -11,6 +11,17 @@ class LCE_953VerifyingAnAlienDictionary {
         }
     return true;
     }
+    public static boolean isSorted(String[] words, char[] alphabet) {
+        for (int i = 0; i < alphabet.length; i++) {
+            mapping[alphabet[i] - 'a'] = i;
+        }
+        for (int i = 0; i < words.length - 1; i++){
+            if (compare(words[i], words[i+1])){
+                return false;
+            }
+        }
+        return true;
+    }
 
     private static boolean compare(String s1, String s2) {
         int n = s1.length();
