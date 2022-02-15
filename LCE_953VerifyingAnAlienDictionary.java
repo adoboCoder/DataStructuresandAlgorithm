@@ -1,6 +1,6 @@
-class Solution {
-    int[] mapping = new int[26];
-    public boolean isAlienSorted(String[] words, String order) {
+class LCE_953VerifyingAnAlienDictionary {
+    public static int[] mapping = new int[26];
+    public static boolean isAlienSorted(String[] words, String order) {
         for (int i = 0; i < order.length(); i++) {
             mapping[order.charAt(i) - 'a'] = i;
         }
@@ -12,7 +12,7 @@ class Solution {
     return true;
     }
 
-    private boolean compare(String s1, String s2) {
+    private static boolean compare(String s1, String s2) {
         int n = s1.length();
         int m = s2.length();
         for (int i = 0; i < n && i < m; ++i){
@@ -21,5 +21,11 @@ class Solution {
             }
         }
         return n > m;
+    }
+
+    public static void main(String[] args) {
+        String[] words = {"hello","leetcode"};
+        String order = "hlabcdefgijkmnopqrstuvwxyz";
+        System.out.println(isAlienSorted(words, order));
     }
 }
