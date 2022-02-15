@@ -23,5 +23,8 @@ class LCM_670MaximumSwap {
 
     public static void main(String[] args) {
         System.out.println(maximumSwap(2342));
+        System.out.println(maximumSwap(9973));
     }
 }
+// tc O(n)
+// sc O(1)
