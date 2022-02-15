@@ -20,9 +20,9 @@ class LCM_560SubarraySumEqualsK{
     }
 
     public static void main(String[] args) {
-        int[] test = new int[] {1, 1, 1, 1, 2};
+        int[] test = new int[] {1, -1, 0};
         System.out.println(Arrays.toString(test));
-        System.out.println(LCM_560SubarraySumEqualsK.subarraySum(test, 3));
+        System.out.println(LCM_560SubarraySumEqualsK.subarraySum(test, 0));
     }
 }
 // TC O(n)
