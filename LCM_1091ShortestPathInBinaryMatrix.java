@@ -38,3 +38,6 @@ class LCM_1091ShortestPathInBinaryMatrix {
         System.out.println(LCM_1091ShortestPathInBinaryMatrix.shortestPathInBinaryMatrix(grid));
     }
 }
+
+// TC O(N)
+// SC O(N)
