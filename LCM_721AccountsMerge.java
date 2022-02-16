@@ -1,7 +1,7 @@
 import java.util.*;
 
 class LCM_721AccountsMerge {
-    public List<List<String>> accountsMerge(List<List<String>> accounts) {
+    public static List<List<String>> accountsMerge(List<List<String>> accounts) {
         Map<String, Set<String>> graph = new HashMap<>();  //<email node, neighbor nodes>
         Map<String, String> name = new HashMap<>();        //<email, username>
         // Build the graph;
@@ -20,7 +20,7 @@ class LCM_721AccountsMerge {
         }
         
         Set<String> visited = new HashSet<>();
-        List<List<String>> result = new LinkedList<>();
+        List<List<String>> result = new ArrayList<>();
         // DFS search the graph;
         for (String email : name.keySet()) {
             List<String> list = new ArrayList<>();
@@ -35,7 +35,7 @@ class LCM_721AccountsMerge {
         return result;
     }
     
-    public void dfs(Map<String, Set<String>> graph, String email, Set<String> visited, List<String> list) {
+    public static void dfs(Map<String, Set<String>> graph, String email, Set<String> visited, List<String> list) {
         list.add(email);
         for (String next : graph.get(email)) {
             if (visited.add(next)) {
@@ -43,12 +43,35 @@ class LCM_721AccountsMerge {
             }
         }
     }
+    public static void main(String[] args) {
+        List<List<String>> accounts = new ArrayList<>();
+        List<String> list1 = new ArrayList<>();
+        list1.add("John");
+        list1.add("johnsmith@mail.com");
+        list1.add("john_newyork@mail.com");
+        List<String> list2 = new ArrayList<>();
+        list2.add("John");
+        list2.add("johnsmith@mail.com");
+        list2.add("john00@mail.com");
+        List<String> list3 = new ArrayList<>();
+        list3.add("Mary");
+        list3.add("mary@mail.com");
+        List<String> list4 = new ArrayList<>();
+        list4.add("John");
+        list4.add("johnnybravo@mail.com");
+        accounts.add(list1);
+        accounts.add(list2);
+        accounts.add(list3);
+        accounts.add(list4);
+
+        System.out.println(accountsMerge(accounts));
+    }
 }
 /*
 
 N is the number of accounts and K is the maximum length of an account.
 
-Time complexity: O(NK log NK)O(NKlogNK)
+Time complexity: O(NK log NK)
 Space complexity: O(NK)O(NK)
 
 */
