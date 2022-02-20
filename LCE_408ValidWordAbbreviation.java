@@ -19,7 +19,7 @@ class LCE_408ValidWordAbbreviation {
             }
             int num = Integer.valueOf(abbreviation.substring(start, j));
             i = i + num;
-            }
+        }
         
         return i == word.length() && j == abbreviation.length();
     }
