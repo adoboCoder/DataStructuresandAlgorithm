@@ -17,7 +17,7 @@ class LCM_215FindKthLargestElementInArray{
         return quickSelect(nums, 0, nums.length - 1, nums.length - k);
     }
 
-    private static int quickSelect(int[] nums, int low, int high, int k /* index we're looking for */) {
+    private static int quickSelect(int[] nums, int low, int high, int k) {
         int i = low;
         int j = high;
         int pivot = nums[high];
