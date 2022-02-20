@@ -24,7 +24,11 @@ class LCM_50PowXN {
         x = 2.0;
         n = -2;
         System.out.println(LCM_50PowXN.myPow(x, n));
+
+        x = -2.0;
+        n = 3;
+        System.out.println(LCM_50PowXN.myPow(x, n));
     }
 }
 //TC : O(log n)
-//SC : O(1)
+//SC : O(log n)
