@@ -33,21 +33,24 @@ class LCM_227BasicCalculatorII {
         }
         return result;
     }
+/*
+TC O(N)
+SC O(N) because of stack
+     */
 
     public static int calculateWithOutStack(String s) {
         if (s == null || s.isEmpty()) return 0;
 
-        int length = s.length();
         int currentNumber = 0;
         int lastNumber = 0;
         int result = 0;
         char operation = '+';
-        for (int i = 0; i < length; i++) {
-            char currentChar = s.charAt(i);
-            if (Character.isDigit(currentChar)) {
-                currentNumber = (currentNumber * 10) + (currentChar - '0');
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (Character.isDigit(c)) {
+                currentNumber = (currentNumber * 10) + (c - '0');
             }
-            if (!Character.isDigit(currentChar) && !Character.isWhitespace(currentChar) || i == length - 1) {
+            if (!Character.isDigit(c) && !Character.isWhitespace(c) || i == s.length() - 1) {
                 if (operation == '+' || operation == '-') {
                     result += lastNumber;
                     lastNumber = (operation == '+') ? currentNumber : -currentNumber;
@@ -56,13 +59,17 @@ class LCM_227BasicCalculatorII {
                 } else if (operation == '/') {
                     lastNumber = lastNumber / currentNumber;
                 }
-                operation = currentChar;
+                operation = c;
                 currentNumber = 0;
             }
         }
         result += lastNumber;
         return result;
     }
+    /*
+    TC O(N)
+    SC O(1) without using stack
+    */
     public static void main(String[] args) {
         String s = "3+23*2";
         System.out.println(LCM_227BasicCalculatorII.calculate(s));
