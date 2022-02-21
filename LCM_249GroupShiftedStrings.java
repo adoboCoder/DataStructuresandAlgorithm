@@ -1,7 +1,7 @@
 import java.util.*;
 
 class LCM_249GroupShiftedStrings {
-    public List<List<String>> groupStrings(String[] strings) {
+    public static List<List<String>> groupStrings(String[] strings) {
         List<List<String>> result = new ArrayList<>();
         Map<String, List<String>> map = new HashMap<>();
         for (String str : strings) {
@@ -22,10 +22,14 @@ class LCM_249GroupShiftedStrings {
         }
         for (String key : map.keySet()) {
             List<String> list = map.get(key);
-            Collections.sort(list);
+            //Collections.sort(list);
             result.add(list);
         }
         return result;
+    }
+    public static void main(String[] args) {
+        String[] str = {"abc","bcd","acef","xyz","az","ba","a","z"};
+        System.out.println(groupStrings(str));
     }
 }
 
