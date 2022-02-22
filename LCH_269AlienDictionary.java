@@ -1,64 +1,55 @@
 import java.util.*;
 class LCH_269AlienDictionary {
-    public static  String alienOrder(String[] words) {
-
-        //Setup datatstructures to find all unique words
-        Map<Character, Set<Character>> map = new HashMap<>();
-        Map<Character, Integer> degree = new HashMap<>();
-        String result = "";
-        if(words == null || words.length == 0) return result;
-        for(String word: words){
-            for(char c: word.toCharArray()){
-                degree.put(c,0);
+    public static String alienOrder(String[] words) {
+        
+        Map<Character, List<Character>> adj = new HashMap<>();
+        Map<Character, Integer> inDegree = new HashMap<>();
+        for(String word : words){
+            for(int i=0; i<word.length(); i++){
+                char c = word.charAt(i);
+                adj.putIfAbsent(c, new ArrayList<>());
+                inDegree.put(c,0);
             }
         }
-
-        // find all edges
-        for(int i = 0; i < words.length - 1; i++){
-            String currentWord = words[i];
-            String nextWord = words[i+1];
-            int length = Math.min(currentWord.length(), nextWord.length());
-            if(currentWord.length() > nextWord.length() && currentWord.startsWith(nextWord)){
+        for(int i = 1; i < words.length; i++){
+            String word1 = words[i-1];
+            String word2 = words[i];
+            if(word1.length()>word2.length() && word1.startsWith(word2)){
                 return "";
             }
-            for(int j = 0; j < length; j++){
-                char char1 = currentWord.charAt(j); //Char1 is the pointer to currentWord
-                char char2 = nextWord.charAt(j); //Char2 is the pointer to nextWord
-                if(char1 != char2){
-                    Set<Character> set = new HashSet<Character>();
-                    if(map.containsKey(char1)){
-                        set = map.get(char1);
-                    }
-                    if(!set.contains(char2)){
-                        set.add(char2);
-                        map.put(char1, set);
-                        degree.put(char2, degree.get(char2)+1);
-                    }
+            for(int k = 0 ; k< Math.min(word1.length(), word2.length()); k++){
+                char c1 = word1.charAt(k);
+                char c2 = word2.charAt(k);
+                
+                if(c1 != c2){
+                    adj.get(c1).add(c2);
+                    inDegree.put(c2, inDegree.get(c2)+1);
                     break;
                 }
             }
         }
-        
-        // bfs
-        Queue<Character> q = new LinkedList<Character>();
-        for(char c: degree.keySet()){
-            if(degree.get(c) == 0){
-                q.add(c);
-            } 
+        Queue<Character> q = new LinkedList<>();
+        StringBuilder sb = new StringBuilder();
+        for(Map.Entry<Character, Integer> e: inDegree.entrySet()){
+            if(e.getValue()==0){
+                q.add(e.getKey());
+            }
         }
         while(!q.isEmpty()){
-            char c = q.poll();
-            result += c;
-            if(map.containsKey(c)){
-                for(char char2: map.get(c)){
-                    degree.put(char2,degree.get(char2) - 1);
-                    if(degree.get(char2) == 0) q.add(char2);
+            char cur = q.remove();
+            sb.append(cur);
+            for(char nei : adj.get(cur)){
+                inDegree.put(nei, inDegree.get(nei)-1);
+                if(inDegree.get(nei) == 0){
+                    q.add(nei);
                 }
             }
         }
-        if(result.length() != degree.size()) return "";
-        return result;
+        if(inDegree.size() > sb.length()){
+            return "";
         }
+        return sb.toString();
+    }
 
         public static void main(String[] args) {
             String[] words = {"awzwwim","wrt", "wrf", "er", "ett", "rftt"};
