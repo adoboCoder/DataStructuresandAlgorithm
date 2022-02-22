@@ -42,3 +42,8 @@ class LCH_273IntegerToEnglishWords {
         
     }
 }
+
+/*
+TC O(N)
+SC O(1)
+*/
