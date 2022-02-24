@@ -1,22 +1,27 @@
 import java.util.*;
-
 class LCH_124BinaryTreeMaximumPathSum {
-    public int globalMax;
+    private static int maxSum;
     public static int maxPathSum(TreeNode root) {
-        globalMax = Integer.MIN_VALUE;
+        maxSum = Integer.MIN_VALUE;
         dfs(root);
-        return globalMax;
+        return maxSum; // as maxSum will always store the result
     }
     public static int dfs(TreeNode root) {
-        if(root == null) return 0;
+        if (root == null) return 0; 
+		
+		// recursing through left and right subtree
+        int leftMax = dfs(root.left);
+        int rightMax = dfs(root.right);
 
-        int left = dfs(root.left);
-        int right = dfs(root.right);
-        int maxLeftRight = Math.max(left, right);
-        int maxRoot = Math.max(maxLeftRight + root.val, root.val);
-        int maxAll = Math.max(maxRoot, left + right + root.val);
-        globalMax = Math.max(globalMax, maxAll);
-        return maxRoot;
-
+		// finding all the four paths and the maximum between all of them
+        int maxRightLeft = Math.max(leftMax, rightMax);
+        int maxOneNodeRoot = Math.max(root.val, (root.val + maxRightLeft));
+        int maxAll = Math.max(maxOneNodeRoot, leftMax + rightMax + root.val);
+		
+		// Storing the result in the maxSum holder
+        maxSum = Math.max(maxSum, maxAll);
+		
+		// returning the value if root was part of the answer
+        return maxOneNodeRoot;
     }
 }
