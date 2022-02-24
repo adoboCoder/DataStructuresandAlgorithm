@@ -23,3 +23,6 @@ class LCM_647PalindromicSubStrings {
         System.out.println(count("aaa"));
     }
 }
+
+// TC O(n^2)
+// SC O(1)
