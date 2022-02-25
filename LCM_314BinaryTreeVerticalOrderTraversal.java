@@ -52,3 +52,6 @@ class LCM_314BinaryTreeVerticalOrderTraversal {
 
     }
 }
+
+// Tc: O(n) n # of nodes
+// Sc: O(n) 

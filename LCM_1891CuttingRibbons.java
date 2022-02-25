@@ -23,3 +23,7 @@ class LCM_1891CuttingRibbons {
         System.out.println(LCM_1891CuttingRibbons.maxLength(ribbons, k));
     }
 }
+
+/**
+  The final running time is O(N log (max length)) with O(1) auxilary space.
+ */

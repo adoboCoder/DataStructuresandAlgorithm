@@ -43,3 +43,7 @@ class LCM_1650LowestCommonAncestorIII {
         System.out.println(lowestCommonAncestor(p, q));
     }
 }
+/*
+Time Complexity: O(h)
+Space Complexity: O(1)
+*/

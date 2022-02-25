@@ -71,11 +71,9 @@ class LCH_317ShortestDistanceFromAllBuildings {
                 }
             }
         }
-
     }
     private static boolean isValid(int[][]grid, int row, int col, boolean[][] visited){
         return row >= 0 && row < grid.length && col >= 0 && col < grid[0].length && !visited[row][col] && grid[row][col] == 0;
-
     }
 
     public static void main(String[] args) {

@@ -30,3 +30,7 @@ class LCM_71SimplifyPath {
     }
 
 }
+/*
+TC: O(N)
+S/C: O(N)
+*/

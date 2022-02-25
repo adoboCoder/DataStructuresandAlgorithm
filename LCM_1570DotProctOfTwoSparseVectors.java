@@ -24,3 +24,9 @@ class SparseVector {
         return product;
     }
 }
+/*
+Time complexity: O(n) for creating the <index, value> pair for non-zero values; O(L1 + L2) for dot product
+​
+
+Space complexity: O(L) for creating the <index, value> pairs for non-zero values. O(1) for calculating the dot product.
+*/

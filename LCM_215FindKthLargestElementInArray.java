@@ -14,10 +14,10 @@ class LCM_215FindKthLargestElementInArray{
     }
 
     public static int findKthLargest_quickSelect(int[] nums, int k) {
-        return quickSelect(nums, 0, nums.length - 1, k);
+        return quickSelect(nums, 0, nums.length - 1, nums.length - k);
     }
 
-    private static int quickSelect(int[] nums, int low, int high, int k /* index we're looking for */) {
+    private static int quickSelect(int[] nums, int low, int high, int k) {
         int i = low;
         int j = high;
         int pivot = nums[high];

@@ -31,7 +31,7 @@ class LCM_31NextPermutation {
         }
     }
     public static void main(String[] args) {
-        int[] nums = {1, 2, 3};
+        int[] nums = {1, 4, 3};
         System.out.println(Arrays.toString(nums));
         nextPermutation(nums);
         System.out.println(Arrays.toString(nums));

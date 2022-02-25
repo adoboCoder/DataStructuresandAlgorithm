@@ -25,3 +25,8 @@ class LCM_921MinimumAddToMakeParenthesesValid {
         System.out.println(LCM_921MinimumAddToMakeParenthesesValid.minAddToMakeValid(s));
     }
 }
+/*
+Time Complexity: O(N), where N is the length of S.
+
+Space Complexity: O(1).
+*/

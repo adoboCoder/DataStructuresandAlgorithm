@@ -21,3 +21,7 @@ class Solution{
         return sb.reverse().toString();
     }
 }
+/*
+TC O(max(n1, n2))
+SC O(max(n1, n2))
+*/

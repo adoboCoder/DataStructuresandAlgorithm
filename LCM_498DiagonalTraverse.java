@@ -48,3 +48,7 @@ class LCM_498DiagonalTraverse{
         
     }
 }
+/*
+TC: O(N * M)
+SC: O (min(N, M))
+*/

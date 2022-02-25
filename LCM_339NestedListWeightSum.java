@@ -37,5 +37,6 @@ class LCM_339NestedListWeightSum {
         }
         return total;
     }
-
 }
+// TC O(N) DFS
+// SC O(N)
