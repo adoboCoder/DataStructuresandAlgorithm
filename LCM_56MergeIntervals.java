@@ -32,3 +32,7 @@ class LCM_56MergeIntervals {
 
 	}
 }
+/*
+TC O(NlogN)
+SC O(logN)
+*/
