@@ -24,6 +24,16 @@ class LCM_1650LowestCommonAncestorIII {
 
         return q;
     }
+
+    public Node lowestCommonAncestor_constantSpace(Node p, Node q) {
+        Node a = p;
+        Node b = q;
+        while (a != b) {
+            a = a == null? q : a.parent;
+            b = b == null? p : b.parent;    
+        }
+        return a;
+    }
     public static void main(String[] args) {
         Node root = new Node(3);
         root.left = new Node(5);
