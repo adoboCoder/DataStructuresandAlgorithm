@@ -1,4 +1,6 @@
 import java.util.*;
+
+// Definition for a Node.
 class Node {
     public int val;
     public Node left;
@@ -16,8 +18,11 @@ class Node {
         right = _right;
     }
 }
+
+
 class LCM_426ConvertBinarySearchTreeToSortedDoublyLinkedList{
-    public static Node treeToDoublyList(Node root) {
+    Node prev = null;
+    public Node treeToDoublyList(Node root) {
         Node prev = null;
         if (root == null) return null;
         Node dummy = new Node(0, null, null);
@@ -29,7 +34,7 @@ class LCM_426ConvertBinarySearchTreeToSortedDoublyLinkedList{
         return dummy.right;
     }
     
-    private static void helper (Node cur) {
+    private void helper (Node cur) {
         if (cur == null) return;
         helper(cur.left);
         prev.right = cur;
