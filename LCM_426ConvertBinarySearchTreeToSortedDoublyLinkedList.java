@@ -15,7 +15,7 @@ class Node {
         left = _left;
         right = _right;
     }
-};
+}
 class LCM_426ConvertBinarySearchTreeToSortedDoublyLinkedList{
     public static Node treeToDoublyList(Node root) {
         Node prev = null;
