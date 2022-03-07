@@ -40,13 +40,19 @@ class LCM_973KClosestPointsToOrigin {
     public static void main(String[] args) {
         int[][] points = {{1, 3},{-2, 2}};
         System.out.println(Arrays.deepToString(LCM_973KClosestPointsToOrigin.kClosest(points, 1)));
+        System.out.println(Arrays.deepToString(LCM_973KClosestPointsToOrigin.kClosest_comparator(points, 1)));
 
         int[][] points2 = {{3, 3},{5, -1},{-2, 4}};
         System.out.println(Arrays.deepToString(LCM_973KClosestPointsToOrigin.kClosest(points2, 2)));
+        System.out.println(Arrays.deepToString(LCM_973KClosestPointsToOrigin.kClosest_comparator(points2, 2)));
     }
+    // TC: Binary Search average case O(N), worst case O(N^2)
+    // SC: O(N)
 
-
-    public int[][] kClosest_comparator(int[][] points, int K) {
+    public static int[][] kClosest_comparator(int[][] points, int K) {
         Arrays.sort(points, Comparator.comparing(p -> p[0] * p[0] + p[1] * p[1]));
         return Arrays.copyOfRange(points, 0, K);
+    }
 }
+    // TC: O(N logN) for sorting the points
+    // SC: O(log N) to O(N)
