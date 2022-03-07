@@ -33,3 +33,7 @@ class LCE_408ValidWordAbbreviation {
         
     }
 }
+/*
+TC : O(n)
+SC : O(1)
+*/
