@@ -3,7 +3,9 @@ import java.util.*;
 class LCM_791CustomSortString {
     public static String customSortString(String S, String T) {
         int[] count = new int[26];
-        for (char c : T.toCharArray()) { ++count[c - 'a']; }  // count each char in T.
+        for (char c : T.toCharArray()) {
+            ++count[c - 'a']; 
+        }  // count each char in T.
         StringBuilder sb = new StringBuilder();
         for (char c : S.toCharArray()) {                            
             while (count[c - 'a']-- > 0) {
