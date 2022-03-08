@@ -38,3 +38,7 @@ class LCM_31NextPermutation {
 
     }
 }
+/*
+TC: O(N) worst case, two scans of the whole array are needed.
+SC :O(1) because of inplace replacements
+*/

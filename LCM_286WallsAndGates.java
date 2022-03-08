@@ -22,3 +22,7 @@ class LCM_286WallsAndGates {
         }
     }
 }
+/*
+TC: O(MN)
+SC: O(MN)
+ */

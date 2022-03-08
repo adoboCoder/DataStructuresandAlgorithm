@@ -1,21 +1,21 @@
 import java.util.*;
 
 class LCM_791CustomSortString {
-    public static String customSortString(String order, String s) {
-        Set<Character> set = new HashSet<>();
+    public static String customSortString(String S, String T) {
+        int[] count = new int[26];
+        for (char c : T.toCharArray()) {
+            ++count[c - 'a']; 
+        }  // count each char in T.
         StringBuilder sb = new StringBuilder();
-        for (char c : order.toCharArray()) {
-            for (int i = 0; i < s.length(); i++) {
-                if (s.charAt(i) == c) {
-                    sb.append(c);
-                }
-            }
-            set.add(c);
+        for (char c : S.toCharArray()) {                            
+            while (count[c - 'a']-- > 0) {
+                sb.append(c); 
+            }    // sort chars both in T and S by the order of S.
         }
-        for (char c : s.toCharArray()) {
-            if (!set.contains(c)) {
-                sb.append(c);
-            }
+        for (char c = 'a'; c <= 'z'; ++c) {
+            while (count[c - 'a']-- > 0) {
+                sb.append(c); 
+            }    // group chars in T but not in S.
         }
         return sb.toString();
     }
@@ -29,3 +29,8 @@ class LCM_791CustomSortString {
         System.out.println(LCM_791CustomSortString.customSortString(order, s));
     }
 }
+/*
+
+TC: O(N) n = t.length()
+SC: O(N) n = t.length()
+*/
