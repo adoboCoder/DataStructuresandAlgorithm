@@ -18,3 +18,8 @@ class LCE_766ToeplitzMatrix {
         System.out.println(LCE_766ToeplitzMatrix.isToeplitzMatrix(matrix));
     }
 }
+
+/*
+TC: O(M * N)
+SC: O(1)
+*/
