@@ -35,4 +35,5 @@ class LCH_282ExpressionAddOperators {
         System.out.println(addOperators(num, target));
     }
 }
-
+// tc O(n 4^n) n is the length of num
+// sc O(n)
