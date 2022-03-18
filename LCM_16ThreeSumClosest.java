@@ -43,3 +43,8 @@ class LCM_16ThreeSumClosest {
         System.out.println(threeSumClosest(nums, target));
     }
 }
+
+/*
+TC: O(N log N)
+SC: O(log N)
+*/
