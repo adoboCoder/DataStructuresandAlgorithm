@@ -1,4 +1,4 @@
-class LCE_766TeoplitzMatrix {
+class LCE_766ToeplitzMatrix {
     public static boolean isToeplitzMatrix(int[][] matrix) {
         for (int i = 0; i < matrix.length - 1; i++) {
             for (int j = 0; j < matrix[i].length - 1; j++) {
@@ -15,6 +15,11 @@ class LCE_766TeoplitzMatrix {
                                 {5, 1, 2, 3},
                                 {9, 5, 1, 2}
                             };
-        System.out.println(LCE_766TeoplitzMatrix.isToeplitzMatrix(matrix));
+        System.out.println(LCE_766ToeplitzMatrix.isToeplitzMatrix(matrix));
     }
 }
+
+/*
+TC: O(M * N)
+SC: O(1)
+*/
