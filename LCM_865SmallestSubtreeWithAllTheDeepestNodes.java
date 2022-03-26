@@ -19,3 +19,8 @@ class LCM_865SmallestSubtreeWithAllTheDeepestNodes {
         return currentLevel;
     }
 }
+
+/*
+TC: O(N)
+SC O(N)
+*/
