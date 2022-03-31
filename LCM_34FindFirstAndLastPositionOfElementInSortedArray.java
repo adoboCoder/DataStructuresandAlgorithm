@@ -1,6 +1,6 @@
 import java.util.*;
 
-class LCM_34FirstAndLastPositionOfElementInSortedArray {
+class LCM_34FindFirstAndLastPositionOfElementInSortedArray {
     public static int[] searchRange(int[] nums, int target) {
         int[] result = new int[2];
         result[0] = findFirst(nums, target);
@@ -51,3 +51,7 @@ class LCM_34FirstAndLastPositionOfElementInSortedArray {
         System.out.println(Arrays.toString(searchRange(new int[] { 10, 10, 10, 10, 10, 10 }, 10)));
     }
 }
+
+/* Time: O(logN)
+ * Space: O(1)
+ */
