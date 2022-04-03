@@ -33,3 +33,6 @@ class LCH_987VerticalOrderTraversalOfBinaryTree {
         dfs(root.right, x + 1, y + 1, map);
     }
 }
+
+//TC: O(N Log N)
+//SC: O(N)
