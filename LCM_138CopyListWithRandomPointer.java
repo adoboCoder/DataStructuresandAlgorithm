@@ -1,7 +1,18 @@
 import java.util.*;
+class Node {
+    int val;
+    Node next;
+    Node random;
 
+    public Node(int val) {
+        this.val = val;
+        this.next = null;
+        this.random = null;
+    }
+}
 class LCM_138CopyListWithRandomPointer {
-    public class Solution {
+
+    
         // HashMap which holds old nodes as keys and new nodes as its values.
         HashMap<Node, Node> visitedHash = new HashMap<Node, Node>();
         public Node copyRandomList(Node head) {
@@ -29,5 +40,4 @@ class LCM_138CopyListWithRandomPointer {
             node.random = this.copyRandomList(head.random);
             return node;
         }
-    }
 }
