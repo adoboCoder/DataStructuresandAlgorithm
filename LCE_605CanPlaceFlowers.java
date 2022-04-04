@@ -21,3 +21,6 @@ class LCE_605CanPlaceFlowers {
         System.out.println(canPlaceFlowers(new int[] { 1, 0, 0, 0, 1 }, 2));
     }
 }
+
+//Time: O(N)
+// Space: O(1)
