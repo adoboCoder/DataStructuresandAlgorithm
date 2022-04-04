@@ -109,3 +109,10 @@ class LRUCache {
  * int param_1 = obj.get(key);
  * obj.put(key,value);
  */
+
+
+ /*
+ 
+ TC: O(1)
+ SC: O(capacity) , since the space is used only for a hashmap and double linked list with at most capacity + 1 elements.
+ */
