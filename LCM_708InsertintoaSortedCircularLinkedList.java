@@ -4,7 +4,8 @@ class Node {
     public int val;
     public Node next;
 
-    public Node() {}
+    public Node() {
+    }
 
     public Node(int _val) {
         val = _val;
@@ -15,7 +16,6 @@ class Node {
         next = _next;
     }
 };
-
 
 class Solution {
     public Node insert(Node head, int insertVal) {
@@ -45,3 +45,6 @@ class Solution {
         return head;
     }
 }
+
+// TC O(n)
+// SC O(1)
