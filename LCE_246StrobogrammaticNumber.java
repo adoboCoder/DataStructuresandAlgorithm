@@ -1,21 +1,24 @@
 import java.util.*;
 class LCE_246StrobogrammaticNumber {
     public static boolean isStrobogrammatic(String num) {
-        Map<Character, Character> map = new HashMap<Character, Character>();
-        map.put('6', '9');
-        map.put('9', '6');
-        map.put('0', '0');
-        map.put('1', '1');
-        map.put('8', '8');
-
-        int left = 0;
-        int right = num.length() - 1;
-        while (left <= right) {
-            if (!map.containsKey(num.charAt(left))) return false;
-            if (map.get(num.charAt(left)) != num.charAt(right))
+        int[] map = new int[10];
+        map[6] = 9;
+        map[9] = 6;
+        map[1] = 1;
+        map[0] = 0;
+        map[8] = 8;
+        
+        char[] ca = num.toCharArray();
+        int i = 0;
+        int j = ca.length - 1;
+        while(i <= j) {
+            int begin = ca[i] - '0';
+            int end = ca[j] - '0';
+            if((begin != 0 && map[begin] == 0) || map[begin] != end) {
                 return false;
-            left++;
-            right--;
+            }
+            i++;
+            j--;
         }
         return true;
     }
@@ -27,3 +30,6 @@ class LCE_246StrobogrammaticNumber {
         System.out.println(isStrobogrammatic("962"));
     }
 }
+
+//TC O(N)
+// SC O(1)
