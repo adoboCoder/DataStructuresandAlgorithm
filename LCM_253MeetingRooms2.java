@@ -35,3 +35,6 @@ class LCM_253MeetingRooms2 {
         System.out.println(LCM_253MeetingRooms2.minMeetingRooms(interval));
     }
 }
+
+// TC O(N log N)
+// SC O(N)
