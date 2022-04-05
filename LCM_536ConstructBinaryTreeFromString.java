@@ -1,6 +1,6 @@
 import java.util.*;
 
-class LCM_536ContructBinaryTreeFromString {
+class LCM_536ConstructBinaryTreeFromString {
     public static TreeNode str2tree(String s) {
         Stack<TreeNode> stack = new Stack<>();
         for (int i = 0, j = i; i < s.length(); i++, j = i) {
