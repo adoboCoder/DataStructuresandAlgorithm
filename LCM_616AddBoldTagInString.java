@@ -29,6 +29,10 @@ class LCM_616AddBoldTagInString {
         String s = "abcxyz123";
         String[] words = new String[] {"abc","123"};
         System.out.println(LCM_616AddBoldTagInString.addBoldTag(s, words));
+
+        String s1 = "aaabbcc";
+        String[] words1 = new String[] {"aaa","aab","bc"};
+        System.out.println(LCM_616AddBoldTagInString.addBoldTag(s1, words1));
     }
 }
 
