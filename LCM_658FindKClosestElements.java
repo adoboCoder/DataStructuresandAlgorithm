@@ -29,3 +29,5 @@ class LCM_658FindKClosestElements {
         System.out.println(LCM_658FindKClosestElements.findClosestElement(arr, 4, -1));
     }
 }
+// TC: O(log(n) + k)
+// SC: O(1)
