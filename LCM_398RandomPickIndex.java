@@ -28,3 +28,6 @@ public class Solution{
         return res;
     }
 }
+
+//tc o(n)
+// sc o(1)
