@@ -24,3 +24,6 @@ class LCM_1004MaxConsecutiveOnesIII {
         System.out.println(longestOnes(new int[] { 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1 }, 3));
     }
 }
+
+// tc o(n)
+// sc o(1)
