@@ -24,7 +24,7 @@ class LCM_162FindPeakElement {
     }
 
     public static void main(String[] args) {
-        int[] nums = { 1, 2, 1, 3, 5, 6, 4 };
+        int[] nums = { 5, 9, 7, 10, 12 };
         int[] nums1 = { 1, 2, 3, 1 };
 
         System.out.println(LCM_162FindPeakElement.findPeak(nums));
