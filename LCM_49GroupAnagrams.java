@@ -32,3 +32,7 @@ class LCM_49GroupAnagrams {
         }
     }
 }
+/*
+TC: O(N)
+SC: O(N)
+*/
