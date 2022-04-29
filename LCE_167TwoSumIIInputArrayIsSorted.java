@@ -1,25 +1,29 @@
 import java.util.*;
 
 class LCE_167TwoSumIIInputArrayIsSorted {
-    public static int[] twoSum (int[] nums, int target) {
-        int[] result = new int[2];
-        int left = 0;
-        int right = nums.length - 1;
-
-        while(left < right) {
-            if(nums[left] + nums[right] == target) {
-                result[0] = left + 1;
-                result[1] = right + 1;
-                break;
+    public static int[] twoSum (int[] numbers, int target) {
+        int a_pointer = 0;
+        int b_pointer = numbers.length - 1;
+        int num_a;
+        int num_b;
+        
+        while(a_pointer < b_pointer) {
+            num_a = numbers[a_pointer];
+            num_b = numbers[b_pointer];
+            
+            if(num_a + num_b == target) break;
+            
+            if(num_a + num_b < target) {
+                a_pointer++;
+                continue;
             }
-            else if(nums[left] + nums[right] > target) {
-                right--;
-            }
-            else {
-                left++;
-            }
+            
+            b_pointer--;
+            
         }
-        return result;
+        
+        return new int[]{a_pointer + 1, b_pointer + 1};
+    }
     }
     public static void main(String[] args) {
         int[] nums = {1, 2, 3, 4, 5, 6};
