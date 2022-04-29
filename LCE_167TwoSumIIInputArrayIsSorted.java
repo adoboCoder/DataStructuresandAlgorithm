@@ -24,7 +24,6 @@ class LCE_167TwoSumIIInputArrayIsSorted {
         
         return new int[]{a_pointer + 1, b_pointer + 1};
     }
-    }
     public static void main(String[] args) {
         int[] nums = {1, 2, 3, 4, 5, 6};
         System.out.println(Arrays.toString(twoSum(nums, 7)));
