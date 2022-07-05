@@ -1,8 +1,7 @@
-import java.util.Stack;
-
-public class Solution {
-    public boolean isValid(String s){
-        Stack<Character> stack  = new Stack();
+import java.util.*;
+class Solution {
+    public static boolean isValid(String s){
+        Stack<Character> stack  = new Stack<>();
 
         for(char c : s.toCharArray()){
             if(c == '('){
@@ -18,6 +17,14 @@ public class Solution {
             }
         }
         return stack.isEmpty();
+    }
+    public static void main(String[] args) {
+        String s = "()";
+        System.out.println(isValid(s));
+        String s2 = "()[]{}";
+        System.out.println(isValid(s2));
+        String s3 = "(]";
+        System.out.println(isValid(s3));
     }
 }
 
