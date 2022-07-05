@@ -1,10 +1,11 @@
-class Solution {
-    public List<String> generateParenthesis(int n) {
+import java.util.*;
+class LCM_22GenerateParentheses {
+    public static List<String> generateParenthesis(int n) {
     List<String> result = new ArrayList<String>();
     dfs("", result, n, n);
     return result;
 }
-    private void dfs(String sublist, List<String> list, int left, int right){
+    private static void dfs(String sublist, List<String> list, int left, int right){
         if(left > right){
             return;
         }
@@ -19,13 +20,11 @@ class Solution {
             return;
         }
     }
-
     public static void main(String[] args){
         int n = 4;
-        List<String> test = new ArrayList<String>();
+        List<String> test = new ArrayList<>();
         test = generateParenthesis(n);
-
-        
+        System.out.println(Arrays.toString(test.toArray()));
     }
 }
 
