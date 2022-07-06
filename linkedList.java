@@ -1,4 +1,5 @@
 class LinkedLists{
+    Node head;
     class Node{
         int data;
         Node next;
@@ -17,12 +18,12 @@ class LinkedLists{
         newNode.next = null;
 
         //If list is empty, make newNode the head.
-        if(list.head != null){
+        if(list.head == null){
             list.head = newNode;
         }
         else{
             //Traverse until the end of the list, and insert newNode there
-            Node last = new list.head;
+            Node last = list.head;
             while(last.next != null){
                 last = last.next;
             }
@@ -42,5 +43,19 @@ class LinkedLists{
         }
         return list;
 
+    }
+
+    public static void printList(LinkedLists list) {
+        Node currentNode = list.head;
+        System.out.println("LinkedList :");
+        while(currentNode != null) {
+            System.out.print(currentNode.data + " ");
+            currentNode = currentNode.next;
+        }
+    }
+    public static void main(String[] args) {
+        LinkedLists list = new LinkedLists(1);
+        list.next = new LinkedLists(2);
+        printList(list);
     }
 }
