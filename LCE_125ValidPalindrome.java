@@ -1,5 +1,5 @@
-class Solution {
-    public boolean isPalindrome(String s) {
+class ValidPalindrome {
+    public static boolean isPalindrome(String s) {
         int start = 0;
         int end = s.length() -1;
         
@@ -15,5 +15,12 @@ class Solution {
             }       
         }
         return true;
+    }
+    public static void main(String[] args) {
+        String s = "A man, a plan, a canal: Panama";
+        String t = "A n";
+
+        System.out.println(ValidPalindrome.isPalindrome(s));
+        System.out.println(ValidPalindrome.isPalindrome(t));
     }
 }
