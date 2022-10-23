@@ -1,7 +1,7 @@
 package Blind75.Arrays;
 import java.util.*;
 
-public class ContainsDuplicate {
+class ContainsDuplicate {
     public static boolean ContainsDuplicate(int[] nums) {
         Set<Integer> set = new HashSet<>();
         

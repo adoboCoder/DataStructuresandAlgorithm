@@ -26,11 +26,11 @@ class TopKFrequentNumbers {
     }
 
     
-  public static void main(String[] args) {
-    List<Integer> result = TopKFrequentNumbers.findTopKFrequentNumbers(new int[] { 1, 3, 5, 12, 11, 12, 11 }, 2);
-    System.out.println("Here are the K frequent numbers: " + result);
+    public static void main(String[] args) {
+        List<Integer> result = TopKFrequentNumbers.findTopKFrequentNumbers(new int[] { 1, 3, 5, 12, 11, 12, 11 }, 2);
+        System.out.println("Here are the K frequent numbers: " + result);
 
-    result = TopKFrequentNumbers.findTopKFrequentNumbers(new int[] { 5, 12, 11, 3, 11 }, 2);
-    System.out.println("Here are the K frequent numbers: " + result);
-  }
+        result = TopKFrequentNumbers.findTopKFrequentNumbers(new int[] { 5, 12, 11, 3, 11 }, 2);
+        System.out.println("Here are the K frequent numbers: " + result);
+    }
 }
