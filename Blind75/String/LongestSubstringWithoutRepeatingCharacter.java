@@ -26,3 +26,5 @@ public class LongestSubstringWithoutRepeatingCharacter {
         System.out.println(n);
     }
 }
+// Time: O(n)
+//Space: O(n)
