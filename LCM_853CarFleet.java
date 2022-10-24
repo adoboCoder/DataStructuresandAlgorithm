@@ -27,5 +27,5 @@ class LCM_853CarFleet{
         int[] speed = {2,4,1,1,3};
         int target = 12;
         System.out.println(LCM_853CarFleet.findCarFleet(target, position, speed));
-    }   
+    }
 }

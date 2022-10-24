@@ -21,7 +21,7 @@ class LCM_22GenerateParentheses {
         }
     }
     public static void main(String[] args){
-        int n = 4;
+        int n = 15;
         List<String> test = new ArrayList<>();
         test = generateParenthesis(n);
         System.out.println(Arrays.toString(test.toArray()));
