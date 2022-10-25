@@ -15,17 +15,10 @@ class Solution{
                 carry = carry + l2.val;
                 l2 = l2.next;
             }
-        p.next = new ListNode(carry % 10);
-        carry = carry / 10;
-        p = p.next;
+            p.next = new ListNode(carry % 10);
+            carry = carry / 10;
+            p = p.next;
         }
     return dummy.next;
     }
 }
-
-
-
-
-
-
-
