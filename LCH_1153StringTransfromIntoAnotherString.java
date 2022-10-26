@@ -2,6 +2,8 @@ import java.util.*;
 
 class LCH_1153StringTransformIntoAnotherString {
     public static boolean canConvert(String str1, String str2) {
+        if(str1 == null || str2 == null || str1.length() == 0 || str2.length() == 0) return false;
+
         if (str1.equals(str2)) {
             return true;
         }
