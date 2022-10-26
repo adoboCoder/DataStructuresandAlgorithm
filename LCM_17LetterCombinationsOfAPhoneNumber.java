@@ -33,7 +33,7 @@ class Leetcode {
     }
     
     public static void main(String[] args) {
-        System.out.println(Leetcode.letterCombinations("234"));
+        System.out.println(Leetcode.letterCombinations("02));
     }
 }
 /*
