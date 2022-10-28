@@ -1,5 +1,5 @@
-import java.util.*;
-class Solution {
+import java.util.Stack;
+class LCE_20ValidParentheses {
     public static boolean isValid(String s){
         Stack<Character> stack  = new Stack<>();
 
