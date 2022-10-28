@@ -37,6 +37,6 @@ class Leetcode {
     }
 }
 /*
-Time: O(n)
+Time: O(n 4^n)
 Space: O(n)
 */
