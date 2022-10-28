@@ -39,5 +39,9 @@ class LCH_1153StringTransformIntoAnotherString {
         s1 = "catdo";
         s2 = "dot";
         System.out.println(LCH_1153StringTransformIntoAnotherString.canConvert(s1, s2));
+
+        s1 = "";
+        s2 = "dot";
+        System.out.println(LCH_1153StringTransformIntoAnotherString.canConvert(s1, s2));
     }
 }
