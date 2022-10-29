@@ -2,20 +2,35 @@ import java.util.*;
 
 class LCM_139WordBreak {
     public static boolean wordBreak(String s, List<String> wordDict) {
-        int n = s.length();
-        boolean[] dp = new boolean[n + 1];
-        dp[0] = true;
+        boolean[] dp = new boolean[s.length() + 1];
+        Set<String> workDictSet = new HashSet<>(wordDict);
 
-        for (int i = 0; i <= n; i++) {
-            for (int j = i - 1; j >= 0; j--) {
-                if (dp[j] && wordDict.contains(s.substring(j, i))) {
-                    dp[i] = true;
+        for (int i = 0; i < dp.length; i++) {
+            dp[i] = false;
+        }
+
+        dp[s.length()] = true;
+
+        for (int i = s.length() - 1; i >= 0; i--) {
+            for (String word : wordDict) {
+                if (
+                    ((i + word.length()) <= s.length()) &&
+                    (s.substring(i, i + word.length()).startsWith(word))
+                ) {
+                    dp[i] = dp[i + word.length()];
+                }
+                if (dp[i]) {
                     break;
                 }
             }
         }
-        return dp[n];
+        return dp[0];
     }
+
+
+//Bottom up approach
+//TC: 
+//SC:
 
     public static void main(String[] args) {
         List<String> wordDict = new ArrayList<>();
