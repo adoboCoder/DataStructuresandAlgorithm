@@ -29,8 +29,8 @@ class LCM_139WordBreak {
 
 
 //Bottom up approach
-//TC: 
-//SC:
+//TC: O(n^2 * m)
+//SC: O(n)
 
     public static void main(String[] args) {
         List<String> wordDict = new ArrayList<>();
