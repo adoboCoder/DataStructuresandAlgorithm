@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Stack;
 class MyQueue {
     private Stack<Integer> s1 = new Stack<>();
@@ -36,5 +37,19 @@ class MyQueue {
     /** Returns whether the queue is empty. */
     public boolean empty() {
         return s1.isEmpty() && s2.isEmpty();
+    }
+
+    public static void main(String[] args) {
+        MyQueue q = new MyQueue();
+        q.push(1);
+        q.push(2);
+        q.push(3);
+        q.push(4);
+        q.pop();
+
+        while(!q.empty()){
+            System.out.println(q.pop());
+        }
+
     }
 }
