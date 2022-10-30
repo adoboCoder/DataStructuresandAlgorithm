@@ -28,7 +28,7 @@ class LCM_692TopKFrequentWords {
 
     public static void main(String[] args) {
         List<String> result = LCM_692TopKFrequentWords
-                .topKFrequent(new String[] { "i", "love", "love", "i", "love", "love" }, 2);
+                .topKFrequent(new String[] { "i", "love", "love", "i", "love", "love" }, 0);
         System.out.println("Here are the K frequent words:" + result);
     }
 }
