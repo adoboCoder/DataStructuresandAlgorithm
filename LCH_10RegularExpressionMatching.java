@@ -12,30 +12,29 @@ class LCH_10RegularExpressionMatching {
 
         if (j >= p.length()) return false;
 
-        boolean match =
-            i < s.length() &&
-            (s.charAt(i) == p.charAt(j) || p.charAt(j) == '.');
+        boolean match = i < s.length() && (s.charAt(i) == p.charAt(j) || p.charAt(j) == '.');
 
         if (j + 1 < p.length() && p.charAt(j + 1) == '*') {
             cache[i][j] =
-                dfs(cache, s, p, i, j + 2) ||
-                (match && dfs(cache, s, p, i + 1, j));
+                dfs(cache, s, p, i, j + 2) || //dont use *
+                (match && dfs(cache, s, p, i + 1, j)); //use *
         } else {
             cache[i][j] = match && dfs(cache, s, p, i + 1, j + 1);
         }
 
         return cache[i][j];
-    } 
-
+    } //top down Memoization
     public static void main(String[] args) {
         String s = "mississippi";
         String p = "mis*is*p*.";
         System.out.println(LCH_10RegularExpressionMatching.isMatch(s,p));
-        s = "aa";
+        s = "aaaaaaaaaa";
         p = "a*";
         System.out.println(LCH_10RegularExpressionMatching.isMatch(s,p));
-        s = "aab";
-        p = "c*a*b";
+        s = "abff";
+        p = ".f*";
         System.out.println(LCH_10RegularExpressionMatching.isMatch(s,p));
     }
 }
+
+// first character of pattern (p) cannot be a star (*) -> false
