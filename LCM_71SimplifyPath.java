@@ -1,5 +1,6 @@
-import java.util.*;
+import java.util.Stack;
 import java.io.*;
+import java.util.*;
 
 class LCM_71SimplifyPath {
     public static String simplifyPath(String path) {
