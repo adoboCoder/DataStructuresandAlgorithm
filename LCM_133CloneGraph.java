@@ -1,6 +1,6 @@
 import java.util.*;
 
-/*
+
 // Definition for a Node.
 class Node {
     public int val;
@@ -18,14 +18,14 @@ class Node {
         neighbors = _neighbors;
     }
 }
-*/
+
 class LCM_133CloneGraph {
     public static Node cloneGraph(Node node) {
         if (node == null) return null;
         return dfs(node, new HashMap<>());
     }
     
-    public static Node dfs(Node node, HashMap<Node, Node> map) {
+    public static Node dfs(Node node, Map<Node, Node> map) {
         if (map.containsKey(node)) return map.get(node);
         Node clone = new Node(node.val);
         map.put(node, clone); // map OLD node to NEW node!
