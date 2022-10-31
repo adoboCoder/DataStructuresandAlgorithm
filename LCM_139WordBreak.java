@@ -3,11 +3,6 @@ import java.util.*;
 class LCM_139WordBreak {
     public static boolean wordBreak(String s, List<String> wordDict) {
         boolean[] dp = new boolean[s.length() + 1];
-        Set<String> workDictSet = new HashSet<>(wordDict);
-
-        for (int i = 0; i < dp.length; i++) {
-            dp[i] = false;
-        }
 
         dp[s.length()] = true;
 
@@ -32,6 +27,7 @@ class LCM_139WordBreak {
 //TC: O(n^2 * m)
 //SC: O(n)
 
+//Recurrence relation : dp[0 +  word.length]
     public static void main(String[] args) {
         List<String> wordDict = new ArrayList<>();
         wordDict.add("cat");
