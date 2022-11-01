@@ -66,8 +66,12 @@ class LCM_347TopKFrequentElements {
         int[] result1 = LCM_347TopKFrequentElements.topKFrequent(new int[] { 1, 3, 5, 12, 11, 12, 11 }, 2);
         System.out.println("Here are the K frequent numbers: " + Arrays.toString(result1));
 
-        result = LCM_347TopKFrequentElements.topKFrequent(new int[] { 5, 12, 11, 3, 11 }, 2);
-        System.out.println("Here are the K frequent numbers: " + result);
+        int[] result2 = LCM_347TopKFrequentElements.topKFrequent(new int[] { 5, 12, 11, 3, 11 }, 2);
+        System.out.println("Here are the K frequent numbers: " + result2);
+
+        List<Integer> result3 = new ArrayList<>();
+        result3 = LCM_347TopKFrequentElements.topKFrequent_bucketSort(new int[] { 5, 12, 11, 3, 11 }, 2);
+        System.out.println("Here are the K frequent numbers: " + result3);
         
     }
 }
