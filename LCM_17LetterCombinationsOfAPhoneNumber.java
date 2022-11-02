@@ -33,10 +33,10 @@ class Leetcode {
     }
     
     public static void main(String[] args) {
-        System.out.println(Leetcode.letterCombinations("239"));
+        System.out.println(Leetcode.letterCombinations("23"));
     }
 }
 /*
-Time: O(n 4^n)
+Time: O(n 4^n) because w maps to wxyz, and 7 maps to pqrs "9999"
 Space: O(n)
 */
