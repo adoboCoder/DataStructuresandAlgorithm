@@ -20,6 +20,8 @@ class LCM_97InterleavingString {
         if(!valid) dp[i][j] = true;
         return valid;
     }
+    //TC O(m*n)
+    //SC O(m+n)
 
     public static void main(String[] args) {
         String s1 = "aabcc";
