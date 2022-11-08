@@ -1,5 +1,5 @@
-class Solution{
-    public String addBinary(String a, String b){
+class LCE_67AddBinary{
+    public static String addBinary(String a, String b){
         StringBuilder sb = new StringBuilder();
 
         int i = a.length()-1;
@@ -24,5 +24,9 @@ class Solution{
             sb.insert(0, 1);
         }
     return sb.toString();
+    }
+
+    public static void main(String[] args) {
+        System.out.println(LCE_67AddBinary.addBinary("001","110"));
     }
 }

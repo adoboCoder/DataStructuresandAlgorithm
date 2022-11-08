@@ -1,0 +1,1827 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch AverageWindow",
+            "request": "launch",
+            "mainClass": "AverageWindow",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch BlendGenerateTimeSeries",
+            "request": "launch",
+            "mainClass": "BlendGenerateTimeSeries",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch BlendGetPairSum",
+            "request": "launch",
+            "mainClass": "BlendGetPairSum",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch BestTimeToBuyAndSellStock",
+            "request": "launch",
+            "mainClass": "Blind75.Arrays.BestTimeToBuyAndSellStock",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch ContainerWithMostWater",
+            "request": "launch",
+            "mainClass": "Blind75.Arrays.ContainerWithMostWater",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch ContainsDuplicate",
+            "request": "launch",
+            "mainClass": "Blind75.Arrays.ContainsDuplicate",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch FindMinimumInRotatedSortedArray",
+            "request": "launch",
+            "mainClass": "Blind75.Arrays.FindMinimumInRotatedSortedArray",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaximumProductSubarray",
+            "request": "launch",
+            "mainClass": "Blind75.Arrays.MaximumProductSubarray",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch MaximumSubarray",
+            "request": "launch",
+            "mainClass": "Blind75.Arrays.MaximumSubarray",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProductOfArrayExceptSelf",
+            "request": "launch",
+            "mainClass": "Blind75.Arrays.ProductOfArrayExceptSelf",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch SearchInRotatedSortedArray",
+            "request": "launch",
+            "mainClass": "Blind75.Arrays.SearchInRotatedSortedArray",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch ThreeSum",
+            "request": "launch",
+            "mainClass": "Blind75.Arrays.ThreeSum",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch TwoSum",
+            "request": "launch",
+            "mainClass": "Blind75.Arrays.TwoSum",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch ValidAnagram",
+            "request": "launch",
+            "mainClass": "Blind75.Arrays.ValidAnagram",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch ValidSudoku",
+            "request": "launch",
+            "mainClass": "Blind75.Arrays.ValidSudoku",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch NumberOfOneBits",
+            "request": "launch",
+            "mainClass": "Blind75.Binary.NumberOfOneBits",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch SumOfTwoIntegers",
+            "request": "launch",
+            "mainClass": "Blind75.Binary.SumOfTwoIntegers",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClimbingStairs",
+            "request": "launch",
+            "mainClass": "Blind75.DynamicProgramming.ClimbingStairs",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch CoinChange",
+            "request": "launch",
+            "mainClass": "Blind75.DynamicProgramming.CoinChange",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch CombinationSum",
+            "request": "launch",
+            "mainClass": "Blind75.DynamicProgramming.CombinationSum",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch HouseRobber",
+            "request": "launch",
+            "mainClass": "Blind75.DynamicProgramming.HouseRobber",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LongestCommonSubsequence",
+            "request": "launch",
+            "mainClass": "Blind75.DynamicProgramming.LongestCommonSubsequence",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LongestIncreasingSubsequence",
+            "request": "launch",
+            "mainClass": "Blind75.DynamicProgramming.LongestIncreasingSubsequence",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch WordBreak",
+            "request": "launch",
+            "mainClass": "Blind75.DynamicProgramming.WordBreak",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LongestConsecutiveSequence",
+            "request": "launch",
+            "mainClass": "Blind75.Graph.LongestConsecutiveSequence",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch NumberOfIslands",
+            "request": "launch",
+            "mainClass": "Blind75.Graph.NumberOfIslands",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch InsertInterval",
+            "request": "launch",
+            "mainClass": "Blind75.Interval.InsertInterval",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch MeetingRooms",
+            "request": "launch",
+            "mainClass": "Blind75.Interval.MeetingRooms",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReverseLinkedList",
+            "request": "launch",
+            "mainClass": "Blind75.LinkedList.ReverseLinkedList",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch SpiralMatrix",
+            "request": "launch",
+            "mainClass": "Blind75.Matrix.SpiralMatrix",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LongesRepeatingCharacterReplacement",
+            "request": "launch",
+            "mainClass": "Blind75.String.LongesRepeatingCharacterReplacement",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LongestSubstringWithoutRepeatingCharacter",
+            "request": "launch",
+            "mainClass": "Blind75.String.LongestSubstringWithoutRepeatingCharacter",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Graph",
+            "request": "launch",
+            "mainClass": "Graph",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Helix",
+            "request": "launch",
+            "mainClass": "Helix",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch KaratxWayfairInterview",
+            "request": "launch",
+            "mainClass": "KaratxWayfairInterview",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Knapsack",
+            "request": "launch",
+            "mainClass": "Knapsack",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE463IslandPerimeter",
+            "request": "launch",
+            "mainClass": "LCE463IslandPerimeter",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE680_ValidPalindromeII",
+            "request": "launch",
+            "mainClass": "LCE680_ValidPalindromeII",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_1046LastStoneWeight",
+            "request": "launch",
+            "mainClass": "LCE_1046LastStoneWeight",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_1047RemoveAllAdjacentDuplicateInString",
+            "request": "launch",
+            "mainClass": "LCE_1047RemoveAllAdjacentDuplicateInString",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_1047RemoveAllAdjacentDuplicatesInString",
+            "request": "launch",
+            "mainClass": "LCE_1047RemoveAllAdjacentDuplicatesInString",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_1189MaximumNumbersOfBalloons",
+            "request": "launch",
+            "mainClass": "LCE_1189MaximumNumbersOfBalloons",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_1331RankTransformOfAnArray",
+            "request": "launch",
+            "mainClass": "LCE_1331RankTransformOfAnArray",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_14LongestCommonPrefix",
+            "request": "launch",
+            "mainClass": "LCE_14LongestCommonPrefix",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_1539KthMissingPositiveNumber",
+            "request": "launch",
+            "mainClass": "LCE_1539KthMissingPositiveNumber",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_160RemoveDuplicatesFromSortedArray",
+            "request": "launch",
+            "mainClass": "LCE_160RemoveDuplicatesFromSortedArray",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_1614MaximumNestingDepthOfTheParentheses",
+            "request": "launch",
+            "mainClass": "LCE_1614MaximumNestingDepthOfTheParentheses",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_163MissingRanges",
+            "request": "launch",
+            "mainClass": "LCE_163MissingRanges",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_167TwoSumIIInputArrayIsSorted",
+            "request": "launch",
+            "mainClass": "LCE_167TwoSumIIInputArrayIsSorted",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_1941CheckIfAllCharactersHaveEqualNumberOfOccurences",
+            "request": "launch",
+            "mainClass": "LCE_1941CheckIfAllCharactersHaveEqualNumberOfOccurences",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_1twoSum",
+            "request": "launch",
+            "mainClass": "LCE_1twoSum",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_204CountPrimes",
+            "request": "launch",
+            "mainClass": "LCE_204CountPrimes",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_20ValidParentheses",
+            "request": "launch",
+            "mainClass": "LCE_20ValidParentheses",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_242ValidAnagram",
+            "request": "launch",
+            "mainClass": "LCE_242ValidAnagram",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_246StrobogrammaticNumber",
+            "request": "launch",
+            "mainClass": "LCE_246StrobogrammaticNumber",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_252MeetingRooms",
+            "request": "launch",
+            "mainClass": "LCE_252MeetingRooms",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_266PalindromePermutation",
+            "request": "launch",
+            "mainClass": "LCE_266PalindromePermutation",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_26RemoveDupicatesFromSortedArray",
+            "request": "launch",
+            "mainClass": "LCE_26RemoveDupicatesFromSortedArray",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_270ClosestBinarySearchTreeValue",
+            "request": "launch",
+            "mainClass": "LCE_270ClosestBinarySearchTreeValue",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_28StrStr",
+            "request": "launch",
+            "mainClass": "LCE_28StrStr",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_408ValidWordAbbreviation",
+            "request": "launch",
+            "mainClass": "LCE_408ValidWordAbbreviation",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_543DiameterOfBinaryTree",
+            "request": "launch",
+            "mainClass": "LCE_543DiameterOfBinaryTree",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_605CanPlaceFlowers",
+            "request": "launch",
+            "mainClass": "LCE_605CanPlaceFlowers",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_67AddBinary",
+            "request": "launch",
+            "mainClass": "LCE_67AddBinary",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_696CountBinarySubStrings",
+            "request": "launch",
+            "mainClass": "LCE_696CountBinarySubStrings",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_704BinarySearch",
+            "request": "launch",
+            "mainClass": "LCE_704BinarySearch",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_70ClimbingStairs",
+            "request": "launch",
+            "mainClass": "LCE_70ClimbingStairs",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_724FindPivotIndex",
+            "request": "launch",
+            "mainClass": "LCE_724FindPivotIndex",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_746MinCostClimbingStairs",
+            "request": "launch",
+            "mainClass": "LCE_746MinCostClimbingStairs",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_766ToeplitzMatrix",
+            "request": "launch",
+            "mainClass": "LCE_766ToeplitzMatrix",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_824GoatLatin",
+            "request": "launch",
+            "mainClass": "LCE_824GoatLatin",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_88MergeSortedArray",
+            "request": "launch",
+            "mainClass": "LCE_88MergeSortedArray",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_896MonotonicArray",
+            "request": "launch",
+            "mainClass": "LCE_896MonotonicArray",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_917ReverseOnlyLetters",
+            "request": "launch",
+            "mainClass": "LCE_917ReverseOnlyLetters",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_937ReorderDataInLogFile",
+            "request": "launch",
+            "mainClass": "LCE_937ReorderDataInLogFile",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_938RangeSumOfBST",
+            "request": "launch",
+            "mainClass": "LCE_938RangeSumOfBST",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_953VerifyingAnAlienDictionary",
+            "request": "launch",
+            "mainClass": "LCE_953VerifyingAnAlienDictionary",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_977SquaresOfASortedArray",
+            "request": "launch",
+            "mainClass": "LCE_977SquaresOfASortedArray",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCH301_RemoveInvalidParentheses",
+            "request": "launch",
+            "mainClass": "LCH301_RemoveInvalidParentheses",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCH_10RegularExpressionMatching",
+            "request": "launch",
+            "mainClass": "LCH_10RegularExpressionMatching",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCH_1153StringTransformIntoAnotherString",
+            "request": "launch",
+            "mainClass": "LCH_1153StringTransformIntoAnotherString",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCH_1216ValidPalindromeIII",
+            "request": "launch",
+            "mainClass": "LCH_1216ValidPalindromeIII",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCH_1293ShortestPathInAGridWIthObstaclesElimination",
+            "request": "launch",
+            "mainClass": "LCH_1293ShortestPathInAGridWIthObstaclesElimination",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCH_140WordBreakII",
+            "request": "launch",
+            "mainClass": "LCH_140WordBreakII",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCH_1499MaximumValueOfEquation",
+            "request": "launch",
+            "mainClass": "LCH_1499MaximumValueOfEquation",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCH_1610MaximumNuberOfVisiblePoints",
+            "request": "launch",
+            "mainClass": "LCH_1610MaximumNuberOfVisiblePoints",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCH_1610MaximumNumberOfVisiblePoints",
+            "request": "launch",
+            "mainClass": "LCH_1610MaximumNumberOfVisiblePoints",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCH_1776CarFleet2",
+            "request": "launch",
+            "mainClass": "LCH_1776CarFleet2",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCH_1944NumberOfVisiblesInAQueue",
+            "request": "launch",
+            "mainClass": "LCH_1944NumberOfVisiblesInAQueue",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCH_2076ProcessRestrictedFriendRequest",
+            "request": "launch",
+            "mainClass": "LCH_2076ProcessRestrictedFriendRequest",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCH_2272SubstringWithLargestVariance",
+            "request": "launch",
+            "mainClass": "LCH_2272SubstringWithLargestVariance",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCH_23MergedKSortedLists",
+            "request": "launch",
+            "mainClass": "LCH_23MergedKSortedLists",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCH_269AlienDictionary",
+            "request": "launch",
+            "mainClass": "LCH_269AlienDictionary",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCH_273IntegerToEnglishWords",
+            "request": "launch",
+            "mainClass": "LCH_273IntegerToEnglishWords",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCH_282ExpressionAddOperators",
+            "request": "launch",
+            "mainClass": "LCH_282ExpressionAddOperators",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCH_312BurstBalloons",
+            "request": "launch",
+            "mainClass": "LCH_312BurstBalloons",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCH_317ShortestDistanceFromAllBuildings",
+            "request": "launch",
+            "mainClass": "LCH_317ShortestDistanceFromAllBuildings",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCH_322ReconstrucItinerary",
+            "request": "launch",
+            "mainClass": "LCH_322ReconstrucItinerary",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCH_329LongestIncreasingPathInAMatrix",
+            "request": "launch",
+            "mainClass": "LCH_329LongestIncreasingPathInAMatrix",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCH_336PalindromePairs",
+            "request": "launch",
+            "mainClass": "LCH_336PalindromePairs",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCH_410SplitArrayLargestSum",
+            "request": "launch",
+            "mainClass": "LCH_410SplitArrayLargestSum",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCH_41FirstMissingPositiive",
+            "request": "launch",
+            "mainClass": "LCH_41FirstMissingPositiive",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCH_51NQueens",
+            "request": "launch",
+            "mainClass": "LCH_51NQueens",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCH_552StudenAttendanceRecordII",
+            "request": "launch",
+            "mainClass": "LCH_552StudenAttendanceRecordII",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCH_65ValidNumber",
+            "request": "launch",
+            "mainClass": "LCH_65ValidNumber",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCH_68TextJustification",
+            "request": "launch",
+            "mainClass": "LCH_68TextJustification",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCH_727MinimumWindowSubSequence",
+            "request": "launch",
+            "mainClass": "LCH_727MinimumWindowSubSequence",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCH_76MinimumWindowSubstring",
+            "request": "launch",
+            "mainClass": "LCH_76MinimumWindowSubstring",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCH_778SwimInRisingWater",
+            "request": "launch",
+            "mainClass": "LCH_778SwimInRisingWater",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCH_827MakingALargeIsland",
+            "request": "launch",
+            "mainClass": "LCH_827MakingALargeIsland",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM1525_NumberOfGoodWaysToSplitAString",
+            "request": "launch",
+            "mainClass": "LCM1525_NumberOfGoodWaysToSplitAString",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM1762_BuidingsWithAnOceanView",
+            "request": "launch",
+            "mainClass": "LCM1762_BuidingsWithAnOceanView",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM1834_SingleThreadedCPU",
+            "request": "launch",
+            "mainClass": "LCM1834_SingleThreadedCPU",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM55_JumpGame",
+            "request": "launch",
+            "mainClass": "LCM55_JumpGame",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM62_UniquePaths",
+            "request": "launch",
+            "mainClass": "LCM62_UniquePaths",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM690_EmployeeImportance",
+            "request": "launch",
+            "mainClass": "LCM690_EmployeeImportance",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM735_AsteroidCollision",
+            "request": "launch",
+            "mainClass": "LCM735_AsteroidCollision",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM90_subsets2",
+            "request": "launch",
+            "mainClass": "LCM90_subsets2",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM954_ArrayOfDoubledPairs",
+            "request": "launch",
+            "mainClass": "LCM954_ArrayOfDoubledPairs",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_1004MaxConsecutiveOnesIII",
+            "request": "launch",
+            "mainClass": "LCM_1004MaxConsecutiveOnesIII",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_1007MinimumDominoRotationsForEqualRow",
+            "request": "launch",
+            "mainClass": "LCM_1007MinimumDominoRotationsForEqualRow",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_1010PairsOfSongsWithTotalDurationDivisibleBy60",
+            "request": "launch",
+            "mainClass": "LCM_1010PairsOfSongsWithTotalDurationDivisibleBy60",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_1011CapacityToShipWithinDDays",
+            "request": "launch",
+            "mainClass": "LCM_1011CapacityToShipWithinDDays",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_102BinaryTreeLevelOrderTraversal",
+            "request": "launch",
+            "mainClass": "LCM_102BinaryTreeLevelOrderTraversal",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_1041RobotBoundedInCircle",
+            "request": "launch",
+            "mainClass": "LCM_1041RobotBoundedInCircle",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_1048LongestStringChain",
+            "request": "launch",
+            "mainClass": "LCM_1048LongestStringChain",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_1060MissingElementInSortedArray",
+            "request": "launch",
+            "mainClass": "LCM_1060MissingElementInSortedArray",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_1091ShortestPathInBinaryMatrix",
+            "request": "launch",
+            "mainClass": "LCM_1091ShortestPathInBinaryMatrix",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_1094CarPooling",
+            "request": "launch",
+            "mainClass": "LCM_1094CarPooling",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_1139AlphabelBoardPath",
+            "request": "launch",
+            "mainClass": "LCM_1139AlphabelBoardPath",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_1209RemoveAllAdjacentDuplicatesInStringII",
+            "request": "launch",
+            "mainClass": "LCM_1209RemoveAllAdjacentDuplicatesInStringII",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_1218LongestArithmeticSubSequenceOfGivenDifference",
+            "request": "launch",
+            "mainClass": "LCM_1218LongestArithmeticSubSequenceOfGivenDifference",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_1249MinimumReMoveToMakeValidParentheses",
+            "request": "launch",
+            "mainClass": "LCM_1249MinimumReMoveToMakeValidParentheses",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_1277CountSquareSubmatricesWithAllOnes",
+            "request": "launch",
+            "mainClass": "LCM_1277CountSquareSubmatricesWithAllOnes",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_128LongestConsecutiveSequence",
+            "request": "launch",
+            "mainClass": "LCM_128LongestConsecutiveSequence",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_129SumRootToLeafNumbers",
+            "request": "launch",
+            "mainClass": "LCM_129SumRootToLeafNumbers",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_12IntegerToRoman",
+            "request": "launch",
+            "mainClass": "LCM_12IntegerToRoman",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_1344AngleBetweenHandsOfClock",
+            "request": "launch",
+            "mainClass": "LCM_1344AngleBetweenHandsOfClock",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_1366RankTeamsByVotes",
+            "request": "launch",
+            "mainClass": "LCM_1366RankTeamsByVotes",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_139WordBreak",
+            "request": "launch",
+            "mainClass": "LCM_139WordBreak",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_1509MinimumDifferenceBetweenLargestAndSmallestValueInThreeMoves",
+            "request": "launch",
+            "mainClass": "LCM_1509MinimumDifferenceBetweenLargestAndSmallestValueInThreeMoves",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_150EvaluateReversePolishNotation",
+            "request": "launch",
+            "mainClass": "LCM_150EvaluateReversePolishNotation",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_1554StringsDifferByOneCharacter",
+            "request": "launch",
+            "mainClass": "LCM_1554StringsDifferByOneCharacter",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_162FindPeakElement",
+            "request": "launch",
+            "mainClass": "LCM_162FindPeakElement",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_1650LowestCommonAncestorIII",
+            "request": "launch",
+            "mainClass": "LCM_1650LowestCommonAncestorIII",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_16ThreeSumClosest",
+            "request": "launch",
+            "mainClass": "LCM_16ThreeSumClosest",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_1877MinimizeMaximumPairSumInArray",
+            "request": "launch",
+            "mainClass": "LCM_1877MinimizeMaximumPairSumInArray",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_1891CuttingRibbons",
+            "request": "launch",
+            "mainClass": "LCM_1891CuttingRibbons",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_18FourSum",
+            "request": "launch",
+            "mainClass": "LCM_18FourSum",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_1922FindAllGroupsOfFarmLand",
+            "request": "launch",
+            "mainClass": "LCM_1922FindAllGroupsOfFarmLand",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_1937MaximumNumberOfPointsWithCost",
+            "request": "launch",
+            "mainClass": "LCM_1937MaximumNumberOfPointsWithCost",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_2007FindOriginalArrayFromDoubledArray",
+            "request": "launch",
+            "mainClass": "LCM_2007FindOriginalArrayFromDoubledArray",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_200NumberOfIslands",
+            "request": "launch",
+            "mainClass": "LCM_200NumberOfIslands",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_207CourseSchedule",
+            "request": "launch",
+            "mainClass": "LCM_207CourseSchedule",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_2128RemoveAllOnesWIthRowAndColumnFlips",
+            "request": "launch",
+            "mainClass": "LCM_2128RemoveAllOnesWIthRowAndColumnFlips",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_215FindKthLargestElementInArray",
+            "request": "launch",
+            "mainClass": "LCM_215FindKthLargestElementInArray",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_227BasicCalculatorII",
+            "request": "launch",
+            "mainClass": "LCM_227BasicCalculatorII",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_22GenerateParentheses",
+            "request": "launch",
+            "mainClass": "LCM_22GenerateParentheses",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_238ProductOfArrayExceptSelf",
+            "request": "launch",
+            "mainClass": "LCM_238ProductOfArrayExceptSelf",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_249GroupShiftedStrings",
+            "request": "launch",
+            "mainClass": "LCM_249GroupShiftedStrings",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_253MeetingRooms2",
+            "request": "launch",
+            "mainClass": "LCM_253MeetingRooms2",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_299BullsAndCows",
+            "request": "launch",
+            "mainClass": "LCM_299BullsAndCows",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_300LongestIncreasingSubsequence",
+            "request": "launch",
+            "mainClass": "LCM_300LongestIncreasingSubsequence",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_311SparseMatrixMultiplication",
+            "request": "launch",
+            "mainClass": "LCM_311SparseMatrixMultiplication",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_314BinaryTreeVerticalOrderTraversal",
+            "request": "launch",
+            "mainClass": "LCM_314BinaryTreeVerticalOrderTraversal",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_31NextPermutation",
+            "request": "launch",
+            "mainClass": "LCM_31NextPermutation",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_322CoinChange",
+            "request": "launch",
+            "mainClass": "LCM_322CoinChange",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_322ReconstructItinerary",
+            "request": "launch",
+            "mainClass": "LCM_322ReconstructItinerary",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_325MaximumSizeSumEqualsK",
+            "request": "launch",
+            "mainClass": "LCM_325MaximumSizeSumEqualsK",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_347TopKFrequentElements",
+            "request": "launch",
+            "mainClass": "LCM_347TopKFrequentElements",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_34FindFirstAndLastPositionOfElementInSortedArray",
+            "request": "launch",
+            "mainClass": "LCM_34FindFirstAndLastPositionOfElementInSortedArray",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_366FindLeavesOfBinaryTree",
+            "request": "launch",
+            "mainClass": "LCM_366FindLeavesOfBinaryTree",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_384ShuffleAnArray",
+            "request": "launch",
+            "mainClass": "LCM_384ShuffleAnArray",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_394DecodeString",
+            "request": "launch",
+            "mainClass": "LCM_394DecodeString",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_3ThreeSum",
+            "request": "launch",
+            "mainClass": "LCM_3ThreeSum",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_402RemoveKDigits",
+            "request": "launch",
+            "mainClass": "LCM_402RemoveKDigits",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_416PartitionEqualSubsetSum",
+            "request": "launch",
+            "mainClass": "LCM_416PartitionEqualSubsetSum",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_418SentenceScreenFitting",
+            "request": "launch",
+            "mainClass": "LCM_418SentenceScreenFitting",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_424LongestRepeatingCharacterReplacement",
+            "request": "launch",
+            "mainClass": "LCM_424LongestRepeatingCharacterReplacement",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_438FindAllAnagramsInAString",
+            "request": "launch",
+            "mainClass": "LCM_438FindAllAnagramsInAString",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_43MultiplyString",
+            "request": "launch",
+            "mainClass": "LCM_43MultiplyString",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_442FindAllDuplicatesInAnArray",
+            "request": "launch",
+            "mainClass": "LCM_442FindAllDuplicatesInAnArray",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_447NumberOfBoomerangs",
+            "request": "launch",
+            "mainClass": "LCM_447NumberOfBoomerangs",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_456132Pattern",
+            "request": "launch",
+            "mainClass": "LCM_456132Pattern",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_46Permutations",
+            "request": "launch",
+            "mainClass": "LCM_46Permutations",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_47PermutationsII",
+            "request": "launch",
+            "mainClass": "LCM_47PermutationsII",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_48RotateImage",
+            "request": "launch",
+            "mainClass": "LCM_48RotateImage",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_494TargetSum",
+            "request": "launch",
+            "mainClass": "LCM_494TargetSum",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_498DiagonalTraverse",
+            "request": "launch",
+            "mainClass": "LCM_498DiagonalTraverse",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_49GroupAnagrams",
+            "request": "launch",
+            "mainClass": "LCM_49GroupAnagrams",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_503NextGreaterElementII",
+            "request": "launch",
+            "mainClass": "LCM_503NextGreaterElementII",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_518CoinChange2",
+            "request": "launch",
+            "mainClass": "LCM_518CoinChange2",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_523ContinuousSubArraySum",
+            "request": "launch",
+            "mainClass": "LCM_523ContinuousSubArraySum",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_525ContiguousArray",
+            "request": "launch",
+            "mainClass": "LCM_525ContiguousArray",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_556NextGreaterElementIII",
+            "request": "launch",
+            "mainClass": "LCM_556NextGreaterElementIII",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_560SubarraySumEqualsK",
+            "request": "launch",
+            "mainClass": "LCM_560SubarraySumEqualsK",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_567PermutationInString",
+            "request": "launch",
+            "mainClass": "LCM_567PermutationInString",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_56MergeIntervals",
+            "request": "launch",
+            "mainClass": "LCM_56MergeIntervals",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_57InsertInterval",
+            "request": "launch",
+            "mainClass": "LCM_57InsertInterval",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_5LongestPalindromicSubstring",
+            "request": "launch",
+            "mainClass": "LCM_5LongestPalindromicSubstring",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_609FindDuplicateFileInSystem",
+            "request": "launch",
+            "mainClass": "LCM_609FindDuplicateFileInSystem",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_616AddBoldTagInString",
+            "request": "launch",
+            "mainClass": "LCM_616AddBoldTagInString",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_636ExclusiveTimeOffFunctions",
+            "request": "launch",
+            "mainClass": "LCM_636ExclusiveTimeOffFunctions",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_63UniquePathsII",
+            "request": "launch",
+            "mainClass": "LCM_63UniquePathsII",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_647PalindromicSubStrings",
+            "request": "launch",
+            "mainClass": "LCM_647PalindromicSubStrings",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_652FindDuplicateSubtrees",
+            "request": "launch",
+            "mainClass": "LCM_652FindDuplicateSubtrees",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_658FindKClosestElements",
+            "request": "launch",
+            "mainClass": "LCM_658FindKClosestElements",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_670MaximumSwap",
+            "request": "launch",
+            "mainClass": "LCM_670MaximumSwap",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_678ValidParenthesisString",
+            "request": "launch",
+            "mainClass": "LCM_678ValidParenthesisString",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_692TopKFrequentWords",
+            "request": "launch",
+            "mainClass": "LCM_692TopKFrequentWords",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_695MaxAreaOfIsland",
+            "request": "launch",
+            "mainClass": "LCM_695MaxAreaOfIsland",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_71SimplifyPath",
+            "request": "launch",
+            "mainClass": "LCM_71SimplifyPath",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_720LongesWordInDictionary",
+            "request": "launch",
+            "mainClass": "LCM_720LongesWordInDictionary",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_721AccountsMerge",
+            "request": "launch",
+            "mainClass": "LCM_721AccountsMerge",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_739DailyTemperatures",
+            "request": "launch",
+            "mainClass": "LCM_739DailyTemperatures",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_743NetWorkDelayTime",
+            "request": "launch",
+            "mainClass": "LCM_743NetWorkDelayTime",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_752OpenTheLock",
+            "request": "launch",
+            "mainClass": "LCM_752OpenTheLock",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_75SortColors",
+            "request": "launch",
+            "mainClass": "LCM_75SortColors",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_763PartitionLabels",
+            "request": "launch",
+            "mainClass": "LCM_763PartitionLabels",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_777SwapAdjacentInLRString",
+            "request": "launch",
+            "mainClass": "LCM_777SwapAdjacentInLRString",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_77Combinations",
+            "request": "launch",
+            "mainClass": "LCM_77Combinations",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_78Subsets",
+            "request": "launch",
+            "mainClass": "LCM_78Subsets",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_791CustomSortString",
+            "request": "launch",
+            "mainClass": "LCM_791CustomSortString",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_792NumberOfMatchingSubsequences",
+            "request": "launch",
+            "mainClass": "LCM_792NumberOfMatchingSubsequences",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_79WordSearch",
+            "request": "launch",
+            "mainClass": "LCM_79WordSearch",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_825FriendsOfAppropriateAges",
+            "request": "launch",
+            "mainClass": "LCM_825FriendsOfAppropriateAges",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_833FindAndReplaceInString",
+            "request": "launch",
+            "mainClass": "LCM_833FindAndReplaceInString",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_853CarFleet",
+            "request": "launch",
+            "mainClass": "LCM_853CarFleet",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_875KokoEatingBananas",
+            "request": "launch",
+            "mainClass": "LCM_875KokoEatingBananas",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_8StringToIntegerATOI",
+            "request": "launch",
+            "mainClass": "LCM_8StringToIntegerATOI",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_91DecodeWays",
+            "request": "launch",
+            "mainClass": "LCM_91DecodeWays",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_921MinimumAddToMakeParenthesesValid",
+            "request": "launch",
+            "mainClass": "LCM_921MinimumAddToMakeParenthesesValid",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_921MinimumAddToiMakeParenthesesValid",
+            "request": "launch",
+            "mainClass": "LCM_921MinimumAddToiMakeParenthesesValid",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_934ShortestBridge",
+            "request": "launch",
+            "mainClass": "LCM_934ShortestBridge",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_939MinimumAreaRectangle",
+            "request": "launch",
+            "mainClass": "LCM_939MinimumAreaRectangle",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_973KClosestPointsToOrigin",
+            "request": "launch",
+            "mainClass": "LCM_973KClosestPointsToOrigin",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_97InterleavingString",
+            "request": "launch",
+            "mainClass": "LCM_97InterleavingString",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_983MinimumCostForTickets",
+            "request": "launch",
+            "mainClass": "LCM_983MinimumCostForTickets",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_994RottingOranges",
+            "request": "launch",
+            "mainClass": "LCM_994RottingOranges",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Leetcode",
+            "request": "launch",
+            "mainClass": "Leetcode",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch LinkedLists",
+            "request": "launch",
+            "mainClass": "LinkedLists",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch MergeTwoIntervalLists",
+            "request": "launch",
+            "mainClass": "MergeTwoIntervalLists",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch MicrosoftPhoneScreen",
+            "request": "launch",
+            "mainClass": "MicrosoftPhoneScreen",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch MissingNumber",
+            "request": "launch",
+            "mainClass": "MissingNumber",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch MoveiesOnFlight",
+            "request": "launch",
+            "mainClass": "MoveiesOnFlight",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch MoviesOnFlight",
+            "request": "launch",
+            "mainClass": "MoviesOnFlight",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch MyQueue",
+            "request": "launch",
+            "mainClass": "MyQueue",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Partition",
+            "request": "launch",
+            "mainClass": "Partition",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Prime",
+            "request": "launch",
+            "mainClass": "Prime",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch Qualtrics",
+            "request": "launch",
+            "mainClass": "Qualtrics",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch QualtricsPhoneScreen1",
+            "request": "launch",
+            "mainClass": "QualtricsPhoneScreen1",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch QualtricsPhoneScreen2",
+            "request": "launch",
+            "mainClass": "QualtricsPhoneScreen2",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch QualtricsPhoneScreen4",
+            "request": "launch",
+            "mainClass": "QualtricsPhoneScreen4",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch QualtricsPhoneScreen5",
+            "request": "launch",
+            "mainClass": "QualtricsPhoneScreen5",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch QuickSort",
+            "request": "launch",
+            "mainClass": "QuickSort",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch UserLogsEarliestAndLatestWayfair",
+            "request": "launch",
+            "mainClass": "UserLogsEarliestAndLatestWayfair",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch ValidPalindrome",
+            "request": "launch",
+            "mainClass": "ValidPalindrome",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch facebookInterviewQuesitonOne_092020",
+            "request": "launch",
+            "mainClass": "facebookInterviewQuesitonOne_092020",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        },
+        {
+            "type": "java",
+            "name": "Launch metaPhoneScreenEvaluateExpression",
+            "request": "launch",
+            "mainClass": "metaPhoneScreenEvaluateExpression",
+            "projectName": "DataStructuresandAlgorithm_2fc920bd"
+        }
+    ]
+}
