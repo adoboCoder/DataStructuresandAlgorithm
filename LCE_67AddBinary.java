@@ -27,6 +27,6 @@ class LCE_67AddBinary{
     }
 
     public static void main(String[] args) {
-        System.out.println(LCE_67AddBinary.addBinary("001","110"));
+        System.out.println(LCE_67AddBinary.addBinary("1","1"));
     }
 }
