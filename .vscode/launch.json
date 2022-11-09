@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch LCH_10RegularExpressionMatching",
+            "request": "launch",
+            "mainClass": "LCH_10RegularExpressionMatching",
+            "projectName": "DataStructuresandAlgorithm_8d00359"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_17LetterCombinationsOfAPhoneNumber",
+            "request": "launch",
+            "mainClass": "LCM_17LetterCombinationsOfAPhoneNumber",
+            "projectName": "DataStructuresandAlgorithm_8d00359"
+        },
+        {
+            "type": "java",
+            "name": "Launch Leetcode",
+            "request": "launch",
+            "mainClass": "Leetcode",
+            "projectName": "DataStructuresandAlgorithm_8d00359"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCE_20ValidParentheses",
+            "request": "launch",
+            "mainClass": "LCE_20ValidParentheses",
+            "projectName": "DataStructuresandAlgorithm_8d00359"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
