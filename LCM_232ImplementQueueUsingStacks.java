@@ -1,19 +1,20 @@
 import java.util.Arrays;
 import java.util.Stack;
+
 class MyQueue {
     private Stack<Integer> s1 = new Stack<>();
     private Stack<Integer> s2 = new Stack<>();
 
     /** Initialize your data structure here. */
     public MyQueue() {
-        
+
     }
-    
+
     /** Push element x to the back of queue. */
     public void push(int x) {
         s1.push(x);
     }
-    
+
     /** Removes the element from in front of queue and returns that element. */
     public int pop() {
         if (s2.isEmpty()) {
@@ -22,7 +23,7 @@ class MyQueue {
         }
         return s2.pop();
     }
-    
+
     /** Get the front element. */
     public int peek() {
         if (!s2.isEmpty()) {
@@ -33,7 +34,7 @@ class MyQueue {
         }
         return s2.peek();
     }
-    
+
     /** Returns whether the queue is empty. */
     public boolean empty() {
         return s1.isEmpty() && s2.isEmpty();
@@ -47,7 +48,7 @@ class MyQueue {
         q.push(4);
         q.pop();
 
-        while(!q.empty()){
+        while (!q.empty()) {
             System.out.println(q.pop());
         }
 
