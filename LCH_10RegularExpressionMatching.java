@@ -6,34 +6,43 @@ class LCH_10RegularExpressionMatching {
     }
 
     private static boolean dfs(boolean[][] cache, String s, String p, int i, int j) {
-        if (cache[i][j] != false) return cache[i][j];
+        if (cache[i][j] != false)
+            return cache[i][j];
 
-        if (i >= s.length() && j >= p.length()) return true;
+        if (i >= s.length() && j >= p.length())
+            return true;
 
-        if (j >= p.length()) return false;
+        if (j >= p.length())
+            return false;
 
         boolean match = i < s.length() && (s.charAt(i) == p.charAt(j) || p.charAt(j) == '.');
 
         if (j + 1 < p.length() && p.charAt(j + 1) == '*') {
-            cache[i][j] =
-                dfs(cache, s, p, i, j + 2) || //dont use *
-                (match && dfs(cache, s, p, i + 1, j)); //use *
+            cache[i][j] = dfs(cache, s, p, i, j + 2) || // dont use *
+                    (match && dfs(cache, s, p, i + 1, j)); // use *
         } else {
             cache[i][j] = match && dfs(cache, s, p, i + 1, j + 1);
         }
 
         return cache[i][j];
-    } //top down Memoization
+    } // top down Memoization
+
     public static void main(String[] args) {
         String s = "mississippi";
         String p = "mis*is*p*.";
-        System.out.println(LCH_10RegularExpressionMatching.isMatch(s,p));
+        System.out.println(LCH_10RegularExpressionMatching.isMatch(s, p));
         s = "aaaaaaaaaa";
         p = "a*";
-        System.out.println(LCH_10RegularExpressionMatching.isMatch(s,p));
-        s = "abff";
-        p = ".f*";
-        System.out.println(LCH_10RegularExpressionMatching.isMatch(s,p));
+        System.out.println(LCH_10RegularExpressionMatching.isMatch(s, p));
+        s = "ab";
+        p = ".b";
+        System.out.println(LCH_10RegularExpressionMatching.isMatch(s, p));
+        s = "abbb";
+        p = ".*";
+        System.out.println(LCH_10RegularExpressionMatching.isMatch(s, p));
+        s = "bbb";
+        p = "*";
+        System.out.println(LCH_10RegularExpressionMatching.isMatch(s, p));
     }
 }
 
