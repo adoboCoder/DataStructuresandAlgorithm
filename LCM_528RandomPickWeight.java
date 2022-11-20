@@ -1,32 +1,33 @@
 import java.util.*;
+
 class Solution {
     private int[] prefixSum;
     private int sum;
-    
+
     public Solution(int[] w) {
         sum = 0;
         prefixSum = new int[w.length];
-        for(int i = 0; i < w.length; i++) {
+        for (int i = 0; i < w.length; i++) {
             sum = sum + w[i];
             prefixSum[i] = sum;
         }
     }
-    
+
     public int pickIndex() {
         int left = 0;
         int right = prefixSum.length - 1;
         double rand = (new Random().nextDouble()) * sum;
-        
-        while(left < right) {
+
+        while (left < right) {
             int mid = left + (right - left) / 2;
-            if(rand > prefixSum[mid]) {
+            if (rand > prefixSum[mid]) {
                 left = mid + 1;
-            }
-            else {
+            } else {
                 right = mid;
             }
         }
         return left;
+
     }
 }
 
