@@ -1,27 +1,27 @@
 class LCM_97InterleavingString {
     public static boolean isInterleave(String s1, String s2, String s3) {
-        char[] c1 = s1.toCharArray();
-        char[] c2 = s2.toCharArray();
-        char[] c3 = s3.toCharArray();
+        if (s1.length() + s2.length() != s3.length()) {
+            return false;
+        }
 
-        int m = s1.length();
-        int n = s2.length();
+        boolean[][] dp = new boolean[s1.length() + 1][s2.length() + 1];
+        dp[s1.length()][s2.length()] = true;
 
-        if(m + n != s3.length()) return false;
-        return dfs(c1, c2, c3, 0, 0, 0, new boolean [m + 1][n + 1]);
+        for (int i = dp.length - 1; i >= 0; i--) {
+            for (int j = dp[0].length - 1; j >= 0; j--) {
+                if (i < s1.length() && s1.charAt(i) == s3.charAt(i + j) && dp[i + 1][j]) {
+                    dp[i][j] = true;
+                }
+                if (j < s2.length() && s2.charAt(j) == s3.charAt(i + j) && dp[i][j + 1]) {
+                    dp[i][j] = true;
+                }
+            }
+        }
+
+        return dp[0][0];
     }
-
-    private static boolean dfs(char[] c1, char[] c2, char[] c3, int i, int j, int k, boolean [][] dp) {
-        if(dp[i][j]) return false;
-        if(k == c3.length) return true;
-        boolean valid = i < c1.length && c1[i] == c3[k] && dfs(c1, c2, c3, i + 1, j, k + 1, dp) || 
-                        j < c2.length && c2[j] == c3[k] && dfs(c1, c2, c3, i, j + 1, k + 1, dp);
-
-        if(!valid) dp[i][j] = true;
-        return valid;
-    }
-    //TC O(m*n)
-    //SC O(m+n)
+    // TC O(m*n)
+    // SC O(m+n)
 
     public static void main(String[] args) {
         String s1 = "aabcc";
