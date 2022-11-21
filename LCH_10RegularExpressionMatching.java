@@ -26,6 +26,8 @@ class LCH_10RegularExpressionMatching {
 
         return cache[i][j];
     } // top down Memoization
+      // TC O(N*M)
+      // SC O(N*M)
 
     public static void main(String[] args) {
         String s = "mississippi";
