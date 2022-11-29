@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch LCM_1615MaximalNetworkRank",
+            "request": "launch",
+            "mainClass": "LCM_1615MaximalNetworkRank",
+            "projectName": "DataStructuresandAlgorithm_8d00359"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_518CoinChange2",
+            "request": "launch",
+            "mainClass": "LCM_518CoinChange2",
+            "projectName": "DataStructuresandAlgorithm_8d00359"
+        },
+        {
+            "type": "java",
             "name": "Launch MyQueue",
             "request": "launch",
             "mainClass": "MyQueue",
