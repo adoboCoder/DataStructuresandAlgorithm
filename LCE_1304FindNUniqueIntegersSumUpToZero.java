@@ -18,7 +18,7 @@ class LCE_1304FindNUniqueIntegersSumUpToZero {
     public static void main(String[] args) {
         int n = 5;
         System.out.println(Arrays.toString(LCE_1304FindNUniqueIntegersSumUpToZero.findSumZero(n)));
-        n = 7;
+        n = 8;
         System.out.println(Arrays.toString(LCE_1304FindNUniqueIntegersSumUpToZero.findSumZero(n)));
     }
 }
