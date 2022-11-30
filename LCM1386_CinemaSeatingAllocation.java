@@ -47,6 +47,5 @@ class LCM1386_CinemaSeatingAllocation {
         int[][] seats1 = { { 4, 3 }, { 1, 4 }, { 4, 6 }, { 1, 7 } };
         n = 4;
         System.out.println(LCM1386_CinemaSeatingAllocation.maxNumberOfFamilies(n, seats1));
-
     }
 }
