@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch LCM1386_CinemaSeatingAllocation",
+            "request": "launch",
+            "mainClass": "LCM1386_CinemaSeatingAllocation",
+            "projectName": "DataStructuresandAlgorithm_8d00359"
+        },
+        {
+            "type": "java",
             "name": "Launch LCE_1304FindNUniqueIntegersSumUpToZero",
             "request": "launch",
             "mainClass": "LCE_1304FindNUniqueIntegersSumUpToZero",
