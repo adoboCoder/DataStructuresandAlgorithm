@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch LCM_1647MinimumDeletionstoMakeCharacterFrequenciesUnique",
+            "request": "launch",
+            "mainClass": "LCM_1647MinimumDeletionstoMakeCharacterFrequenciesUnique",
+            "projectName": "DataStructuresandAlgorithm_8d00359"
+        },
+        {
+            "type": "java",
             "name": "Launch LCM_453MinimumMovesToEqualArrayElements",
             "request": "launch",
             "mainClass": "LCM_453MinimumMovesToEqualArrayElements",
