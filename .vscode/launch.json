@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch LCM1404_NumberOfStepsToReduceANumberInBinaryRepresentationToOne",
+            "request": "launch",
+            "mainClass": "LCM1404_NumberOfStepsToReduceANumberInBinaryRepresentationToOne",
+            "projectName": "DataStructuresandAlgorithm_8d00359"
+        },
+        {
+            "type": "java",
             "name": "Launch LCM_1405LongestHappyString",
             "request": "launch",
             "mainClass": "LCM_1405LongestHappyString",
