@@ -1,21 +1,27 @@
 import java.util.*;
 
-class Solution{
-    public int minDeletions(String s){
-        int[] freqCount = new int[26];
-        int count = 0;
+class LCM_1647MinimumDeletionstoMakeCharacterFrequenciesUnique {
+    public static int minDeletions(String s) {
+        int[] freq = new int[26];
+        for (char c : s.toCharArray()) {
+            freq[c - 'a']++;
+        }
 
-        for(char c : s.toCharArray()){
-            freqCount[c - 'a']++;
+        Arrays.sort(freq);
+        int keep = freq[25];
+        int prev = keep;
+
+        for (int i = 24; i >= 0 && freq[i] != 0 && prev != 0; i--) {
+            prev = Math.min(freq[i], prev - 1);
+            keep += prev;
         }
-        Set<Integer> hs = new HashSet<>();
-        for(int i : freqCount){
-            while(i != 0 && hs.contains(i)){
-                i--;
-                count++;
-            }
-            hs.add(i);
-        }
-        return count;
+
+        return s.length() - keep;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(LCM_1647MinimumDeletionstoMakeCharacterFrequenciesUnique.minDeletions("aab"));
+        System.out.println(LCM_1647MinimumDeletionstoMakeCharacterFrequenciesUnique.minDeletions("aaabbbcc"));
+        System.out.println(LCM_1647MinimumDeletionstoMakeCharacterFrequenciesUnique.minDeletions("ceabaacb"));
     }
 }
