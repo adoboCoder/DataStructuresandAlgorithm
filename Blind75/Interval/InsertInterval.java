@@ -24,5 +24,8 @@ public class InsertInterval {
         int[][] intervals = {{1, 3}, {6, 9}};
         int[] newInterval = {1, 5};
         System.out.println(Arrays.deepToString(InsertInterval.insert(intervals, newInterval)));
+        int[][] intervals1 = {{1,2},{3,5},{6,7},{8,10},{12,16}};
+        int[] newInterval1 = {4, 8};
+        System.out.println(Arrays.deepToString(InsertInterval.insert(intervals1, newInterval1)));
     }
 }

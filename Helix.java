@@ -1,3 +1,4 @@
+
 /*
  * Protein Synthesis is the process of generating proteins from information coded in our genes. It is a multi step process, whereby the input DNA string is transcribed to produce messenger RNA (mRNA), then the mRNA is translated to produce amino acids. The concatenation of the resulting amino acids results in the protein.
 
@@ -41,94 +42,60 @@ DNA -> mRNA -> Codon -> Amino Acid ?
 
 AUGUUUG
  */
-
-import java.io.*;
-import java.util.*;
-
-/*
- * To execute Java, please define "static void main" on a class
- * named Solution.
- *
- * If you need more classes, simply define them inline.
- */
+import java.util.HashMap;
+import java.util.Map;
 
 class Helix {
-    public static void main(String[] args) {
-        String s = "ATGTTTGTAUAATATTAG";
-        String codon = Helix.convertToCodon(s);
-        System.out.println(codon);
-        System.out.println("");
-        String protein = Helix.convertToProtein(codon);
-        System.out.println(protein);
-    }
-    public static String convertToCodon(String s) {
-        StringBuilder sb = new StringBuilder();
-        if(s == null || s.length() == 0) {
+    public static String proteinSynthesis(String dna) {
+        // Initialize the codon -> amino acid lookup table
+        Map<String, String> codonTable = new HashMap<>();
+        codonTable.put("AUG", "Met");
+        codonTable.put("UUU", "Phe");
+        codonTable.put("GUA", "Val");
+        codonTable.put("UAU", "Tyr");
+        codonTable.put("CGU", "Arg");
+        codonTable.put("AAG", "Lys");
+        // Add more codons and amino acids here
+
+        // Check if the DNA string is valid
+        if (!dna.matches("[ACTG]+")) {
             return "";
         }
-        Set<Character> set = new HashSet<>(Arrays.asList('A', 'C', 'T', 'G'));
-        
-        for(char c : s.toCharArray()) {
-            if(!set.contains(c)) return "";
-            else {
-                if(c == 'A') {
-                    sb.append('A');
-                }
-                else if (c == 'C') {
-                    sb.append('C');
-                }
-                else if (c == 'T') {
-                    sb.append('U');
-                }
-                else if (c == 'G') {
-                    sb.append('G');
-                }
-                
+
+        // Check if the DNA string has a valid length
+        if (dna.length() % 3 != 0) {
+            return "";
+        }
+
+        // Transcribe the DNA string to produce the mRNA string
+        String mrna = dna.replace('A', 'A').replace('T', 'U').replace('C', 'C').replace('G', 'G');
+
+        // Find the start codon in the mRNA string
+        int startCodonIdx = mrna.indexOf("AUG");
+        if (startCodonIdx == -1) {
+            return "";
+        }
+
+        // Translate the mRNA string to produce the encoded protein string
+        String protein = "";
+        for (int i = startCodonIdx; i < mrna.length(); i += 3) {
+            String codon = mrna.substring(i, i + 3);
+            if (codonTable.containsKey(codon)) {
+                protein += codonTable.get(codon);
+            } else if (codon.equals("UAA") || codon.equals("UAG") || codon.equals("UGA")) {
+                break;
             }
         }
-        return sb.toString();
+        return protein;
     }
 
-    public static String convertToProtein(String s) {
-        if(s.length() % 3 != 0) return "String is not divisble by 3";
-        StringBuilder sb = new StringBuilder();
-
-        for(int i = 0; i < s.length(); i += 3) {
-            String codon = s.substring(i, i + 3);
-            if(codon.equals("AUG")) {
-                sb.append("Met");
-                sb.append(" ");
-            }
-            else if(codon.equals("UUU")) {
-                sb.append("Phe");
-                sb.append(" ");
-            }
-            else if(codon.equals("GUA")){
-                sb.append("Val");
-                sb.append(" ");
-            }
-            else if(codon.equals("UAU")) {
-                sb.append("Tyr");
-                sb.append(" ");
-            }
-            else if(codon.equals("CGU")) {
-                sb.append("Arg");
-                sb.append(" ");
-            }
-            else if(codon.equals("AAG")) {
-                sb.append("Lys");
-                sb.append(" ");
-            }
-            else if(codon.equals("UAA")) {
-                break;
-            }
-            else if(codon.equals("UAG")) {
-                break;
-            }
-            else if(codon.equals("UGA")) {
-                break;
-            }
-        } 
-        return sb.toString().trim();
+    public static void main(String[] args) {
+        System.out.println(Helix.proteinSynthesis("ATGAAG"));
     }
 }
+// // Test the proteinSynthesis function
+// ProteinSynthesis ps = new ProteinSynthesis();
+// assert ps.proteinSynthesis("ATGAAG").equals("MetLys");
+// assert ps.proteinSynthesis("ATGAUGAACG").equals("MetValArg");
+// assert ps.proteinSynthesis("ATGAUGUAG").equals("MetVal");
+// assert ps.proteinSynthesis("ATGAUGUAGCGAUGUAG").equals("MetValVal");

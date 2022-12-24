@@ -6,6 +6,62 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch LCM_435NonOverlappingIntervals",
+            "request": "launch",
+            "mainClass": "LCM_435NonOverlappingIntervals",
+            "projectName": "DataStructuresandAlgorithm_8d00359"
+        },
+        {
+            "type": "java",
+            "name": "Launch InsertInterval",
+            "request": "launch",
+            "mainClass": "Blind75.Interval.InsertInterval",
+            "projectName": "DataStructuresandAlgorithm_8d00359"
+        },
+        {
+            "type": "java",
+            "name": "Launch LCM_22GenerateParentheses",
+            "request": "launch",
+            "mainClass": "LCM_22GenerateParentheses",
+            "projectName": "DataStructuresandAlgorithm_8d00359"
+        },
+        {
+            "type": "java",
+            "name": "Launch Airclub",
+            "request": "launch",
+            "mainClass": "Airclub",
+            "projectName": "DataStructuresandAlgorithm_8d00359"
+        },
+        {
+            "type": "java",
+            "name": "Launch nameMatching",
+            "request": "launch",
+            "mainClass": "nameMatching",
+            "projectName": "DataStructuresandAlgorithm_8d00359"
+        },
+        {
+            "type": "java",
+            "name": "Launch NameMatcher",
+            "request": "launch",
+            "mainClass": "NameMatcher",
+            "projectName": "DataStructuresandAlgorithm_8d00359"
+        },
+        {
+            "type": "java",
+            "name": "Launch nthPrime",
+            "request": "launch",
+            "mainClass": "nthPrime",
+            "projectName": "DataStructuresandAlgorithm_8d00359"
+        },
+        {
+            "type": "java",
+            "name": "Launch Helix",
+            "request": "launch",
+            "mainClass": "Helix",
+            "projectName": "DataStructuresandAlgorithm_8d00359"
+        },
+        {
+            "type": "java",
             "name": "Launch LCM_885SpiralMatrixIII",
             "request": "launch",
             "mainClass": "LCM_885SpiralMatrixIII",
