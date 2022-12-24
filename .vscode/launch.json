@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch LCH_1851MinimumIntervalToIncludeEachQuery",
+            "request": "launch",
+            "mainClass": "LCH_1851MinimumIntervalToIncludeEachQuery",
+            "projectName": "DataStructuresandAlgorithm_8d00359"
+        },
+        {
+            "type": "java",
             "name": "Launch LCM_435NonOverlappingIntervals",
             "request": "launch",
             "mainClass": "LCM_435NonOverlappingIntervals",
